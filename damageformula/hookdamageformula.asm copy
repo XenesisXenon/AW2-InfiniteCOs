@@ -1,0 +1,98 @@
+;Advance Wars 2 - AW Project Damage Formula
+;hookdamageformula.asm
+
+;Subroutine that gets firepower boosts.
+;Input of CO ID and CO Power status in r0, r1
+;Calculates unit in R2
+
+
+;Firepower Boost Adjustment
+.org 0x08043070
+	push {r4-r6,r14}
+	add sp, -0xC
+	str r0, [sp, 0x0]
+	str r1, [sp, 0x4]
+	str r6, [sp, 0x8]
+	ldr r6, [sp, 0x1C]
+	ldr r5,=0x085D5ABC
+	mov r4, 0x1A
+	mul r4, r6
+	add r3, r3, r4
+	mov r4, 0x5C
+	mul r4, r2
+	add r3, r3, r4
+	add r5, 0x1E
+	add r3, r3, r5
+	ldrb r4,[r3]
+	bl 0x080430B0
+;This BL gets this unit's firepower boost
+	ldr r1,=CustomCOFirepowerBoost
+	add r1, 0x1
+	bx r1
+	.pool
+
+;Defence Boost Adjustment
+.org 0x08042CF8
+	push {r4-r6,r14}
+	ldr r1,=CustomCODefenceBoost
+	add r1, 0x1
+	bx r1
+	.pool
+	
+;Luck Boost Adjustments
+.org 0x08042E64
+	push	{r14}
+	ldr	r1,=CustomCOLuckAdjustment+1
+	bx	r1
+	.pool
+
+;Terrain Boost Adjustments (Display Formula)
+.org 0x08043326
+	bl 0x08043050
+	ldr r1,=CustomCOTerrainAdjustment
+	add r1, 0x1
+	bx r1
+	.pool
+	
+;Capture Boost Adjustments
+.org 0x08042F14
+	push	{r14}
+	ldr	r1,=CustomCOCaptureAdjustment+1
+	bx	r1
+	.pool
+
+	
+;Division-based Defence (instead of multiplicative)
+;This is for the display damage info box (excludes luck)
+.org 0x08024E00
+	mov r1, 0xE
+	ldsh r1, [r6, r1]
+	mov r7, 100
+	mov r2, 0x14
+	ldsh r0, [r4, r2]
+	mul r0, r7
+	add r0, 0x1
+	;This is to account for rounding down errors. We want the damage rounded up always
+	bl 0x0808AAAC
+	lsl r0, r0, 0x0
+
+;For the actual damage inflicted	
+.org 0x08024E30
+	mov r2, 0xE
+	ldsh r1, [r6, r2]
+	mov r2, 0xC
+	ldsh r0, [r4, r2]
+	mul r0, r7
+	bl 0x0808AAAC
+	b 0x08024E42
+
+;For Charge calculation and storage
+;Note that this hooks into the start of one of the damage routine thingamos
+.org 0x08024A2E
+;Can jump off from here
+	ldr r4,=ChargeScaleCalculator
+	add r4, 0x1
+	bx r4
+	.pool
+	
+;Blank Line

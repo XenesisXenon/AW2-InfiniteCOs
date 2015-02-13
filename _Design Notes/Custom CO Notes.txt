@@ -1,0 +1,57 @@
+Custom CO Notes:
+
+Walter - Custom Wars
+D2D: See All HP
+COP: Reflect 20-40% Damage suffered back.
+SCOP: Drain fuel, round down health, hide all HP
+
+Bugs: Reflection damage doesn't cap out with overkill.
+
+Epoch - Custom Wars
+D2D: Bland
+COP: Stat Boosts
+SCOP: Stat Boosts
+
+Bugs: N/A
+
+Python (Venom Adder)
+D2D: +1% per 2 days gameplay
+COP: +1M, Doubles
+SCOP: +2M, Triples
+
+Bugs: None, but convert to Daily COP format.
+
+Wyatt (x0_000's City CO)
+D2D: Neutralises Enemy Cities when Camping on them. No terrain defence on enemy properties
+COP: Neutralises Enemy Properties for a Turn
+SCOP: Neutralises Enemy Properties for a turn, Boosts units who start on properties.
+
+Bugs: Not coded yet
+
+Optimus Prime (x0_000's CO)
+D2D: Infantry transform into Vehicles for star charge
+COP: N/A
+SCOP: N/A
+
+Bugs: Not coded yet
+
+Zed
+D2D: None
+COP: Restore Unit Position
+SCOP: Restore Unit Position + Status
+
+Bugs: 
+Positions aren't recorded on a save/load
+Units that are joined are not un-joined (and may lose HP in the wind-back)
+Units may get restored to a position in a unit that has been destroyed
+
+7 Bytes per unit available for SRAM:
+X Pos (1)
+Y Pos (1)
+Unit ID (1)
+Unit HP/Ammo/Capture (2)
+Unit State (1)
+AI State (4)
+Transporting Unit IDs (2)
+
+Concatenate UID/XPos/YPos to (1), State (1), HP/AmmoCapture(1),Transporting IDs (2)
