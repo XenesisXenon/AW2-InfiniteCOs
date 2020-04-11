@@ -18,7 +18,8 @@ String2504:
 String2505:
 	.ascii "Start a new War Room battle.",0x0
 String2506:
-	.ascii "Shop here with your hard-earned points.",0x0
+	;.ascii "Shop here with your hard-earned points.",0x0
+	.ascii "Shop here with points. Hold L + R for advanced options.",0x0
 String2507:
 	.ascii "Create maps and edit CO colours.",0x0
 String2508:
@@ -30,5 +31,7 @@ String2510:
 String2511:
 	.ascii "Press SELECT for Hard Campaign",0x0
 String2512:
-	.ascii "Press SELECT for the Sound Room.",0x0
+	;.ascii "Press SELECT for the Sound Room.",0x0
+	.ascii "SELECT for Sound Room. Hold L + R for options.",0x0
+
 ;Blank Line

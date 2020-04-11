@@ -100,7 +100,7 @@ String1175:
 	.ascii TextWait
 	.ascii " Why, you no-good...",TextConfirm
 	.ascii "Are you familiar with the concept of",TextNL
-	.ascii ""chain of command"?",TextConfirm
+	.ascii TextQuote,"chain of command",TextQuote,"?",TextConfirm
 	TextEnd
 ; Original offset: 0x085f2448
 String1176:

@@ -100,7 +100,7 @@ EndOfSiloCheck:
 	pop	{r4-r7}
 	pop	{r1}
 	bx	r1
-	.align
+	.align 4
 	.pool
 
 ;Blank Line	

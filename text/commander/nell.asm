@@ -26,20 +26,20 @@ String2422:
 	.ascii "she was born lucky.",TextNL
 	.ascii " "
 	TextEnd
-String2423:
+String2423:	;Fixed this description
 	.ascii "Improves her chance",TextNL
 	.ascii "to strike with",TextNL
 	.ascii "increased firepower,",TextNL
-	.ascii "and damages multiple",TextNL
-	.ascii "foes. Lucky!",TextNL
+	.ascii "and inflict extra",TextNL
+	.ascii "damage. Lucky!",TextNL
 	.ascii " "
 	TextEnd
-String2424:
+String2424: ;Fixed this description
 	.ascii "Improves her chance",TextNL
 	.ascii "to strike with",TextNL
 	.ascii "increased firepower,",TextNL
-	.ascii "and damages even",TextNL
-	.ascii "more foes. Lucky!",TextNL
+	.ascii "and inflict even",TextNL
+	.ascii "more damage. Lucky!",TextNL
 	.ascii " "
 	TextEnd
 

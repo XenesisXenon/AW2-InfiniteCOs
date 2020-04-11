@@ -4,9 +4,9 @@ AW1MaxName:
 	TextEnd
 
 AW1MaxCOPower:
-	.ascii " ",0x0
-AW1MaxSuperPower:
 	.ascii "Max Force",0x0
+AW1MaxSuperPower:
+	.ascii " ",0x0
 AW1MaxDesc1:
 	.ascii "Dependable and brave.",TextNL
 	.ascii "Over-protective of",TextNL
@@ -22,16 +22,16 @@ AW1MaxDesc2:
 	.ascii "attack ranges.",TextNL
 	.ascii " ",0x0
 AW1MaxDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
+	.ascii "Increases all",TextNL
+	.ascii "abilites of direct",TextNL
+	.ascii "combat units.",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1MaxDesc4:
-	.ascii "Increases all",TextNL
-	.ascii "abilites of direct",TextNL
-	.ascii "combat units.",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0

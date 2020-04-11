@@ -240,7 +240,7 @@ String1792:
 	.ascii "Yes, I visited one of them myself.",TextWait
 	.ascii TextNL
 	.ascii "They gave me a message for you.",TextConfirm
-	.ascii ""Thank you for saving us.TextConfirm
+	.ascii TextQuote,"Thank you for saving us.",TextQuote,TextConfirm
 	TextEnd
 ; Original offset: 0x085fcfd4
 String1793:

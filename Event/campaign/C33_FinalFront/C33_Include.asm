@@ -1,0 +1,21 @@
+;C33_Include.asm
+.relativeinclude on
+	.include "C33_0_Event_0.asm"
+	.include "C33_0_Event_1.asm"
+	.include "C33_0_Trigger.asm"
+	.include "C33_1_Event_0.asm"
+	.include "C33_1_Event_1.asm"
+	.include "C33_1_Trigger.asm"
+	.include "C33_2_Trigger.asm"
+	.include "C33_3_Event_0.asm"
+	.include "C33_3_Trigger.asm"
+	.include "C33_4_Trigger.asm"
+	.include "C33_5_Event_0.asm"
+	.include "C33_5_Event_0a.asm"
+	.include "C33_5_Event_0b.asm"
+	.include "C33_5_Event_1.asm"
+	.include "C33_5_Event_1a.asm"
+	.include "C33_5_Trigger.asm"
+	.include "C33_Terms.asm"
+	.include "C33_Worldmap.asm"
+.relativeinclude off

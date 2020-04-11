@@ -8,14 +8,14 @@ GraphicsOutrealmCOGraphic:
 	.dw GraphicsOutrealmBody
 	
 GraphicsOutrealmTop:
-	.import graphics/CO/OutrealmCO/outrealmtop.bin
+	.import "graphics/CO/OutrealmCO/outrealmtop.bin"
 GraphicsOutrealmBody:	
-	.import graphics/CO/OutrealmCO/outrealmbody.bin
+	.import "graphics/CO/OutrealmCO/outrealmbody.bin"
 GraphicsOutrealmFace:	
-	.import graphics/CO/OutrealmCO/outrealmneutral.bin
+	.import "graphics/CO/OutrealmCO/outrealmneutral.bin"
 GraphicsOutrealmName:
-	.import graphics/CO/OutrealmCO/outrealmname.bin	
+	.import "graphics/CO/OutrealmCO/outrealmname.bin"	
 GraphicsOutrealmMug:
-	.import graphics/CO/OutrealmCO/outrealmmug.bin
+	.import "graphics/CO/OutrealmCO/outrealmmug.bin"
 	
 ;

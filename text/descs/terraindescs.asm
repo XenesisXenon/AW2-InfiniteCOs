@@ -36,7 +36,7 @@ String2378:
 	.ascii "traverse seas.",0x0
 String2379:
 	.ascii "An army HQ. Battle",TextNL
-	.ascii "ends if it's",TextBlue,"captured",TextBlack,".",TextNL
+	.ascii "ends if it's ",TextBlue,"captured",TextBlack,".",TextNL
 	.ascii "Ground units get HP",TextNL
 	.ascii "and supplies here.",0x0
 String2380:
@@ -124,4 +124,48 @@ String2396:
 	.ascii "It's heavily armoured",TextNL
 	.ascii "and cannot be",TextNL
 	.ascii "entered or attacked.",0x0
+	
+StringAWDSTower_0:
+	.ascii "Com Tower",0x0
 
+StringAWDSTower_1:
+	.ascii "This tower boosts the",TextNL
+	.ascii "attack for all units in",TextNL
+	.ascii "its owner's command.",0x0
+	
+String_AW4_Wasteland_0:
+	.ascii "Wasteland",0x0
+	
+String_AW4_Wasteland_1:
+	.ascii "This impairs mobility",TextNL
+	.ascii "for all but infantry",TextNL
+	.ascii "and mech units.",0x0
+
+String_AW4_Mist_0:
+	.ascii "Mist",0x0
+String_AW4_Mist_1:
+	.ascii "Mist provides ideal hiding",TextNL
+	.ascii "places for naval units in",TextNL
+	.ascii "Fog of War",0x0
+
+String_AW4_Ruins_0:
+	.ascii "Ruins",0x0
+String_AW4_Ruins_1:
+	.ascii "Ruins provide hiding",TextNL
+	.ascii "places for ground",TextNL
+	.ascii "units during Fog",TextNL
+	.ascii "of War",0x0
+	
+String_AW4_Rough_0:
+	.ascii "Rough Sea",0x0
+String_AW4_Rough_1:
+	.ascii "Slows the movement of",TextNL
+	.ascii "naval units, but air",TextNL
+	.ascii "units are not affected.",0x0
+
+String_AW4_Fire_0:
+	.ascii "Fire",0x0
+String_AW4_Fire_1:
+	.ascii "Prevents unit movement",TextNL
+	.ascii "and illuminates a 5-square",TextNL
+	.ascii "in Fog of War",0x0

@@ -1,0 +1,32 @@
+;Unlock Status Offsets
+;Relative to CurrentUnlockedStatus
+UnlockedCampaign			equ	0x0
+UnlockedMapCase				equ	0x10
+UnlockedMap				equ	0x12
+UnlockedCO				equ	0x2A
+UnlockedColourEdit			equ	0x2D
+UnlockedMapClears			equ	0x30
+
+UnlockBoolean_HardCampaign		equ	0x20
+UnlockBoolean_CampaignClear		equ	0x21
+UnlockBoolean_HardClear			equ	0x22
+UnlockBoolean_OSFactoryClear		equ	0x23
+UnlockBoolean_BMFactoryClear		equ	0x24
+UnlockBoolean_YCFactoryClear		equ	0x25
+UnlockBoolean_GEFactoryClear		equ	0x26
+UnlockBoolean_SoundRoom			equ	0x28
+
+UnlockBoolean_Custom_TurnTimer		equ	0x29
+UnlockBoolean_Custom_Charging		equ	0x2A
+UnlockBoolean_Custom_Debug		equ	0x2B
+UnlockBoolean_Custom_CampaignCO		equ	0x2C
+UnlockBoolean_Custom_VersusAW1		equ	0x2D
+UnlockBoolean_Custom_VersusAW2		equ	0x2E
+UnlockBoolean_Custom_VersusAW3		equ	0x2F
+UnlockBoolean_Custom_VersusCCO		equ	0x30
+UnlockBoolean_Custom_VersusSFW		equ	0x31
+UnlockBoolean_Custom_CampaignForces	equ	0x32
+UnlockBoolean_Custom_TutorialSkip	equ	0x33
+UnlockBoolean_Custom_AWDSWeather	equ	0x34
+UnlockBoolean_Custom_ChargingAW1	equ	0x35
+UnlockBoolean_Custom_ChargingAW3	equ	0x36

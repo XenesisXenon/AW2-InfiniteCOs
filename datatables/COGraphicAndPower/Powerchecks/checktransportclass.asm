@@ -30,4 +30,4 @@ COPCheckTransportClassTable:
 	.db 0,0,0,0,0,0,1,1,0,0
 	.db 0,0,1,1,0,0,0,0,0
 	.db 1,1,0,1,1,0 
-	.align
+	.align 4

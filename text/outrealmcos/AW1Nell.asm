@@ -4,9 +4,9 @@ AW1NellName:
 	TextEnd
 
 AW1NellCOPower:
-	.ascii " ",0x0
-AW1NellSuperPower:
 	.ascii "Lucky Star",0x0
+AW1NellSuperPower:
+	.ascii " ",0x0
 AW1NellDesc1:
 	.ascii "A respected CO of",TextNL
 	.ascii "no mean ability.",TextNL
@@ -22,15 +22,15 @@ AW1NellDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1NellDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
+	.ascii "May become even",TextNL
+	.ascii "luckier than normal.",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1NellDesc4:
-	.ascii "May become even",TextNL
-	.ascii "luckier than normal.",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL

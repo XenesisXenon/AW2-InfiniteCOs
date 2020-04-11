@@ -39,7 +39,6 @@
 	.word TextTable
 .org 0x0803A654
 	.word TextTable
-;This entry causing bugs...	
 .org 0x080469DC
 	.word TextTable
 .org 0x08047EAC
@@ -52,12 +51,20 @@
 	.word TextTable
 .org 0x0807605C
 	.word TextTable
-;Also causing bugs	
 .org 0x0807FACC
 	.word TextTable
+;This is called in hook_splashmod.asm
 .org 0x0808069C
 	.word TextTable
 .org 0x080853A8
 	.word TextTable
 	
+.org 0x08086C94
+	.word MapCaseNameTable
+.org 0x08086B9C
+	.word MapCaseNameTable
+
+;Just for Fun
+.org	0x085802B4
+	;.ascii "OPTION*SHOP",0x0
 ;Blank Line	

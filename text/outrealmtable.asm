@@ -1,56 +1,4 @@
-;outrealm text table additions
-	;3316
-	ScriptOutrealm 		equ 3316
-	ScriptAWDSJugger 	equ ScriptOutrealm+14
-	ScriptAWDSKindle 	equ ScriptAWDSJugger+14
-	ScriptAWDSSasha 	equ ScriptAWDSKindle+14
-	ScriptAWDSJake 		equ ScriptAWDSSasha+14
-	ScriptAWDSKoal 		equ ScriptAWDSJake+14
-	ScriptAWDSGrimm 	equ ScriptAWDSKoal+14
-	ScriptAW1Sturm 		equ ScriptAWDSGrimm+14
-	ScriptAW1SturmVs 	equ ScriptAW1Sturm+14
-	ScriptAWDSJavier 	equ ScriptAW1SturmVs+14
-	ScriptAW1Andy 		equ ScriptAWDSJavier+14	
-	ScriptAW1Max 		equ ScriptAW1Andy+14	
-	ScriptAW1Sami 		equ ScriptAW1Max+14	
-	ScriptAW1Nell 		equ ScriptAW1Sami+14
-	ScriptAW1Olaf 		equ ScriptAW1Nell+14
-	ScriptAW1Grit 		equ ScriptAW1Olaf+14	
-	ScriptAW1Kanbei 	equ ScriptAW1Grit+14	
-	ScriptAW1Sonja 		equ ScriptAW1Kanbei+14	
-	ScriptAW1Eagle 		equ ScriptAW1Sonja+14	
-	ScriptAW1Drake 		equ ScriptAW1Eagle+14	
-	ScriptSFWCaroline 	equ ScriptAW1Drake+14
-	ScriptSFWYamamoto 	equ ScriptSFWCaroline+14
-	ScriptSFWBillygates 	equ ScriptSFWYamamoto+14
-	ScriptAWDSOlaf 		equ ScriptSFWBillygates+14
-	ScriptAWDSNell 		equ ScriptAWDSOlaf+14
-	ScriptAWDSRachel 	equ ScriptAWDSNell+14
-	ScriptAWDSAndy 		equ ScriptAWDSRachel+14
-	ScriptAWDSMax 		equ ScriptAWDSAndy+14
-	ScriptAWDSSami 		equ ScriptAWDSMax+14
-	ScriptAWDSGrit 		equ ScriptAWDSSami+14
-	ScriptAWDSKanbei 	equ ScriptAWDSGrit+14
-	ScriptAWDSSonja 	equ ScriptAWDSKanbei+14
-
-	ScriptAWDSEagle 	equ ScriptAWDSSonja+14
-	ScriptAWDSDrake 	equ ScriptAWDSEagle+14
-	ScriptAWDSFlak	 	equ ScriptAWDSDrake+14
-	ScriptAWDSLash	 	equ ScriptAWDSFlak+14
-	ScriptAWDSAdder 	equ ScriptAWDSLash+14
-	ScriptAWDSHawke 	equ ScriptAWDSAdder+14
-	ScriptAWDSVonbolt 	equ ScriptAWDSHawke+14
-	
-	ScriptAWDSHachi 	equ ScriptAWDSVonbolt+14
-	ScriptAWDSColin 	equ ScriptAWDSHachi+14
-	ScriptAWDSJess	 	equ ScriptAWDSColin+14
-	ScriptAWDSSensei 	equ ScriptAWDSJess+14
-	
-	ScriptCCOVenomAdder	equ ScriptAWDSSensei+14
-	ScriptCCOEpoch		equ ScriptCCOVenomAdder+14
-	ScriptCCOWalter		equ ScriptCCOEpoch+14	
-	ScriptCCOZed		equ ScriptCCOWalter+14
-	
+;outrealm text table additions	
 	.word	OutrealmName
 	.word	OutrealmCOPower
 	.word	OutrealmSuperPower
@@ -754,5 +702,36 @@
 	.word	CCOZedCOPQuote3
 	.word	CCOZedCOPQuote4
 	.word	CCOZedCOPQuote5
-	.word	CCOZedCOPQuote6	
-;Blank Line	
+	.word	CCOZedCOPQuote6
+	
+
+	.word	CCOEliwoodName
+	.word	CCOEliwoodCOPower
+	.word	CCOEliwoodSuperPower
+	.word	CCOEliwoodDesc1
+	.word	CCOEliwoodDesc2
+	.word	CCOEliwoodDesc3
+	.word	CCOEliwoodDesc4
+	.word	CCOEliwoodVictory
+	.word	CCOEliwoodCOPQuote1
+	.word	CCOEliwoodCOPQuote2
+	.word	CCOEliwoodCOPQuote3
+	.word	CCOEliwoodCOPQuote4
+	.word	CCOEliwoodCOPQuote5
+	.word	CCOEliwoodCOPQuote6
+	
+	.word	CCONergalName
+	.word	CCONergalCOPower
+	.word	CCONergalSuperPower
+	.word	CCONergalDesc1
+	.word	CCONergalDesc2
+	.word	CCONergalDesc3
+	.word	CCONergalDesc4
+	.word	CCONergalVictory
+	.word	CCONergalCOPQuote1
+	.word	CCONergalCOPQuote2
+	.word	CCONergalCOPQuote3
+	.word	CCONergalCOPQuote4
+	.word	CCONergalCOPQuote5
+	.word	CCONergalCOPQuote6	
+	;Blank Line

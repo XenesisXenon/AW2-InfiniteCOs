@@ -102,7 +102,7 @@ EndOfCaptureCheck:
 	pop	{r4-r7}
 	pop	{r1}
 	bx	r1
-	.align
+	.align 4
 	.pool
 	
 .org 0x0804236C
@@ -152,7 +152,7 @@ TerrainCaptureCheckEnd:
 	pop	{r4-r6}
 	pop	{r1}
 	bx	r1
-	.align
+	.align 4
 	.pool
 	
 TerrainListCaptureableTiles:

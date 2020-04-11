@@ -1,0 +1,113 @@
+; Original offset: 0x084abb50
+C09_0_Event_0:
+	Event_TriggerState_Set	0x00000001
+	Event_Audio_Start	0x019b
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03ba
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03bb
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03bc
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03bd
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03be
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03bf
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03c0
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03c1
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03c2
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03c3
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03c4
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03c5
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03c6
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03c7
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03c8
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03c9
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03ca
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03cb
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerOne
+	Event_Textbox_Create	COGrit,Position_Top
+	Event_Textbox_SetFace	COGrit
+	Event_Textbox_Text	0x03cc
+	Event_Textbox_Clear
+	Event_Textbox_SetPlayer	PlayerTwo
+	Event_Textbox_Create	COAdder,Position_Bottom
+	Event_Textbox_SetFace	COAdder
+	Event_Textbox_Text	0x03cd
+	Event_Audio_Stop
+	Event_Textbox_Clear
+	Event_Textbox_SetCurrent
+	Event_Dummy_0x22
+	Event_Controls_Unlock
+	Event_RunASM		0x0801987d
+	;Unknown Event
+	 .dw	0x0000003a,0x00000000,0x00000000,0x00000000
+	Event_End
+
+; blank line

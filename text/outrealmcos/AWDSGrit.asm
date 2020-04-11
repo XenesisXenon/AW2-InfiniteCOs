@@ -48,7 +48,7 @@ AWDSGritCOPQuote1:
 	TextEnd
 AWDSGritCOPQuote2:
 	.ascii "Aw shucks.",TextWait,TextNL
-	.ascii "I was hopin' it wouldn't come to this..."TextWait
+	.ascii "I was hopin' it wouldn't come to this...",TextWait
 	.ascii TextWait
 	.ascii TextWait
 	TextEnd
@@ -72,7 +72,7 @@ AWDSGritCOPQuote5:
 	TextEnd
 AWDSGritCOPQuote6:
 	.ascii "Y'all gimme no choice...",TextWait,TextNL
-	.ascii "Time to bring in the big guns!"TextWait
+	.ascii "Time to bring in the big guns!",TextWait
 	.ascii TextWait
 	.ascii TextWait
 	TextEnd

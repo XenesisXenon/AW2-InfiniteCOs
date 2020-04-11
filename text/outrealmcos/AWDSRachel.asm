@@ -8,17 +8,17 @@ AWDSRachelCOPower:
 AWDSRachelSuperPower:
 	.ascii "Covering Fire",0x0
 AWDSRachelDesc1:
-	.ascii "A young Orange Star CO.",TextNL
-	.ascii "She strives to follow",TextNL
-	.ascii "in the footsteps of her",TextNL
-	.ascii "big sister, Nell.",TextNL
+	.ascii "A young Orange Star",TextNL
+	.ascii "CO. She strives to",TextNL
+	.ascii "follow in the footsteps",TextNL
+	.ascii "of her big sister, Nell.",TextNL
 	.ascii "Hit: Hard work",TextNL
 	.ascii "Miss: Excuses",0x0
 AWDSRachelDesc2:
 	.ascii "Her troops are quite",TextNL
 	.ascii "hardworking, and they",TextNL
-	.ascii "increase base resupplies",TextNL
-	.ascii "by one.",TextNL
+	.ascii "increase base",TextNL
+	.ascii "resupplies by one.",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AWDSRachelDesc3:

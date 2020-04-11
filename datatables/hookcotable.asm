@@ -1,4 +1,4 @@
-;hookcotable.asm
+;hookcotable.asm"
 ;Datatable generator for AW2 COs. Requires Pointer Hack Ultra
 
 ;All Hooks to this Table
@@ -50,8 +50,8 @@
 	.dw	COStatsAbilitiesDatatable
 .org 0x08044234
 	.dw	COStatsAbilitiesDatatable
-.org 0x08044B94
-	.dw	COStatsAbilitiesDatatable
+;.org 0x08044B94
+;	.dw	COStatsAbilitiesDatatable
 .org 0x08046864
 	.dw	COStatsAbilitiesDatatable
 .org 0x08046C3C
@@ -93,44 +93,52 @@
 
 	
 ;CO Power ASM
-	.include datatables/COStats/COPowers/COPowerDefault.asm
-	.include datatables/COStats/COPowers/COPowerBlizzard.asm
-	.include datatables/COStats/COPowers/COPowerBarter.asm
-	.include datatables/COStats/COPowers/COPowerBlackWave.asm
-	.include datatables/COStats/COPowers/COPowerBlackStorm.asm
-	.include datatables/COStats/COPowers/COPowerTsunami.asm
-	.include datatables/COStats/COPowers/COPowerTyphoon.asm
-	.include datatables/COStats/COPowers/COPowerWinterFury.asm
-	.include datatables/COStats/COPowers/COPowerAirborneAssault.asm
-	.include datatables/COStats/COPowers/COPowerCopterCommand.asm
-	.include datatables/COStats/COPowers/COPowerMeteorStrike4HP.asm
-	.include datatables/COStats/COPowers/COPowerMeteorStrike8HP.asm
-	.include datatables/COStats/COPowers/COPowerEnhancedVision.asm
-	.include datatables/COStats/COPowers/COPowerGoldRush.asm
+	.include "datatables/COStats/COPowers/COPowerDefault.asm"
+	.include "datatables/COStats/COPowers/COPowerBlizzard.asm"
+	.include "datatables/COStats/COPowers/COPowerBarter.asm"
+	.include "datatables/COStats/COPowers/COPowerBlackWave.asm"
+	.include "datatables/COStats/COPowers/COPowerBlackStorm.asm"
+	.include "datatables/COStats/COPowers/COPowerTsunami.asm"
+	.include "datatables/COStats/COPowers/COPowerTyphoon.asm"
+	.include "datatables/COStats/COPowers/COPowerWinterFury.asm"
+	.include "datatables/COStats/COPowers/COPowerAirborneAssault.asm"
+	.include "datatables/COStats/COPowers/COPowerCopterCommand.asm"
+	.include "datatables/COStats/COPowers/COPowerMeteorStrike4HP.asm"
+	.include "datatables/COStats/COPowers/COPowerMeteorStrike8HP.asm"
+	.include "datatables/COStats/COPowers/COPowerEnhancedVision.asm"
+	.include "datatables/COStats/COPowers/COPowerGoldRush.asm"
 	
 ;Custom Fix for Meteor Code to allow Stuns
-	.include datatables/COStats/COPowers/hookstunningmeteor.asm
+	.include "datatables/COStats/COPowers/hookstunningmeteor.asm"
 	
 ;Custom Fix for HQ Type Numbers
-.org 0x08042DD8
-	add	r0,0x0
+;Not Necessary in the scripting setup
+;.org 0x08042DD8
+;	add	r0,0x0
 
 ;Movement Charts
 .org 0x085D511C
-	.include datatables/COStats/MovementCharts/movementchartclear.asm
-	.include datatables/COStats/MovementCharts/movementchartsnow.asm
-	.include datatables/COStats/MovementCharts/movementchartrain.asm
-	.include datatables/COStats/MovementCharts/movementchartperfect.asm
-	.include datatables/COStats/MovementCharts/movementchartsamiclear.asm
-	.include datatables/COStats/MovementCharts/movementchartsamisnow.asm
-	.include datatables/COStats/MovementCharts/movementchartsamirain.asm
+	;.include "datatables/COStats/MovementCharts/movementchartclear.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartsnow.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartrain.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartperfect.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartsamiclear.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartsamisnow.asm"
+	;.include "datatables/COStats/MovementCharts/movementchartsamirain.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfclear.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfsnow.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfrain.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfperfect.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfsamiclear.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfsamisnow.asm"
+	.include "datatables/COStats/MovementCharts/movementchartinfsamirain.asm"
 
 ;AI Activation Rules
-	.include datatables/COStats/AIPowerRules/aiactivatealways.asm
-	.include datatables/COStats/AIPowerRules/aiactivatecopifnotsnowscopalways.asm
-	.include datatables/COStats/AIPowerRules/aiactivatecopstartscopend.asm
-	.include datatables/COStats/AIPowerRules/aiactivateifinjured.asm
-	.include datatables/COStats/AIPowerRules/aiactivatestartofturn.asm
+	.include "datatables/COStats/AIPowerRules/aiactivatealways.asm"
+	.include "datatables/COStats/AIPowerRules/aiactivatecopifnotsnowscopalways.asm"
+	.include "datatables/COStats/AIPowerRules/aiactivatecopstartscopend.asm"
+	.include "datatables/COStats/AIPowerRules/aiactivateifinjured.asm"
+	.include "datatables/COStats/AIPowerRules/aiactivatestartofturn.asm"
 	
 
 ;Blank Line

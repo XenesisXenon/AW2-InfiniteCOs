@@ -4,9 +4,9 @@ AW1SturmVsName:
 	TextEnd
 
 AW1SturmVsCOPower:
-	.ascii " ",0x0
-AW1SturmVsSuperPower:
 	.ascii "Meteor Strike",0x0
+AW1SturmVsSuperPower:
+	.ascii " ",0x0
 AW1SturmVsDesc1:
 	.ascii "A riddle within a",TextNL
 	.ascii "shadow, revealing",TextNL

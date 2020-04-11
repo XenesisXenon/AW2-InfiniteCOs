@@ -255,7 +255,7 @@ String1607:
 	TextEnd
 ; Original offset: 0x085f95c0
 String1608:
-	.ascii ""Nice"? ",TextWait
+	.ascii TextQuote,"Nice",TextQuote,"? ",TextWait
 	.ascii "I thought you'd be",TextNL
 	.ascii "more...",TextWait
 	.ascii "excited.",TextConfirm

@@ -4,9 +4,9 @@ AW1SamiName:
 	TextEnd
 
 AW1SamiCOPower:
-	.ascii " ",0x0
-AW1SamiSuperPower:
 	.ascii "Double Time",0x0
+AW1SamiSuperPower:
+	.ascii " ",0x0
 AW1SamiDesc1:
 	.ascii "A graduate of special",TextNL
 	.ascii "forces training. Has a",TextNL
@@ -22,18 +22,18 @@ AW1SamiDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1SamiDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",0x0
-AW1SamiDesc4:
 	.ascii "Increases movement",TextNL
 	.ascii "range for ",TextRed,"infantry",TextBlack,TextNL
 	.ascii "and ",TextRed,"mech",TextBlack," units. Their",TextNL
 	.ascii "movement cost on all",TextNL
 	.ascii "terrain becomes 1.",TextNL
+	.ascii " ",0x0
+AW1SamiDesc4:
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1SamiVictory:
 	.ascii "Yes!",TextNL

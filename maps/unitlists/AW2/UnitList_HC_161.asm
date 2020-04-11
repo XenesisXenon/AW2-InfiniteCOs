@@ -1,0 +1,70 @@
+;UnitList_HC_161.bin
+	;Unit Type, X co-ordinate, Y co-ordinate, HP, Ammo, Fuel, AI Type
+
+	@@UnitArmyStart ArmyOrangeStar
+	@@UnitBasic UnitNameBomber,5,32,AIUnitPassive
+	@@UnitBasic UnitNameBomber,6,32,AIUnitPassive
+	@@UnitBasic UnitNameBomber,7,32,AIUnitPassive
+	@@UnitBasic UnitNameBomber,8,32,AIUnitPassive
+	@@UnitBasic UnitNameBomber,9,32,AIUnitPassive
+	@@UnitBasic UnitNameBomber,10,32,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,4,32,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,11,32,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,5,31,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,10,31,AIUnitPassive
+	@@UnitBasic UnitNameFighter,6,31,AIUnitPassive
+	@@UnitBasic UnitNameFighter,7,31,AIUnitPassive
+	@@UnitBasic UnitNameFighter,8,31,AIUnitPassive
+	@@UnitBasic UnitNameFighter,9,31,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,6,30,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,9,30,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,8,29,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,7,29,AIUnitPassive
+	@@UnitBasic UnitNameBomber,2,29,AIUnitPassive
+	@@UnitBasic UnitNameBomber,13,29,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,1,30,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,14,30,AIUnitPassive
+	@@UnitBasic UnitNameCruiser,3,30,AIUnitPassive
+	@@UnitBasic UnitNameCruiser,12,30,AIUnitPassive
+	@@UnitBasic UnitNameBattleShip,2,31,AIUnitPassive
+	@@UnitBasic UnitNameBattleShip,13,31,AIUnitPassive
+
+	@@UnitArmyStart ArmyBlueMoon
+	@@UnitBasic UnitNameBattleCopter,7,0,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,8,0,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,8,18,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,7,18,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,6,8,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,7,8,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,8,8,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,9,8,AIUnitActive
+	@@UnitBasic UnitNameFighter,7,11,AIUnitActive
+	@@UnitBasic UnitNameFighter,8,11,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,6,12,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,5,13,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,9,12,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,10,13,AIUnitActive
+	@@UnitBasic UnitNameCruiser,3,11,AIUnitPassive
+	@@UnitBasic UnitNameCruiser,12,11,AIUnitPassive
+	@@UnitBasic UnitNameCruiser,2,1,AIUnitPassive
+	@@UnitBasic UnitNameCruiser,13,1,AIUnitPassive
+	@@UnitBasic UnitNameBattleCopter,8,19,AIUnitActive
+	@@UnitBasic UnitNameBattleCopter,7,19,AIUnitActive
+	@@UnitBasic UnitNameSub,1,4,AIUnitActive
+	@@UnitBasic UnitNameSub,14,4,AIUnitActive
+	@@UnitBasic UnitNameNeotank,4,6,AIUnitActive
+	@@UnitBasic UnitNameNeotank,11,6,AIUnitActive
+	@@UnitBasic UnitNameNeotank,7,10,AIUnitActive
+	@@UnitBasic UnitNameNeotank,8,10,AIUnitActive
+	@@UnitBasic UnitNameMissile,3,5,AIUnitActive
+	@@UnitBasic UnitNameMissile,12,5,AIUnitActive
+	@@UnitBasic UnitNameMissile,6,2,AIUnitActive
+	@@UnitBasic UnitNameMissile,9,2,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,5,10,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,10,10,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,4,5,AIUnitActive
+	@@UnitBasic UnitNameAnti-Air,11,5,AIUnitActive
+	@@UnitBasic UnitNameArtillery,14,8,AIUnitActive
+	@@UnitBasic UnitNameArtillery,1,8,AIUnitActive
+
+	@@UnitListEnd

@@ -9,8 +9,8 @@ AWDSJakeSuperPower:
 	.ascii "Block Rock",0x0
 AWDSJakeDesc1:
 	.ascii "A young, energetic",TextNL
-	.ascii "Orange Star CO who is a",TextNL
-	.ascii "top notch tank",TextNL
+	.ascii "Orange Star CO who is",TextNL
+	.ascii "a top notch tank",TextNL
 	.ascii "commander.",TextNL
 	.ascii "Hit: Clubbin'",TextNL
 	.ascii "Miss: Easy Listening",0x0

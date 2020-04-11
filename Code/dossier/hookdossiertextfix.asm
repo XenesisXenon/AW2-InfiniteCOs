@@ -1,0 +1,14 @@
+;hookdossiertextfix.asm
+;Forces the CO Dossier Code to use the CO Data
+
+.org 0x080852D2
+	ldr	r3,=CoreDossierTextFix+1
+	bx	r3
+	.pool	
+
+.org 0x080852E6
+	mov	r1,0x7
+DossierTextFixReturn:
+	mov	r0,0x1
+
+;Blank Line

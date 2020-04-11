@@ -8,7 +8,7 @@ COPowerCoveringFire:
 	push	{r14}
 	mov	r1,r0
 	ldr	r0,=CoveringFireScript
-	bl	LongBLCOPowerCoveringFire;0x0801C95C
+	bl	@LongBLCOPowerCoveringFire;0x0801C95C
 	add	r0,0x64
 	mov	r1,CoveringFireDamage	;This is the Power's Damage per missile
 	strh	r1,[r0]
@@ -16,10 +16,10 @@ COPowerCoveringFire:
 	bx	r0
 	.pool
 
-LongBLCOPowerCoveringFire:
+@LongBLCOPowerCoveringFire:
 	LongBL r2,0x0801C95D
 	
-	.align
+	.align 4
 
 CoveringFireTargetingFirst:
 	push	{r4,r14}

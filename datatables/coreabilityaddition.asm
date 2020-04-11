@@ -1,54 +1,62 @@
-;coreabilityaddition.asm
+;coreabilityaddition.asm"
 
-	.include datatables/COStats/AIPowerRules/aiactivatenever.asm
-	.include datatables/COStats/AIPowerRules/aiactivateendofturn.asm
+	.relativeinclude on
+	.include "./COStats/AIPowerRules/aiactivatenever.asm"
+	.include "./COStats/AIPowerRules/aiactivateendofturn.asm"
+	.include "./COStats/AIPowerRules/aiactivatecopproperties.asm"
 
-	.include datatables/COStats/COPowers/COPowerMeteorStrike0HP.asm
-	.include datatables/COStats/COPowers/COPowerMeteorStrikeTripleTest.asm
-	.include datatables/COStats/COPowers/COPowerCoveringFire.asm
-	.include datatables/COStats/COPowers/COPowerScripts/COPowerScriptCoveringFire.asm
-;	.include datatables/COStats/COPowers/COPowerScripts/COPowerTestMissile.asm
-	.include datatables/COStats/COPowers/COPowerExMachina.asm
-	.include datatables/COStats/COPowers/COPowerScripts/COPowerScriptExMachina.asm
-	.include datatables/COStats/COPowers/COPowerMagnumOpus.asm
+	.include "./COStats/COPowers/COPowerMeteorStrike0HP.asm"
+	.include "./COStats/COPowers/COPowerMeteorStrikeTripleTest.asm"
+	.include "./COStats/COPowers/COPowerCoveringFire.asm"
+	.include "./COStats/COPowers/COPowerScripts/COPowerScriptCoveringFire.asm"
+;	.include "./COStats/COPowers/COPowerScripts/COPowerTestMissile.asm"
+	.include "./COStats/COPowers/COPowerExMachina.asm"
+	.include "./COStats/COPowers/COPowerScripts/COPowerScriptExMachina.asm"
+	.include "./COStats/COPowers/COPowerMagnumOpus.asm"
 	
 
-	.include datatables/COStats/COPowers/COPowerInsurrection.asm
-	.include datatables/COStats/COPowers/COPowerAW1Tsunami.asm
-	.include datatables/COStats/COPowers/COPowerEarthshaker.asm
-	.include datatables/COStats/COPowers/corestunningmeteor.asm
-	.include datatables/COStats/COPowers/COPowerMarketCrash.asm
-	.include datatables/COStats/COPowers/COPowerUrbanBlight.asm
-	.include datatables/COStats/COPowers/COPowerAltCopy.asm
-	.include datatables/COStats/COPowers/COPowerExtendedBlizzard.asm
-	.include datatables/COStats/COPowers/COPowerExtendedWinterfury.asm
-	
-	.include datatables/COStats/MovementCharts/movementchartAW1Samiclear.asm
-	.include datatables/COStats/MovementCharts/movementchartAW1Samisnow.asm
-	.include datatables/COStats/MovementCharts/movementchartAW1Samirain.asm
+	.include "./COStats/COPowers/COPowerInsurrection.asm"
+	.include "./COStats/COPowers/COPowerAW1Tsunami.asm"
+	.include "./COStats/COPowers/COPowerEarthshaker.asm"
+	.include "./COStats/COPowers/corestunningmeteor.asm"
+	.include "./COStats/COPowers/COPowerMarketCrash.asm"
+	.include "./COStats/COPowers/COPowerUrbanBlight.asm"
+	.include "./COStats/COPowers/COPowerAltCopy.asm"
+	.include "./COStats/COPowers/COPowerExtendedBlizzard.asm"
+	.include "./COStats/COPowers/COPowerExtendedWinterfury.asm"
 
-	.include datatables/COStats/TurnStarters/turnstartrecordunitposition.asm	
-	
-	.include datatables/COGraphicAndPower/Powerchecks/checktransportclass.asm	
-	.include datatables/COGraphicAndPower/Powereffects/copactivatelaunch.asm
-	.include datatables/COGraphicAndPower/Powereffects/copupgradetank.asm
-	.include datatables/COGraphicAndPower/Powereffects/cophealhpandresupply.asm
-	.include datatables/COGraphicAndPower/Powereffects/copstealth.asm
-	.include datatables/COGraphicAndPower/Powereffects/copeffectrestoreposition.asm
-	.include datatables/COGraphicAndPower/Powereffects/copcopycopeffect.asm
+	.include "./COStats/COPowers/COPower_EarthSeal.asm"
+	.include "./COStats/COPowers/COPower_HeavenSeal.asm"
+	.include "./COStats/COPowers/COPowerScripts/COPowerScript_EarthSeal.asm"
+	.include "./COStats/COPowers/COPower_Ereshkigal.asm"
 
-	.include datatables/COGraphicAndPower/Powertypes/powertypehighsociety.asm
-	.include datatables/COGraphicAndPower/Powertypes/powertypecopy.asm
-	
-	.include datatables/COGraphicAndPower/PowerChecks/checkcopycheck.asm
-	
-	.include datatables/COStats/TerrainBoosters/terrainboosterkindledaily.asm
-	.include datatables/COStats/TerrainBoosters/terrainboosterkindlepower.asm
-	.include datatables/COStats/TerrainBoosters/terrainboosterkindlesuper.asm
-	.include datatables/COStats/TerrainBoosters/terrainboosterjakedaily.asm
-	.include datatables/COStats/TerrainBoosters/terrainboosterkoal.asm
-	
-	.include datatables/coredailypowertable.asm
+	.include "./COStats/MovementCharts/movementchartinfAW1Samiclear.asm"
+	.include "./COStats/MovementCharts/movementchartinfAW1Samisnow.asm"
+	.include "./COStats/MovementCharts/movementchartinfAW1Samirain.asm"
+	.include "./COStats/MovementCharts/movementchart_nergal.asm"
 
+	.include "./COStats/TurnStarters/turnstartrecordunitposition.asm"	
+	
+	.include "./COGraphicAndPower/Powerchecks/checktransportclass.asm"	
+	.include "./COGraphicAndPower/Powereffects/copactivatelaunch.asm"
+	.include "./COGraphicAndPower/Powereffects/copupgradetank.asm"
+	.include "./COGraphicAndPower/Powereffects/cophealhpandresupply.asm"
+	.include "./COGraphicAndPower/Powereffects/copstealth.asm"
+	.include "./COGraphicAndPower/Powereffects/copeffectrestoreposition.asm"
+	.include "./COGraphicAndPower/Powereffects/copcopycopeffect.asm"
+
+	.include "./COGraphicAndPower/Powertypes/powertypehighsociety.asm"
+	.include "./COGraphicAndPower/Powertypes/powertypecopy.asm"
+	
+	.include "./COGraphicAndPower/PowerChecks/checkcopycheck.asm"
+	
+	.include "./COStats/TerrainBoosters/terrainboosterkindledaily.asm"
+	.include "./COStats/TerrainBoosters/terrainboosterkindlepower.asm"
+	.include "./COStats/TerrainBoosters/terrainboosterkindlesuper.asm"
+	.include "./COStats/TerrainBoosters/terrainboosterjakedaily.asm"
+	.include "./COStats/TerrainBoosters/terrainboosterkoal.asm"
+	
+	.include "./coredailypowertable.asm"
+	.relativeinclude off
 
 ;Blank Line

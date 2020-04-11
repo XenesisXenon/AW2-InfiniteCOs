@@ -1,7 +1,7 @@
 ;copowergoldrush.asm
 ;Graphical Effect and Fund Multiplication for Gold Rush
 
-.align
+.align 4
 COPowerMarketCrash:
 	push	{r4,r14}
 	mov	r4,r0

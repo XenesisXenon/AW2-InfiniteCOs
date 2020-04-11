@@ -4,9 +4,9 @@ AW1KanbeiName:
 	TextEnd
 
 AW1KanbeiCOPower:
-	.ascii " ",0x0
-AW1KanbeiSuperPower:
 	.ascii "Morale Boost",0x0
+AW1KanbeiSuperPower:
+	.ascii " ",0x0
 AW1KanbeiDesc1:
 	.ascii "Fashions himself a",TextNL
 	.ascii "modern samurai.",TextNL
@@ -22,16 +22,16 @@ AW1KanbeiDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1KanbeiDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
+	.ascii "Increases firepower and",TextNL
+	.ascii "defensive ratings",TextNL
+	.ascii "for all units",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1KanbeiDesc4:
-	.ascii "Increases firepower and",TextNL
-	.ascii "defensive ratings",TextNL
-	.ascii "for all units",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0

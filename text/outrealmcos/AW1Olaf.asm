@@ -4,9 +4,9 @@ AW1OlafName:
 	TextEnd
 
 AW1OlafCOPower:
-	.ascii " ",0x0
-AW1OlafSuperPower:
 	.ascii "Blizzard",0x0
+AW1OlafSuperPower:
+	.ascii " ",0x0
 AW1OlafDesc1:
 	.ascii "Plans often go awry,",TextNL
 	.ascii "but he's deadly serious.",TextNL
@@ -22,16 +22,16 @@ AW1OlafDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1OlafDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
+	.ascii "Causes it to snow",TextNL
+	.ascii "creating favourable",TextNL
+	.ascii "conditions for his units.",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1OlafDesc4:
-	.ascii "Causes it to snow",TextNL
-	.ascii "creating favourable",TextNL
-	.ascii "conditions for his units.",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0

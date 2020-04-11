@@ -87,7 +87,7 @@ MovementChartSnow:
 	;Pipeseam, Silo, Silo - Launched, Reef
 	.db -1,02,02,02
 	;Lab, MinicannonS, MinicannonN, MinicannonW
-	.db 01,-1,-1,-1
+	.db 02,-1,-1,-1
 	;MinicannonE, Laser, BlackCannonS, BlackCannonN
 	.db -1,-1,-1,-1
 	;Volcano, Factory, Deathray, Variable Tile

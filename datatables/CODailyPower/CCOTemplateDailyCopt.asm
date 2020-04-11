@@ -1,5 +1,5 @@
 ;CCOTemplateDailyCopt.asm
-	.align
+	.align 4
 CCOTemplateDailyPowerTable:
 	;CO Power Animation Graphic (+28/+0)
 	.db 2

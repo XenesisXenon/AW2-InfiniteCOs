@@ -16,8 +16,8 @@ AWDSFlakDesc1:
 	.ascii "Miss: Vegetables",0x0
 AWDSFlakDesc2:
 	.ascii "High firepower, but",TextNL
-	.ascii "relies solely on",TextNL
-	.ascii "strength. Shoddy technique",TextNL
+	.ascii "relies solely on strength.",TextNL
+	.ascii "Shoddy technique",TextNL
 	.ascii "sometimes reduces the",TextNL
 	.ascii "damage his units deal.",TextNL
 	.ascii " ",0x0
@@ -26,7 +26,7 @@ AWDSFlakDesc3:
 	.ascii "There is a chance of",TextNL
 	.ascii "getting a superstrong",TextNL
 	.ascii "blow, but units'",TextNL
-	.ascii "firepower might unexpectedly",TextNL
+	.ascii "firepower might",TextNL
 	.ascii "drop instead.",0x0
 AWDSFlakDesc4:
 	.ascii "Attack power increases",TextNL

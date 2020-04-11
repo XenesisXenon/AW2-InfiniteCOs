@@ -31,8 +31,8 @@ AWDSJessDesc3:
 AWDSJessDesc4:
 	.ascii "Movement of vehicular",TextNL
 	.ascii "units goes up by two",TextNL
-	.ascii "spaces. Attack dramatically",TextNL
-	.ascii "increases, and fuel and",TextNL
+	.ascii "spaces. Attack",TextNL
+	.ascii "increases, fuel and",TextNL
 	.ascii "ammo supplies are",TextNL
 	.ascii "also replenished.",0x0
 AWDSJessVictory:

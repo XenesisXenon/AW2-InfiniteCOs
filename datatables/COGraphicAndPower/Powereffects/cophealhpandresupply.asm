@@ -38,6 +38,6 @@ COPEffectHealVariableHPTable:
 	.db 2,4,4,2,2
 	.db 4,4,4,4,4
 	.db 4,4,4,4,4
-	.align
+	.align 4
 	
 ;Blank Line	

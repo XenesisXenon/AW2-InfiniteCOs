@@ -18,23 +18,23 @@ AWDSJavierDesc2:
 	.ascii "Javier has enhanced",TextNL
 	.ascii "defence against long-",TextNL
 	.ascii "range attacks.",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",0x0
+	.ascii "When he captures com",TextNL
+	.ascii "towers, his defence",TextNL
+	.ascii "also goes up.",0x0
 AWDSJavierDesc3:
 	.ascii "Improves defence",TextNL
 	.ascii "when attacked by",TextNL
-	.ascii "indirect-combat units.",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
+	.ascii "indirect-combat units",TextNL
+	.ascii "and doubles the",TextNL
+	.ascii "effect of com towers.",TextNL
 	.ascii " ",0x0
 AWDSJavierDesc4:
 	.ascii "Greatly improves",TextNL
 	.ascii "defence when",TextNL
 	.ascii "attacked by indirect-",TextNL
-	.ascii "combat units.",TextNL
-	.ascii " ",TextNL
-	.ascii " ",0x0
+	.ascii "combat units and",TextNL
+	.ascii "triples the effect",TextNL
+	.ascii "of com towers.",0x0
 AWDSJavierVictory:
 	.ascii "You live still, for Javier",TextNL
 	.ascii "is masterful but merciful!"

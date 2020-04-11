@@ -8,10 +8,10 @@ SFWCarolineCOPower:
 SFWCarolineSuperPower:
 	.ascii " ",0x0
 SFWCarolineDesc1:
-	.ascii "       CO: Caroline",TextNL
-	.ascii TextGrey,"-Super Famicom Wars-",TextBlack,TextNL
 	.ascii "A lucky lady who",TextNL
 	.ascii "is a fierce commander.",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii "Hit: Chance",TextNL
 	.ascii "Miss: Determinism",0x0
 SFWCarolineDesc2:

@@ -294,7 +294,7 @@ String0091:
 	.ascii "OK. ",TextWait
 	.ascii "I won't forget.",TextConfirm
 	.ascii "By the way, Nell, ",TextWait
-	.ascii "what's "Supply"?",TextConfirm
+	.ascii "what's ",TextQuote,"Supply",TextQuote,"?",TextConfirm
 	TextEnd
 ; Original offset: 0x085dadec
 String0092:

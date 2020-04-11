@@ -4,9 +4,9 @@ AW1GritName:
 	TextEnd
 
 AW1GritCOPower:
-	.ascii " ",0x0
-AW1GritSuperPower:
 	.ascii "Snipe Attack",0x0
+AW1GritSuperPower:
+	.ascii " ",0x0
 AW1GritDesc1:
 	.ascii "Laid back style masks",TextNL
 	.ascii "dependability. A",TextNL
@@ -22,16 +22,16 @@ AW1GritDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1GritDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
+	.ascii "Increases the range",TextNL
+	.ascii "and firepower of",TextNL
+	.ascii "distance weapons",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1GritDesc4:
-	.ascii "Increases the range",TextNL
-	.ascii "and firepower of",TextNL
-	.ascii "distance weapons",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0

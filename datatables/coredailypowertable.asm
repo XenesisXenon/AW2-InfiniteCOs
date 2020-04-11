@@ -1,10 +1,10 @@
 ;coredailypowertable.asm
 ;Pointers to Table
-	.align
+	.align 4
 CoreDailyPowerTable:
 	;AW2
 	.dw	CCOTemplateDailyPowerTable
-	.dw	HealTwoHPDailyPowerTable
+	.dw	CCOTemplateDailyPowerTable
 	.dw	CCOTemplateDailyPowerTable
 	.dw	CCOTemplateDailyPowerTable
 	.dw	CCOTemplateDailyPowerTable
@@ -81,7 +81,7 @@ CoreDailyPowerTable:
 	.dw	CCOTemplateDailyPowerTable
 	
 ;Additional Tables Added Here
-	.include	datatables/CODailyPower/CCOTemplateDailyCopt.asm
-	.include	datatables/CODailyPower/HealHPDailyCopt.asm
+	.include	"./CODailyPower/CCOTemplateDailyCopt.asm"
+	.include	"./CODailyPower/HealHPDailyCopt.asm"
 	
 	

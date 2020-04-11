@@ -3323,7 +3323,107 @@ TextTable:
 	.word	String3315
 ;.endarea	
 ;Outrealm COs
-	.include text/outrealmtable.asm
+	.include "text/outrealmtable.asm"
+	
+;Additional Maps
+	.include "text/mapnametable.asm"
+	
+;Dynamic Names for Equipped Force Ranks
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)	
+;Extra for Menu Magic	
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	CustomForceRankRAM+(ForceRank_Slot_Total*8)
+	.word	ForceRank_Name_Description
 	
 
-;Blank Line	
+;Extra Menu Commands
+	.word	String_Debug1
+	.word	String_Debug2
+	.word	String_Debug3
+	.word	String_Debug4
+	.word	String_Debug5
+	.word	String_Debug6
+	.word	String_Debug7
+	.word 	String_Debug8
+	.word	String_DSCommands1
+
+;Misc Other Strings
+	.word String_Tag_COSwapName
+	.word String_Tag_AltCOSwapName
+	.word String_Tag_TagPowerName
+	
+	.word StringAWDSTower_0
+	.word StringAWDSTower_1
+	
+	.word String_AW4_Wasteland_0
+	.word String_AW4_Wasteland_1
+	
+	.word String_AW4_Mist_0
+	.word String_AW4_Mist_1	
+	.word String_AW4_Ruins_0
+	.word String_AW4_Ruins_1	
+	.word String_AW4_Rough_0
+	.word String_AW4_Rough_1	
+	.word String_AW4_Fire_0
+	.word String_AW4_Fire_1
+	
+	.word String_VsSetup_ColourSelect
+	.word String_VsSetup_ForceRank
+	
+;Battle Maps Options
+	.word	String_UnlockAll_Name
+	.word	String_UnlockAll_Desc
+	.word	String_TimerOn_Name
+	.word	String_TimerOn_Desc
+	.word	String_TimerOff_Name
+	.word	String_TimerOff_Desc
+	.word	String_ChargeModeOn_Name
+	.word	String_ChargeModeOn_Desc
+	.word	String_ChargeModeOff_Name
+	.word	String_ChargeModeOff_Desc
+	.word	String_DebugOn_Name
+	.word	String_DebugOn_Desc
+	.word	String_DebugOff_Name
+	.word	String_DebugOff_Desc
+	.word	String_CampaignCOOn_Name
+	.word	String_CampaignCOOn_Desc
+	.word	String_CampaignCOOff_Name
+	.word	String_CampaignCOOff_Desc
+	.word	String_VersusCO_Default_Name
+	.word	String_VersusCO_Default_Desc
+	.word	String_VersusCO_AW1_Name
+	.word	String_VersusCO_AW1_Desc
+	.word	String_VersusCO_AW2_Name
+	.word	String_VersusCO_AW2_Desc
+	.word	String_VersusCO_AW3_Name
+	.word	String_VersusCO_AW3_Desc
+	.word	String_VersusCO_CCO_Name
+	.word	String_VersusCO_CCO_Desc
+	.word	String_VersusCO_SFW_Name
+	.word	String_VersusCO_SFW_Desc
+	.word	String_CampaignForcesOn_Name
+	.word	String_CampaignForcesOn_Desc
+	.word	String_CampaignForcesOff_Name
+	.word	String_CampaignForcesOff_Desc
+	.word	String_CampaignTutorialSkipOn_Name
+	.word	String_CampaignTutorialSkipOn_Desc
+	.word	String_CampaignTutorialSkipOff_Name
+	.word	String_CampaignTutorialSkipOff_Desc
+	.word	String_AWDSWeatherOn_Name
+	.word	String_AWDSWeatherOn_Desc
+	.word	String_AWDSWeatherOff_Name
+	.word	String_AWDSWeatherOff_Desc
+	.word	String_ChargeModeAW1On_Name
+	.word	String_ChargeModeAW1On_Desc
+	.word	String_ChargeModeAW3On_Name
+	.word	String_ChargeModeAW3On_Desc
+	;Blank Line	

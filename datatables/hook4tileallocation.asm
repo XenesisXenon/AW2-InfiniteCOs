@@ -1,0 +1,36 @@
+;hook4tileallocation.asm
+;Table of 4x4 tiles to be used for the Mini-Map
+
+.org 0x0849D3DC
+	.dh 4
+	.dh	0
+	.dh	6
+	.dh	2
+	.dh	1
+	.dh	3
+	.dh	8
+	.dh 4
+	.dh	0xD
+	.dh	0x1D
+	.dh	8
+	.dh	8
+	.dh	3
+	.dh	5
+	.dh	8
+	.dh	0x1B
+	.dh	0x1C
+	.dh	0x18
+	.dh	0x18
+	.dh	7
+	.dh	0xD
+	.dh	0x19
+	.dh	0x8 ;0x19 ;AWDS Towers
+	.dh	0x19
+	.dh	0x19
+	.dh	0x1A
+	.dh	0x1D
+	.dh	0x1D
+	.dh	0x1D
+	.dh	0x1D
+	.dh	0x1D
+	.dh	0x1D

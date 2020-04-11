@@ -17,7 +17,7 @@ AWDSSonjaDesc1:
 AWDSSonjaDesc2:
 	.ascii "All units have extended",TextNL
 	.ascii "vision ranges in Fog of",TextNL
-	.ascii "War. Keeps HP intel hidden.",TextNL
+	.ascii "War. HP intel is hidden.",TextNL
 	.ascii "Manipulates info to",TextNL
 	.ascii "reduce enemy terrain",TextNL
 	.ascii "effects by one.",0x0

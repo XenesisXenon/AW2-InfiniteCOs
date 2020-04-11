@@ -1,5 +1,5 @@
 ;CCOTemplateDailyCopt.asm
-	.align
+	.align 4
 HealTwoHPDailyPowerTable:
 	;CO Power Animation Graphic (+28/+0)
 	.db 2

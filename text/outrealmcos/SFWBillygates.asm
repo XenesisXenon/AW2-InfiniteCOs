@@ -8,10 +8,10 @@ SFWBillygatesCOPower:
 SFWBillygatesSuperPower:
 	.ascii " ",0x0
 SFWBillygatesDesc1:
-	.ascii "       CO: Billy Gates",TextNL
-	.ascii TextGrey,"-Super Famicom Wars-",TextBlack,TextNL
 	.ascii "A very rich boy",TextNL
 	.ascii "with plenty of money.",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii "Hit: War Games",TextNL
 	.ascii "Miss: Poverty",0x0
 SFWBillygatesDesc2:

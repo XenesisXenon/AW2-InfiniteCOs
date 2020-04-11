@@ -7,11 +7,11 @@ COPowerExtendedBlizzard:
 	mov	r0,0x1		;This is the Weather Change
 	mov	r1,0x2		;This is the Weather Length
 	bl	SetWeatherbyPower;0x08035144	;Weather Change Thingo
-	bl	LongBLExtendedBlizzard;0x08039F58
+	bl	@LongBLExtendedBlizzard;0x08039F58
 	pop	{r0}
 	bx	r0
 
-LongBLExtendedBlizzard:
+@LongBLExtendedBlizzard:
 	LongBL	r0,0x08039F58+1
 	
 SetWeatherbyPower:

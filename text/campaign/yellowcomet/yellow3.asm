@@ -29,7 +29,7 @@ String1726:
 	TextEnd
 ; Original offset: 0x085fb9a4
 String1727:
-	.ascii "So much for "me time" and tender",TextNL
+	.ascii "So much for ",TextQuote,"me time",TextQuote," and tender",TextNL
 	.ascii "thoughts...",TextConfirm
 	.ascii "Send out the order for",TextNL
 	.ascii "reinforcements! ",TextWait

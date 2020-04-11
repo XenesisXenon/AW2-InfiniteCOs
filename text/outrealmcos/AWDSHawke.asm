@@ -14,11 +14,11 @@ AWDSHawkeDesc1:
 	.ascii "goals.",TextNL
 	.ascii "Hit: Black Coffee",TextNL
 	.ascii "Miss: Incompetence",0x0
-AWDSHawkeDesc2:
+AWDSHawkeDesc2: ;Fixed this description
 	.ascii "All units possess",TextNL
 	.ascii "superior firepower. His",TextNL
-	.ascii "CO Power builds up more",TextNL
-	.ascii "slowly than those of",TextNL
+	.ascii "CO Power costs more",TextNL
+	.ascii "to use than those of",TextNL
 	.ascii "other COs.",TextNL
 	.ascii " ",0x0
 AWDSHawkeDesc3:

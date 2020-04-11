@@ -179,8 +179,8 @@ String2577:
 	TextEnd
 ; Original offset: 0x08607f3c
 String2578:
-	.ascii TextIcon
-	.ascii "†Intel"
+	.ascii TextIcon,0x86
+	.ascii "Intel"
 	TextEnd
 ; Original offset: 0x08607f44
 String2579:
@@ -188,8 +188,8 @@ String2579:
 	TextEnd
 ; Original offset: 0x08607f4c
 String2580:
-	.ascii TextIcon
-	.ascii "‹End"
+	.ascii TextIcon,0x8B
+	.ascii "End"
 	TextEnd
 ; Original offset: 0x08607f54
 String2581:

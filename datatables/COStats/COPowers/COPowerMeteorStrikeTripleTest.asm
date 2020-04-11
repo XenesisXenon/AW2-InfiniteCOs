@@ -16,7 +16,7 @@ COPowerMeteorStrikeTripleTest:
 LongBLCOMeteorStrikeTripleTest:
 	LongBL r2,0x0801C95D
 	
-	.align
+	.align 4
 MeteorStrikeTripleTestScript:
 
 	

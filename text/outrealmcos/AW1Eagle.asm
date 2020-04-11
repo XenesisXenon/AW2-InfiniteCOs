@@ -4,9 +4,9 @@ AW1EagleName:
 	TextEnd
 
 AW1EagleCOPower:
-	.ascii " ",0x0
-AW1EagleSuperPower:
 	.ascii "Lightning Strike",0x0
+AW1EagleSuperPower:
+	.ascii " ",0x0
 AW1EagleDesc1:
 	.ascii "Ace pilot who's",TextNL
 	.ascii "tough as nails.",TextNL
@@ -22,18 +22,18 @@ AW1EagleDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1EagleDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",0x0
-AW1EagleDesc4:
 	.ascii "Non-infantry units",TextNL
 	.ascii "ordered to wait can",TextNL
 	.ascii "move again that turn.",TextNL
 	.ascii "However, their ratings",TextNL
 	.ascii "are lower than normal.",TextNL
+	.ascii " ",0x0
+AW1EagleDesc4:
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1EagleVictory:
 	.ascii "Hmph! As expected!",TextNL

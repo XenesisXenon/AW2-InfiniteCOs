@@ -2,8 +2,7 @@
 
 ;Name and CO Power Names
 String2598:
-	.ascii "Hachi"0x0
-
+	.ascii "Hachi",0x0
 String2282:
 	.ascii "Barter",0x0
 String2283:

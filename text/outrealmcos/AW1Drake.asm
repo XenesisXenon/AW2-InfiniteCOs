@@ -4,9 +4,9 @@ AW1DrakeName:
 	TextEnd
 
 AW1DrakeCOPower:
-	.ascii " ",0x0
-AW1DrakeSuperPower:
 	.ascii "Tsunami",0x0
+AW1DrakeSuperPower:
+	.ascii " ",0x0
 AW1DrakeDesc1:
 	.ascii "A relaxed and care-",TextNL
 	.ascii "free swashbuckler.",TextNL
@@ -22,15 +22,15 @@ AW1DrakeDesc2:
 	.ascii "are weak.",TextNL
 	.ascii " ",0x0
 AW1DrakeDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
+	.ascii "Strikes all enemy",TextNL
+	.ascii "units for damage.",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1DrakeDesc4:
-	.ascii "Strikes all enemy",TextNL
-	.ascii "units for damage.",TextNL
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL

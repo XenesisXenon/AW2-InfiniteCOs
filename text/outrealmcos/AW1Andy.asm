@@ -4,9 +4,9 @@ AW1AndyName:
 	TextEnd
 
 AW1AndyCOPower:
-	.ascii " ",0x0
-AW1AndySuperPower:
 	.ascii "Hyper Repair",0x0
+AW1AndySuperPower:
+	.ascii " ",0x0
 AW1AndyDesc1:
 	.ascii "A brash and energetic",TextNL
 	.ascii "boy wonder.",TextNL
@@ -21,15 +21,15 @@ AW1AndyDesc2:
 	.ascii " ",TextNL
 	.ascii " ",0x0
 AW1AndyDesc3:
-	.ascii "No CO Power",TextNL
+	.ascii "Restores 2 HP",TextNL
+	.ascii "to all units.",0x0
+AW1AndyDesc4:
+	.ascii "No Super CO Power",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
-AW1AndyDesc4:
-	.ascii "Restores 2 HP",TextNL
-	.ascii "to all units.",0x0
 AW1AndyVictory:
 	.ascii "All right! And I'll win",TextNL
 	.ascii "next time, too!"

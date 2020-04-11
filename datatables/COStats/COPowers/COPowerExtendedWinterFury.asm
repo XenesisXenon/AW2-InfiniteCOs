@@ -61,7 +61,7 @@ SetTwoTurnBlizzard:
 	bx	r0
 	
 ;Slightly Modified Script to allow extended weather.
-.align
+.align 4
 ScriptExtendedWinterFury:	
 	@@Comm	0x4,0,0x08034F8C+1
 	@@Comm	0x2,0,0x08034F7C+1
@@ -80,5 +80,5 @@ ScriptExtendedWinterFury:
 	@@Comm	0x1A,0,0x0849BD38
 	@@Comm	0xE,0x1,0
 	@@Comm	0x0,0,0	
-.align	
+.align 4	
 ;Blank Line	

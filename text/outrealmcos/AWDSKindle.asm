@@ -9,11 +9,11 @@ AWDSKindleSuperPower:
 	.ascii "High Society",0x0
 AWDSKindleDesc1:
 	.ascii "Jugger and Koal's",TextNL
-	.ascii "commanding officer. Has",TextNL
-	.ascii "a blunt, queen-like",TextNL
-	.ascii "personality.",TextNL
+	.ascii "commanding officer.",TextNL
+	.ascii "Has a blunt, queen-",TextNL
+	.ascii "like personality.",TextNL
 	.ascii "Hit: Anything chic",TextNL
-	.ascii "Miss: Anything passé",0x0
+	.ascii "Miss: Anything pass",0xE9,0x0	;Accented e, 0xE9
 AWDSKindleDesc2:
 	.ascii "Has long lived in cities,",TextNL
 	.ascii "so she fights better on",TextNL

@@ -4,9 +4,9 @@ Aw1SonjaName:
 	TextEnd
 
 Aw1SonjaCOPower:
-	.ascii " ",0x0
-Aw1SonjaSuperPower:
 	.ascii "Enhanced Vision",0x0
+Aw1SonjaSuperPower:
+	.ascii " ",0x0
 Aw1SonjaDesc1:
 	.ascii "Kanbei's daughter. An",TextNL
 	.ascii "intel gathering genius.",TextNL
@@ -22,17 +22,17 @@ Aw1SonjaDesc2:
 	.ascii "bad luck.",TextNL
 	.ascii " ",0x0
 Aw1SonjaDesc3:
-	.ascii "No CO Power",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",TextNL
-	.ascii " ",0x0
-Aw1SonjaDesc4:
 	.ascii "Extends vision range of",TextNL
 	.ascii "all units. Shows enemy",TextNL
 	.ascii "units hidden in woods,",TextNL
 	.ascii "reefs and other areas.",TextNL
+	.ascii " ",TextNL
+	.ascii " ",0x0
+Aw1SonjaDesc4:
+	.ascii "No Super CO Power",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii " ",TextNL
 	.ascii " ",0x0
 Aw1SonjaVictory:

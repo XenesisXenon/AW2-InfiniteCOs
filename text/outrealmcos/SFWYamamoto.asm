@@ -8,10 +8,10 @@ SFWYamamotoCOPower:
 SFWYamamotoSuperPower:
 	.ascii " ",0x0
 SFWYamamotoDesc1:
-	.ascii " CO: Mister Yamamoto",TextNL
-	.ascii TextGrey,"-Super Famicom Wars-",TextBlack,TextNL
 	.ascii "The legendary general",TextNL
 	.ascii "from the past.",TextNL
+	.ascii " ",TextNL
+	.ascii " ",TextNL
 	.ascii "Hit: Challenges",TextNL
 	.ascii "Miss: Easy pickings",0x0
 SFWYamamotoDesc2:

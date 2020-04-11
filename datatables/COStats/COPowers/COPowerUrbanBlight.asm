@@ -20,14 +20,14 @@ COPowerUrbanBlight:
 	str	r0,[sp,0x10]
 	mov	r0,r6
 	
-	bl	LongBLCOPowerUrbanBlight
+	bl	@LongBLCOPowerUrbanBlight
 	add	sp,0x14
 	pop	{r4-r6}
 	pop	{r0}
 	bx	r0
 	.pool
 	
-LongBLCOPowerUrbanBlight:
+@LongBLCOPowerUrbanBlight:
 	ldr	r4,=0x08044D70+1
 	bx	r4
 	.pool

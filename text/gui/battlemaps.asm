@@ -410,7 +410,7 @@ String2854:
 	.ascii "Hard Campaign mode.",TextConfirm
 	.ascii "You can earn a lot of points here",TextNL
 	.ascii "if you've got the skill!",TextConfirm
-	TextEnd
+	TextEnd	
 ; Original offset: 0x0860a798
 String2855:
 	.ascii "You can now choose a new",TextNL

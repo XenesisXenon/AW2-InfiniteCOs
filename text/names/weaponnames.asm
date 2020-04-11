@@ -1,6 +1,6 @@
 ;Weapon names
 String2253:
-	.ascii "M Gun",0x0
+	.ascii "Machine Gun",0x0;"M Gun",0x0
 String2254:
 	.ascii "Bazooka",0x0
 String2255:
@@ -22,9 +22,9 @@ String2262:
 String2263:
 	.ascii "Bombs",0x0
 String2264:
-	.ascii "Torps",0x0
+	.ascii "Torpedos",0x0
 String2265:
-	.ascii "A-Air Gun",0x0
+	.ascii "Anti-Air Gun",0x0 ;"A-Air Gun",0x0
 String2266:
 	.ascii "None",0x0
 String2267:

@@ -1,4 +1,4 @@
-;hookcographicsandpowertable.asm
+;hookcographicsandpowertable.asm"
 ;Modifies the CO Power And Graphics Table
 
 ;All pointers to the COGraphicsPower Table
@@ -24,8 +24,8 @@
 	.dw COGraphicsPowerEffectsTable
 .org 0x08044B04
 	.dw COGraphicsPowerEffectsTable
-.org 0x08044B98
-	.dw COGraphicsPowerEffectsTable
+;.org 0x08044B98
+;	.dw COGraphicsPowerEffectsTable
 .org 0x08091384
 	.dw COGraphicsPowerEffectsTable
 	
@@ -33,39 +33,39 @@
 ;0x08039B7C - Bad Pointer Fix CO Power Sound Effect - Currently uses the COP's
 ;Minor.
 ;0x080445B0 - Bad Pointer fix CO Power Graphic/Palette
-.org 0x080445B4
-	ldr	r4,=COGraphicsAndPowerTableGraphicIDA+1
-	bx	r4
-	.pool
+;.org 0x080445B4
+;	ldr	r4,=COGraphicsAndPowerTableGraphicIDA+1
+;	bx	r4
+;	.pool
 
-;0x08044AB8 - Bad Pointer fix CO Power Graphic/Palette
-.org 0x08044ABA
-	ldr	r1,=COGraphicsAndPowerTableGraphicIDB+1
-	bx	r1
-	.pool
+;;0x08044AB8 - Bad Pointer fix CO Power Graphic/Palette
+;.org 0x08044ABA
+;	ldr	r1,=COGraphicsAndPowerTableGraphicIDB+1
+;	bx	r1
+;	.pool
 
 ;0x08044B84 - Nullpointer Fix CO Power Type General Pointer
-.org 0x08044B5E
-	ldr	r1,=COGraphicsAndPowerTableGeneralCOP+1
-	bx	r1
-	.pool
+;.org 0x08044B5E
+;	ldr	r1,=COGraphicsAndPowerTableGeneralCOP+1
+;	bx	r1
+;	.pool
 
 ;0x080446AD - Nullpointer Fix Unit Check (+0x20)
-.org 0x0804467C
-	ldr	r0,=COGraphicsAndPowerTableUnitCheck+1
-	bx	r0
-	.pool
+;.org 0x0804467C
+;	ldr	r0,=COGraphicsAndPowerTableUnitCheck+1
+;	bx	r0
+;	.pool
 	
 ;0x0804470C - Nullpointer Fix Unit Effect (+0x24)
-.org 0x080446E2
-	ldr	r0,=COGraphicsAndPowerTableUnitEffectB+1
-	bx	r0
-	.pool
+;.org 0x080446E2
+;	ldr	r0,=COGraphicsAndPowerTableUnitEffectB+1
+;	bx	r0
+;	.pool
 
-.org 0x08044752
-	ldr	r0,=COGraphicsAndPowerTableUnitEffect+1
-	bx	r0
-	.pool
+;.org 0x08044752
+;	ldr	r0,=COGraphicsAndPowerTableUnitEffect+1
+;	bx	r0
+;	.pool
 
 ;0x0804477C - Nullpointer Fix Unit Animation Effect
 
@@ -91,6 +91,9 @@
 	mov	r1,MaxCOId+1
 	
 ;Fixes Faces
+.org 0x08017F96
+	mov	r1,MaxCOId+1
+
 ;Happy Face Start ID
 .org 0x0807ACD0
 	add	r0,MaxCOId+1
@@ -111,21 +114,21 @@
 
 
 ;Includes the Checks and Effects
-	.include datatables/COGraphicAndPower/Powerchecks/checkallunits.asm
-	.include datatables/COGraphicAndPower/Powerchecks/checkdirectcombat.asm
-	.include datatables/COGraphicAndPower/Powerchecks/checkindirectcombat.asm
-	.include datatables/COGraphicAndPower/Powerchecks/checksoldierclass.asm	
-	.include datatables/COGraphicAndPower/Powerchecks/checkaerialclass.asm
-	.include datatables/COGraphicAndPower/Powerchecks/checkaerialclassornotwait.asm
+	.include "datatables/COGraphicAndPower/Powerchecks/checkallunits.asm"
+	.include "datatables/COGraphicAndPower/Powerchecks/checkdirectcombat.asm"
+	.include "datatables/COGraphicAndPower/Powerchecks/checkindirectcombat.asm"
+	.include "datatables/COGraphicAndPower/Powerchecks/checksoldierclass.asm"	
+	.include "datatables/COGraphicAndPower/Powerchecks/checkaerialclass.asm"
+	.include "datatables/COGraphicAndPower/Powerchecks/checkaerialclassornotwait.asm"
 
-	.include datatables/COGraphicAndPower/Powereffects/copnoeffect.asm	
-	.include datatables/COGraphicAndPower/Powereffects/cophealtwohp.asm	
-	.include datatables/COGraphicAndPower/Powereffects/cophealfivehp.asm	
-	.include datatables/COGraphicAndPower/Powereffects/copreanimateunit.asm	
-	.include datatables/COGraphicAndPower/Powereffects/copresupplyunit.asm
+	.include "datatables/COGraphicAndPower/Powereffects/copnoeffect.asm"	
+	.include "datatables/COGraphicAndPower/Powereffects/cophealtwohp.asm"	
+	.include "datatables/COGraphicAndPower/Powereffects/cophealfivehp.asm"	
+	.include "datatables/COGraphicAndPower/Powereffects/copreanimateunit.asm"	
+	.include "datatables/COGraphicAndPower/Powereffects/copresupplyunit.asm"
 
-	.include datatables/COGraphicAndPower/Powertypes/powertypestandard.asm
-	.include datatables/COGraphicAndPower/Powertypes/powertypepowerofmoney.asm	
+	.include "datatables/COGraphicAndPower/Powertypes/powertypestandard.asm"
+	.include "datatables/COGraphicAndPower/Powertypes/powertypepowerofmoney.asm"	
 	
 	
 ;Blank Line

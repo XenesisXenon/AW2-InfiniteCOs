@@ -47,7 +47,7 @@ String0845:
 	TextEnd
 ; Original offset: 0x085ebf78
 String0846:
-	.ascii 0x22,"Won't",0x22"? ",TextWait
+	.ascii TextQuote,"Won't",TextQuote,"? ",TextWait
 	.ascii "Heh heh heh...",TextConfirm
 	.ascii "You mustn't lose, Flak. ",TextWait
 	.ascii "That's",TextNL

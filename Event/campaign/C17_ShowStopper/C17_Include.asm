@@ -1,0 +1,19 @@
+;C17_Include.asm
+.relativeinclude on
+	.include "C17_0_Event_0.asm"
+	.include "C17_0_Trigger.asm"
+	.include "C17_1_Event_0.asm"
+	.include "C17_1_Trigger.asm"
+	.include "C17_2_Trigger.asm"
+	.include "C17_3_Event_0.asm"
+	.include "C17_3_Event_1.asm"
+	.include "C17_3_Trigger.asm"
+	.include "C17_4_Trigger.asm"
+	.include "C17_5_Event_0.asm"
+	.include "C17_5_Event_0a.asm"
+	.include "C17_5_Event_0b.asm"
+	.include "C17_5_Event_1.asm"
+	.include "C17_5_Trigger.asm"
+	.include "C17_Terms.asm"
+	.include "C17_Worldmap.asm"
+.relativeinclude off
