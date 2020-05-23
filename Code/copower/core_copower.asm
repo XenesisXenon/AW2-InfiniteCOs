@@ -2,5 +2,6 @@
 
 
 .relativeinclude on
-	.include	"./Core_COP_Launch.asm"
+	.include	"./core_COP_launch.asm"
+	.include	"./core_COPSCOP_check.asm"
 .relativeinclude off
