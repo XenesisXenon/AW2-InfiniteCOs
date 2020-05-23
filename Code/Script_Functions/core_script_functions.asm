@@ -5,4 +5,5 @@
 .relativeinclude on
 	.include	"./COPower_Scriptfunction_UnitSpawnTarget.asm"
 	.include	"./COPower_Scriptfunction_UnitCreate.asm"
+	.include	"./Campaign_CountLosses.asm"
 .relativeinclude off
