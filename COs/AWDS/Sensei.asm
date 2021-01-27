@@ -29,9 +29,9 @@
 	setCOD2DTransportStat		coAWDSSensei,0,0,1,0
 	setCOD2DUnitStat		coAWDSSensei,Unit_BattleCopter,50,0,0,0
 
-	setCOD2DSoldierStat		coAWDSSensei,10,0,0,0
-	setCOD2DNavyStat		coAWDSSensei,-10,0,0,0
-	setCOD2DTransportStat		coAWDSSensei,0,0,1,0
+	setCOPowerSoldierStat		coAWDSSensei,10,0,0,0
+	setCOPowerNavyStat		coAWDSSensei,-10,0,0,0
+	setCOPowerTransportStat		coAWDSSensei,0,0,1,0
 	setCOPowerUnitStat		coAWDSSensei,Unit_BattleCopter,70,0,0,0
 
 	setCOSuperSoldierStat		coAWDSSensei,10,0,0,0
