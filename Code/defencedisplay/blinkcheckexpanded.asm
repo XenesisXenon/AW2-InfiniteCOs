@@ -14,7 +14,7 @@ ExpandedBlinkCheckTable:
 ;Sami	
 	.db	1,1,1,0
 ;Grit	
-	.db	0,1,1,0
+	.db	1,1,1,0
 ;Kanbei	
 	.db	0,0,0,0
 ;Sonja	
