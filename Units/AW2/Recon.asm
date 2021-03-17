@@ -16,6 +16,7 @@
 	setUnitSupplyTerrain	Unit_Recon,SuppliedByBase
 	setUnitFuelBurn		Unit_Recon,FuelUseageTypeGround
 
+	setUnitAIControl	Unit_Recon,1
 	setUnitAIType		Unit_Recon,AIDirectCombat
 	setUnitAIPriorityTarget	Unit_Recon,AITargetGround
 	setUnitAIUnitClass	Unit_Recon,AITargetGround

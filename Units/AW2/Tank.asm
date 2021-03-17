@@ -18,6 +18,7 @@
 	setUnitFuelBurn		Unit_Tank,FuelUseageTypeGround
 	
 
+	setUnitAIControl	Unit_Tank,2
 	setUnitAIType			Unit_Tank,AIDirectCombat
 	setUnitAIPriorityTarget	Unit_Tank,AITargetGround
 	setUnitAIUnitClass		Unit_Tank,AITargetGround

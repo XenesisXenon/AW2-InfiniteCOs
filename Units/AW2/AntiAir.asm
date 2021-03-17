@@ -17,6 +17,7 @@
 	setUnitSupplyTerrain	Unit_AntiAir,SuppliedByBase
 	setUnitFuelBurn		Unit_AntiAir,FuelUseageTypeGround
 	
+	setUnitAIControl	Unit_AntiAir,2
 	setUnitAIType		Unit_AntiAir,AIDirectCombat
 	setUnitAIPriorityTarget	Unit_AntiAir,AITargetGround+AITargetAir
 	setUnitAIUnitClass	Unit_AntiAir,AITargetGround
@@ -41,7 +42,6 @@
 
 	setUnitInventionDamage	Unit_AntiAir,10,0
 	
-	setUnitUnknown		Unit_AntiAir,8,2,10
 	setUnitUnknown		Unit_AntiAir,13,1,2
 	setUnitUnknown		Unit_AntiAir,18,2,4
 	

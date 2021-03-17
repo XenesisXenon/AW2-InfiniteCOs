@@ -17,6 +17,7 @@
 	setUnitSupplyTerrain	Unit_Missiles,SuppliedByBase
 	setUnitFuelBurn		Unit_Missiles,FuelUseageTypeGround
 	
+	setUnitAIControl	Unit_Missiles,3
 	setUnitAIType		Unit_Missiles,AIIndirectCombat
 	setUnitAIPriorityTarget	Unit_Missiles,AITargetAir
 	setUnitAIUnitClass	Unit_Missiles,AITargetGround

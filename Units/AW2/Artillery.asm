@@ -17,6 +17,7 @@
 	setUnitSupplyTerrain	Unit_Artillery,SuppliedByBase
 	setUnitFuelBurn		Unit_Artillery,FuelUseageTypeGround
 	
+	setUnitAIControl	Unit_Artillery,2
 	setUnitAIType			Unit_Artillery,AIIndirectCombat
 	setUnitAIPriorityTarget	Unit_Artillery,AITargetGround+AITargetSea
 	setUnitAIUnitClass		Unit_Artillery,AITargetGround

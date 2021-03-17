@@ -17,6 +17,7 @@
 	
 	setUnitTransport	Unit_APC,TransportTypeAPC
 
+	setUnitAIControl	Unit_APC,1
 	setUnitAIType		Unit_APC,AICarryFootSoldiers
 	setUnitAIPriorityTarget	Unit_APC,AITargetGround
 	setUnitAIUnitClass	Unit_APC,AITargetGround

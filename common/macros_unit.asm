@@ -55,6 +55,13 @@
 		.org 	UnitDataTable + (UnitID-1)*0x5C + 12
 		.db	EntryValue
 	.endmacro
+	
+	;AI Control Setting
+	;Note that what the values for this do is currently unknown
+	.macro setUnitAIControl,UnitID,EntryValue
+		.org UnitDataTable + (UnitID-1)*0x5C + 13
+		.db	EntryValue
+	.endmacro
 
 	;Minimum Range
 	.macro setUnitMinRange,UnitID,EntryValue
@@ -179,6 +186,7 @@
 		setUnitClass		UnitID,1
 		setUnitMoveType		UnitID,0
 		setUnitBuildLocation	UnitID,0
+		setUnitAIControl	UnitID,4
 		setUnitAIType		UnitID,0
 		setUnitAIPriorityTarget	UnitID,0
 		setUnitAIUnitClass	UnitID,0
@@ -187,7 +195,6 @@
 		setUnitBRangeDisplay	UnitID,1
 		setUnitInventionDamage	UnitID,0,0
 		setUnitUnknown		UnitID,8,2,0
-		setUnitUnknown		UnitID,13,1,0
 		setUnitUnknown		UnitID,18,2,0
 		
 		.org 	UnitDataTable + (UnitID-1)*0x5C + 30	;No Firepower for all Primary/Secondary Entries

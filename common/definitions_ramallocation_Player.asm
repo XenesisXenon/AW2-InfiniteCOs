@@ -11,8 +11,9 @@ CurrentPlayerBases		equ	0xC
 CurrentPlayerCities		equ	0xD
 CurrentPlayerAirports		equ	0xE
 CurrentPlayerPorts		equ	0xF
-CurrentPlayerProperties		equ	0x10
+CurrentPlayerProperties		equ	0x11
 CurrentPlayerDefeated		equ	0x14
+CurrentPlayerCurrentUnitKills	equ	0x16
 CurrentPlayerMaxUnitKills	equ	0x18
 CurrentPlayerColour		equ	0x1A
 CurrentPlayerAIControl		equ	0x1B

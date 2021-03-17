@@ -16,7 +16,6 @@
 	setUnitSupplyTerrain	Unit_BattleCopter,SuppliedByAirport
 	setUnitFuelBurn		Unit_BattleCopter,FuelUseageTypeCopter
 	
-
 	setUnitAIType			Unit_BattleCopter,AIDirectCombat
 	setUnitAIPriorityTarget	Unit_BattleCopter,AITargetGround+AITargetSea
 	setUnitAIUnitClass		Unit_BattleCopter,AITargetAir

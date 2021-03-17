@@ -17,6 +17,7 @@
 	setUnitSupplyTerrain	Unit_Mech,SuppliedByBase
 	setUnitFuelBurn		Unit_Mech,FuelUseageTypeGround
 
+	setUnitAIControl	Unit_Mech,1
 	setUnitAIType		Unit_Mech,AICaptureUnit
 	setUnitAIPriorityTarget	Unit_Mech,AITargetGround
 	setUnitAIUnitClass	Unit_Mech,AITargetGround

@@ -15,6 +15,7 @@
 	setUnitSupplyTerrain	Unit_Infantry,SuppliedByBase
 	setUnitFuelBurn		Unit_Infantry,FuelUseageTypeGround
 
+	setUnitAIControl	Unit_Infantry,1
 	setUnitAIType		Unit_Infantry,AICaptureUnit
 	setUnitAIUnitClass	Unit_Infantry,AITargetGround
 	
