@@ -20,5 +20,7 @@
 ;Various Menu items recreated/disassembled
 	.include "./MainGame/OnSelect_Power.asm"
 	.include "./MainGame/OnSelect_Super.asm"
+	
+	.include "./UnitActions/OnSelect_Capt.asm"
 .relativeinclude off
 ;Blank Line

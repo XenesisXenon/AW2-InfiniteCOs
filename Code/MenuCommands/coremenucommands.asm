@@ -31,6 +31,7 @@
 ;	.include "Code/MenuCommands/UnitActions/BuildUnit/VisibilityCheckBuildUnit4AWP.asm"
 	
 	.include "Code/MenuCommands/MainGame/OnSelectSwap.asm"
+	.include "Code/MenuCommands/MainGame/OnSelect_EndandCapture.asm"
 	.include "Code/MenuCommands/MainGame/VisibilityCheck_SecondCO.asm"
 	.include "Code/MenuCommands/MainGame/VisibilityCheck_Super.asm"
 

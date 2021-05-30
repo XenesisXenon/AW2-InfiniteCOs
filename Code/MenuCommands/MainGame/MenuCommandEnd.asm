@@ -18,7 +18,7 @@
 	.dw	0
 	
 	;Code to Execute upon Selection
-	.dw	0x0802CF6D
+	.dw	MenuOnSelect_EndAndCapture+1;0x0802CF6D
 	
 	;Higher Level Menu?
 	.dw	0x0802C5AD
