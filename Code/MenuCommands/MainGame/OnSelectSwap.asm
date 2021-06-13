@@ -1,10 +1,33 @@
 ;OnSelectSwap.asm
 ;Swaps the Two COs
 
-MenuOnSelectSwap:
+MenuOnSelect_EndAndSwap:
+;End Turn Command
 	push	{r14}
-	push	{r4-r7}
 	
+	bl	MenuOnSelect_EndAndSwap_Swap ;New Code
+	bl	MenuOnSelect_EndAndCapture_Capture ;Run auto-capture code
+	
+	bl	@Long_OnSelectSwap_One;0x0801A168
+	bl	@Long_OnSelectSwap_Five;0x08042B9C
+	ldr	r1,=CurrentGameOptions
+	mov	r0,r1
+	add	r0,0x32
+	ldrb	r0,[r0]
+	cmp	r0,0x0
+	beq	@Jump_Two
+	mov	r0,r1
+	add	r0,0x2E
+	ldrb	r0,[r0]
+	bl	@Long_OnSelectSwap_Six;0x080344F0
+@Jump_Two:
+	pop	{r0}
+	bx	r0
+	.pool
+
+MenuOnSelect_EndAndSwap_Swap:
+	push	{r14}	
+	push	{r4-r7}	
 	;Swap COs here
 	ldr	r4,=CurrentPlayerTurn		;Swap COs
 	ldrb	r4,[r4]
@@ -97,28 +120,10 @@ MenuOnSelectSwap:
 	bl	@Long_OnSelectSwap_Three;0x0804438C
 	bl	@Long_OnSelectSwap_Four;0x08024268
 	pop	{r4}
-	;pop	{r0}
-	;bx	r0
-	
-;End Turn Command
-	;push	{r14}
-	bl	@Long_OnSelectSwap_One;0x0801A168
-	bl	@Long_OnSelectSwap_Five;0x08042B9C
-	ldr	r1,=CurrentGameOptions
-	mov	r0,r1
-	add	r0,0x32
-	ldrb	r0,[r0]
-	cmp	r0,0x0
-	beq	@Jump_Two
-	mov	r0,r1
-	add	r0,0x2E
-	ldrb	r0,[r0]
-	bl	@Long_OnSelectSwap_Six;0x080344F0
-@Jump_Two:
 	pop	{r0}
 	bx	r0
 	.pool
-
+	
 @Long_OnSelectSwap_One:
 	LongBL	r0,0x0801A168+1
 	

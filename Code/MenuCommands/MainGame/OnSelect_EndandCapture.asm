@@ -5,6 +5,31 @@
 
 MenuOnSelect_EndAndCapture:
 ;This code runs auto-capture for all units that have not acted
+
+
+;End Turn Command
+	push	{r14}
+	
+	bl	MenuOnSelect_EndAndCapture_Capture ;New Code
+	
+	bl	@Long_OnSelectSwap_One;0x0801A168
+	bl	@Long_OnSelectSwap_Five;0x08042B9C
+	ldr	r1,=CurrentGameOptions
+	mov	r0,r1
+	add	r0,0x32
+	ldrb	r0,[r0]
+	cmp	r0,0x0
+	beq	@Jump_Two
+	mov	r0,r1
+	add	r0,0x2E
+	ldrb	r0,[r0]
+	bl	@Long_OnSelectSwap_Six;0x080344F0
+@Jump_Two:
+	pop	{r0}
+	bx	r0
+	.pool
+	
+MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 	push	{r14}	
 	push	{r4-r7}
 	
@@ -98,23 +123,7 @@ MenuOnSelect_EndAndCapture:
 	pop	{r1}
 	strb	r1,[r0]
 	
-	pop	{r4-r7}	
-
-;End Turn Command
-	;push	{r14}
-	bl	@Long_OnSelectSwap_One;0x0801A168
-	bl	@Long_OnSelectSwap_Five;0x08042B9C
-	ldr	r1,=CurrentGameOptions
-	mov	r0,r1
-	add	r0,0x32
-	ldrb	r0,[r0]
-	cmp	r0,0x0
-	beq	@Jump_Two
-	mov	r0,r1
-	add	r0,0x2E
-	ldrb	r0,[r0]
-	bl	@Long_OnSelectSwap_Six;0x080344F0
-@Jump_Two:
+	pop	{r4-r7}
 	pop	{r0}
 	bx	r0
 	.pool
