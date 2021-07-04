@@ -90,11 +90,20 @@ SetupMenu_SelectableCOPool:
 @Check_All:
 	mov	r0,r9
 	cmp	r0,0
-	bne	@Unlock_End
+	bne	@COList_SafetyCheck
 	
+@COList_ByGame_All:
 	ldr	r0,=@Table_VersusMenu_Lists+0
 	bl	@VersusCOList_Build
-	
+
+@COList_SafetyCheck:	;Runs if there is no CO list selected at all
+	ldr	r0,=0x0809137C	;Ram offset
+	ldr	r0,[r0]
+	ldrb	r0,[r0]
+	cmp	r0,0xFF
+	bne	@Unlock_End
+	b	@COList_ByGame_All
+
 @Unlock_End:
 	mov	r0,r9
 	pop	{r3,r4}
@@ -121,12 +130,13 @@ SetupMenu_SelectableCOPool:
 ;CO List pointer in r7
 ;Vs CO List pointer RAM in r6
 ;r9 used as num COs added tally
-	push	{r5-r7,r14}
+	push	{r4-r7,r14}
 	mov	r7,r0
 ;Checks for the previous position
 	ldr	r1,=0x0809137C	;Ram offset
 	ldr	r6,[r1]
-	mov	r5,0
+	mov	r5,0	;List incrementer
+	mov	r4,0	;Selected list incrementer
 	
 @FindAddressLoop_Start:
 	mov	r0,r6
@@ -153,12 +163,14 @@ SetupMenu_SelectableCOPool:
 	ldr	r1,[r7]
 	add	r1,r1,r5
 	ldrb	r0,[r1]
-	add	r1,r5,r6
+	add	r1,r4,r6
 	strb	r0,[r1]
 	
 	mov	r0,r9
 	add	r0,1
 	mov	r9,r0
+	
+	add	r4,1
 	
 @Unlock_False:
 	add	r0,r5,1
@@ -170,7 +182,7 @@ SetupMenu_SelectableCOPool:
 	add	r0,r5,r6
 	mov	r1,0xFF
 	strb	r1,[r0]
-	pop	{r5-r7}
+	pop	{r4-r7}
 	pop	{r1}
 	bx	r1
 	.pool
