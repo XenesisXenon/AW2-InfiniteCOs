@@ -825,10 +825,10 @@
 		setCOSuperUnitStat		COID,Unit_Sub,Attack,Defence,Movement,Range
 	.endmacro
 	; sets a blanket set of stats for all units.
-	.macro setCOAllStat, COID,Attack,Defense,Movement,Range
-		setCOD2DAllStat 	COID,Attack,Defense,Movement,Range
-		setCOPowerAllStat 	COID,Attack,Defense,Movement,Range
-		setCOSuperAllStat 	COID,Attack,Defense,Movement,Range
+	.macro setCOAllStat, COID,Attack,Defence,Movement,Range
+		setCOD2DAllStat 	COID,Attack,Defence,Movement,Range
+		setCOPowerAllStat 	COID,Attack,Defence,Movement,Range
+		setCOSuperAllStat 	COID,Attack,Defence,Movement,Range
 	.endmacro
 	
 	; co blanker (set data to defaults (Andy))

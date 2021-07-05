@@ -2,7 +2,8 @@
 ;Gathers the standard Defence boosts
 
 DefenceBoost_Standard:
-	mov	r2,1
+	ldr	r2,[r2]
+	ldrb	r2,[r2]
 	LongBL r3, 0x08043121
 	.pool
 	
