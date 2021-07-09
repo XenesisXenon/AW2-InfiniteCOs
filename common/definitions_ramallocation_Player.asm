@@ -41,6 +41,8 @@ CurrentPlayerUnitLossCount	equ	0x3B
 CurrentUnitID			equ	0x0
 CurrentUnitState		equ	0x1
 CurrentUnitPosition		equ	0x2
+CurrentUnitXPosition		equ	0x2
+CurrentUnitYPosition		equ	0x3
 CurrentUnitHP			equ	0x4
 CurrentUnitAmmo			equ	0x4
 CurrentUnitCapture		equ	0x4

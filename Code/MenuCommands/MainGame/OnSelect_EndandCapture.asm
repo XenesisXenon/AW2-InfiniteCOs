@@ -12,8 +12,8 @@ MenuOnSelect_EndAndCapture:
 	
 	bl	MenuOnSelect_EndAndCapture_Capture ;New Code
 	
-	bl	@Long_OnSelectSwap_One;0x0801A168
-	bl	@Long_OnSelectSwap_Five;0x08042B9C
+	bl	@Long_OnSelectEnd_One;0x0801A168
+	bl	@Long_OnSelectEnd_Five;0x08042B9C
 	ldr	r1,=CurrentGameOptions
 	mov	r0,r1
 	add	r0,0x32
@@ -23,7 +23,7 @@ MenuOnSelect_EndAndCapture:
 	mov	r0,r1
 	add	r0,0x2E
 	ldrb	r0,[r0]
-	bl	@Long_OnSelectSwap_Six;0x080344F0
+	bl	@Long_OnSelectEnd_Six;0x080344F0
 @Jump_Two:
 	pop	{r0}
 	bx	r0
@@ -52,7 +52,7 @@ MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 	ldr	r7,=0x03003100	;Co-ordinates of unit
 	
 @Loop:	
-	ldrb	r0,[r4,0x0]	;Check unit exists
+	ldrb	r0,[r4,CurrentUnitID]	;Check unit exists
 	cmp	r0,0x0
 	beq	@Loop_False
 	cmp	r0,0x1		;Is it an Infantry
@@ -62,13 +62,13 @@ MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 	b	@Loop_False
 	
 @Loop_True:
-	ldrb	r0,[r4,0x1]	;Is it in wait mode already
+	ldrb	r0,[r4,CurrentUnitState]	;Is it in wait mode already
 	lsl	r0,r0,0x19
 	lsr	r0,r0,0x19
 	cmp	r0,0x0
 	bne	@Loop_False
 	
-	ldrb	r0,[r4,0x1]	;Is the unit being transported
+	ldrb	r0,[r4,CurrentUnitState]	;Is the unit being transported
 	lsl	r0,r0,0x16
 	lsr	r0,r0,0x19
 	cmp	r0,0x0
@@ -77,9 +77,9 @@ MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 	ldr	r0,=BaseMapPointer	;Check that the unit is on a captureable property
 	ldr	r0,[r0]
 	ldrh	r1,[r0]
-	ldrb	r2,[r4,0x3]	;Y
+	ldrb	r2,[r4,CurrentUnitYPosition]	;Y
 	mul	r1,r2
-	ldrb	r2,[r4,0x2]	;X
+	ldrb	r2,[r4,CurrentUnitXPosition]	;X
 	add	r1,r1,r2
 	add	r0,r0,r1
 	ldr	r1,=0x1432
@@ -96,9 +96,26 @@ MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 	ldr	r1,=CurrentPlayerTurn	;Check that the property doesn't belong to the player
 	ldrb	r1,[r1]
 	ldrb	r0,[r0]
-	lsr	r0,r0,0x8
+	lsr	r0,r0,0x5
 	cmp	r0,r1
 	beq	@Loop_False
+	
+	mov	r1,PlayerMemory_Length		;Check that the property doesn't belong to an ally
+	mul	r0,r1
+	ldr	r1,=BasePlayerMemory-PlayerMemory_Length
+	add	r0,r0,r1
+	add	r0,CurrentPlayerTeam
+	ldrb	r0,[r0]
+	ldr	r1,=CurrentPlayerTurn
+	ldrb	r1,[r1]
+	mov	r2,PlayerMemory_Length
+	mul	r1,r2
+	ldr	r2,=BasePlayerMemory-PlayerMemory_Length
+	add	r1,r1,r2
+	add	r1,CurrentPlayerTeam
+	ldrb	r1,[r1]
+	cmp	r0,r1
+	beq	@Loop_False	
 	
 	str	r4,[r6]		;Store the unit in the buffers required
 	ldr	r1,=0x03003F24
@@ -131,11 +148,11 @@ MenuOnSelect_EndAndCapture_Capture: ;Performs the capture
 @Long_CaptureCommand:
 	LongBL	r0,0x0802D064+1
 	
-@Long_OnSelectSwap_One:
+@Long_OnSelectEnd_One:
 	LongBL	r0,0x0801A168+1	
-@Long_OnSelectSwap_Five:
+@Long_OnSelectEnd_Five:
 	LongBL	r1,0x08042B9C+1	
-@Long_OnSelectSwap_Six:
+@Long_OnSelectEnd_Six:
 	LongBL	r3,0x080344F0+1
 	
 @Capture_Table:
