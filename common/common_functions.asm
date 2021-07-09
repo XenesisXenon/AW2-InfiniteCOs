@@ -143,7 +143,7 @@ GatherCOAbility:
 	add	r0,r0,r1
 	ldr	r1,=COStatsAbilitiesDatatable
 	add	r1,r0,r1
-	ldrh	r0,[r1,r2]
+	ldsh	r0,[r1,r2]
 	pop	{r3}
 	bx	r14
 	.pool
