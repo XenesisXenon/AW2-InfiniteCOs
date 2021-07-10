@@ -606,29 +606,31 @@ Gather_DSUnitChargeRate:
 
 	.align 4
 Table_UnitChargeRate_AWDS:
-	.dh	0	;Blank
-	.dh	2	;Infantry
-	.dh	2	;Mech
-	.dh	8	;Med Tank
-	.dh	0	;Blank
-	.dh	5	;Tank
-	.dh	5	;Recon
-	.dh	4	;APC
-	.dh	9	;Neotank
-	.dh	5	;Artillery
-	.dh	7	;Rockets
-	.dh	0	;Blank
-	.dh	0	;Blank
-	.dh	5	;Anti-Air
-	.dh	7	;Missiles
-	.dh	9	;Fighter
-	.dh	9	;Bomber
-	.dh	0	;Blank
-	.dh	6	;B-Copter
-	.dh	5	;T-Copter
-	.dh	11	;Battleship
-	.dh	8	;Cruiser
-	.dh	6	;Lander
-	.dh	9	;Submarine	
+	.dh	0	;Blank 0x0
+	.dh	2	;Infantry 0x1
+	.dh	2	;Mech 0x2
+	.dh	8	;Med Tank 0x3
+	.dh	0	;Blank 0x4
+	.dh	5	;Tank 0x5
+	.dh	5	;Recon 0x6
+	.dh	4	;APC 0x7
+	.dh	9	;Neotank 0x8
+	.dh	0	;Blank 0x9
+	.dh	5	;Artillery 0xA
+	.dh	7	;Rockets 0xB
+	.dh	0	;Blank 0xC
+	.dh	0	;Blank 0xD
+	.dh	5	;Anti-Air 0xE
+	.dh	7	;Missiles 0xF
+	.dh	9	;Fighter 0x10
+	.dh	9	;Bomber 0x11
+	.dh	0	;Blank 0x12
+	.dh	6	;B-Copter 0x13
+	.dh	5	;T-Copter 0x14
+	.dh	11	;Battleship 0x15
+	.dh	8	;Cruiser 0x16
+	.dh	6	;Lander 0x17
+	.dh	9	;Submarine 0x18
+	.dh	9	;Dived Sub 0x19
 	.align 4
 ;Blank Line
