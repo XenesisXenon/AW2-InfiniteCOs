@@ -3,9 +3,7 @@
 
 .org 0x080BFBC4
 Eight_TileAlloc_AW2:
-	.relativeinclude on
-	.import	"8x8tiledefinitions.bin"
-	.relativeinclude off
+	.import	"./datatables/8x8tiledefinitions.bin"
 
 
 .org 0x080BFBC4 + (0x8 * 0x1B9)
