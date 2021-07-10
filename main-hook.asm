@@ -48,6 +48,8 @@
 	.include "./code/unitpriceexpansion/hookunitpriceexpansion.asm"
 ;Modification to the CO's Vision Change code for Expansion
 	.include "./code/covisionexpansion/hookcovisionexpansion.asm"
+;Modification to the CO's Movement change code for Expansion
+	.include "./code/movebonusexpansion/hook_movebonusexpansion.asm"
 ;Modification to the CO's Fuel Saver code for Expansion
 	.include "./code/fuelsaveexpansion/hookfuelsaveexpansion.asm"
 ;Modification to the CO's Build Bits. Fixes AI's use of Hachi SCOP
@@ -126,8 +128,6 @@
 ;Expansion to CO Power Charging Subroutine
 	.include "./code/PowerChargingModifier/hookpowercharge.asm"
 	.include "./code/PowerChargingModifier/hook_starcost.asm"
-;Expansion to Display
-	;.include "./code/defencedisplay/hookdefdisplay.asm"
 ;Expansion to Allow more Icons eg Vet/Stun
 	.include "./code/customuniticons/hookcustomuniticonsdisp.asm"
 ;Hook to Allow Title Screen Quick Bypass
@@ -153,4 +153,7 @@
 	.include "./code/freecopmusic/hook_d2dmusic.asm"
 	.include "./code/freecopmusic/hookfreecopmusic.asm"
 	.include "./code/freecopmusic/hookfreescopmusic.asm"
+	
+;Test hooks
+
 ;blank line

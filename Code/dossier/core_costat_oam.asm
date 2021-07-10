@@ -17,18 +17,6 @@
 @MoveNumber_XOffset equ 45	;Default 45
 
 Core_Dossier_COStatOAM:
-	;Range Delta
-	;ldr	r5,=0x08499598
-	;ldr	r1,[r5]
-	;mov	r2,r9
-	;lsl	r0,r2,0x4
-	;sub	r0,r0,r2
-	;lsl	r4,r0,0x2
-	;add	r1,r4,r1
-	;ldrb	r0,[r1,0x1D]
-	;ldrb	r1,[r1,0x1E]
-	;mov	r2,r6
-	;bl	LongBL_Gather_RangeTotal;0x08043200
 	lsl	r0,r6,0x2
 	ldr	r1,=Custom_DossierCOBuffer
 	add	r1,r0,r1
@@ -51,9 +39,7 @@ Core_Dossier_COStatOAM:
 	mov	r2,r5
 	mov	r3,0x0
 	bl	@Long_0801F34C;0x0801F34C
-	;mov	r0,r9
-	;mov	r1,r6
-	;bl	@Long_080856A0;0x080856A0
+
 	lsl	r0,r6,0x2
 	ldr	r1,=Custom_DossierCOBuffer
 	add	r1,r0,r1
@@ -76,17 +62,6 @@ Core_Dossier_COStatOAM:
 
 @Unit_FiringDelta_Zero:
 ;Draw Movement Range Deltas
-	;ldr	r5,=0x08499598
-	;ldr	r1,[r5]
-	;mov	r2,r9
-	;lsl	r0,r2,0x4
-	;sub	r0,r0,r2
-	;lsl	r4,r0,0x2
-	;add	r1,r4,r1
-	;ldrb	r0,[r1,0x1D]
-	;ldrb	r1,[r1,0x1E]
-	;mov	r2,r6
-	;bl	LongBL_Gather_MoveTotal;0x08043190
 	lsl	r0,r6,0x2
 	ldr	r1,=Custom_DossierCOBuffer
 	add	r1,r0,r1
@@ -110,9 +85,6 @@ Core_Dossier_COStatOAM:
 	mov	r3,0x0
 	bl	@Long_0801F34C;0x0801F34C
 	
-	;mov	r0,r9
-	;mov	r1,r6
-	;bl	@Long_08085638;0x08085638 (Gets Move Delta and converts to icon)
 	lsl	r0,r6,0x2
 	ldr	r1,=Custom_DossierCOBuffer
 	add	r1,r0,r1
@@ -157,34 +129,51 @@ Core_Dossier_COStatOAM:
 	mov	r0,r1
 	bx	r14
 	
-Core_Dossier_COStat_Preload:
-
-;	mov	r0,0x3C
-;	mov	r1,r9
-;	mul	r1,r0
-;	ldr	r0,=BasePlayerMemory-0x3C
-;	add	r0,r0,r1
-;	ldrb	r1,[r0,0x1D]
-;	ldrb	r2,[r0,0x1E]
-;	lsl	r1,r1,0x2
-;	;ldr	r3,=ExpandedBlinkCheckTable
-;	add	r3,r1,r3
-;	add	r3,r2,r3
-;	ldrb	r2,[r3]
-;	cmp	r2,0x1
-;	beq	@DoBlink_True
-	
-;	ldr	r0,=CurrentGameOptions
-;	add	r0,GameRule_ActiveWeather
-;	ldrb	r0,[r0]
-;	cmp	r0,CurrentWeatherSandstorm	
-;	beq	@DoBlink_True
-;	b	@DoBlink_False	
-
-Core_Dossier_SavePlayerPage:
-	
+Core_Dossier_SavePlayerPage:	
 	add	sp,0x4
 	pop	{r4}
 	pop	{r0}
 	bx	r0
+	.pool
+
+Dossier_COBlinkCheckCalculator:
+	;Input of CO ID in r0, CO Power State in r1
+	push	{r4-r7,r14}
+	mov	r7,r0
+	mov	r6,r1
+	ldr	r2,=BaseCOUnitAttributesTable
+	mov	r5,r2
+	ldr	r2,=coUnitAtrib_Length
+	mul	r2,r0
+	add	r5,r2,r5
+	ldr	r2,=coUnitAtrib_COPLength
+	mul	r2,r1
+	add	r5,r2,r5
+	mov	r1,1
+	
+@Loop_Start:
+	mov	r2,8
+	mul	r2,r1
+	add	r2,r2,r5
+	ldrh	r0,[r2,0x4]
+	cmp	r0,0
+	bne	@Blink_True
+	ldrh	r0,[r2,0x6]
+	cmp	r0,0
+	bne	@Blink_True
+	add	r1,1
+	cmp	r1,25
+	bge	@Blink_False
+	b	@Loop_Start
+	
+@Blink_True:
+	mov	r0,1
+	b	@Blink_End
+	
+@Blink_False:
+	mov	r0,0
+@Blink_End:	
+	pop	{r4-r7}
+	pop	{r1}
+	bx	r1
 	.pool

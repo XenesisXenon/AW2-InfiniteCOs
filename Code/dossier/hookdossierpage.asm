@@ -19,6 +19,8 @@
 .org 0x08085020	;Pages to display large CO Body Sprite
 	cmp	r0,3
 	
+;Support for Tagged COs also being check-able
+	
 ;0x080851B6 - Draws CO Info Box on Dossier (Basic Name Mode)	
 .org 0x08084C4C
 	.dw	Dossier_PointerTable;0x08084C50
@@ -95,14 +97,19 @@
 ;CO ID in r7
 ;CO Power state in r8	
 ;Preliminary stuff
-	ldr	r0,=ExpandedBlinkCheckTable
-	mov	r1,0x4
-	mul	r1,r7
-	add	r0,r0,r1
-	mov	r1,r8
-	ldrb	r0,[r0,r1]	;Checks if we need a blink tag
-	strb	r0,[r5]
 	strb	r4,[r5,0x1]
+	mov	r0,r7		;Checks if we need a blink tag
+	mov	r1,r8
+	bl	@Long_COStat_BlinkCheck
+	strb	r0,[r5]
+	
+	mov	r1,r4		;Checks if we need a blink tag from Forces
+	mov	r0, ForceRank_APCBoost
+	bl	@Long_ForceRankCheckerSubroutine
+	cmp	r0,0x0
+	beq	@Skip_Force
+	strb	r0,[r5]
+@Skip_Force:
 	add	r6,1
 	
 ;Unit Calculation Loop
@@ -165,4 +172,15 @@
 	ldr	r2,=Dossier_MoveDelta_Calculation+1
 	bx	r2
 	.pool
+
+@Long_ForceRankCheckerSubroutine:
+	ldr	r2,=ForceRankCheckerSubroutine+1
+	bx	r2
+	.pool
+	
+@Long_COStat_BlinkCheck:
+	ldr	r2,=Dossier_COBlinkCheckCalculator+1
+	bx	r2
+	.pool
+	
 	

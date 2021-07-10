@@ -7,8 +7,8 @@
 
 Dossier_MoveDelta_Calculation:
 	push	{r4-r7,r14}
-	mov	r7,r0
-	mov	r6,r1
+	mov	r7,r0		;Player ID
+	mov	r6,r1		;Unit ID
 	
 	ldr	r5,=0x08499598
 	ldr	r1,[r5]
@@ -21,12 +21,27 @@ Dossier_MoveDelta_Calculation:
 	ldrb	r1,[r1,0x1E]
 	mov	r2,r6
 	bl	LongBL_Gather_MoveTotal;0x08043190
+	mov	r4,r0
 	
+	mov	r0,r6
+	cmp	r0,Unit_APC
+	beq	@Check_Force
+	cmp	r0,Unit_TransportCopter
+	beq	@Check_Force
+	cmp	r0,Unit_Lander
+	beq	@Check_Force
+	b	@No_Force
+	
+@Check_Force:
+	mov	r1,r7
+	ForceRankCheckerTurnInput	ForceRank_APCBoost,ForceRank_Strength_APCBoost
+	add	r4,r0,r4
+	
+@No_Force:
+	mov	r0,r4
 	cmp	r0,0x0
 	beq	@@Unit_End	;0x0808586C
 	
-	mov	r0,r7
-	mov	r1,r6
 	bl	@Long_Calc_MoveDeltaGraphic;0x08085638
 	b	@@Get_Graphic
 	
@@ -39,7 +54,8 @@ Dossier_MoveDelta_Calculation:
 	.pool
 
 @Long_Calc_MoveDeltaGraphic:
-	LongBL	r2,0x08085638+1
+	push	{r14}		;Some trickery here
+	LongBL	r2,0x08085650+1
 	
 Dossier_RangeDelta_Calculation:
 	push	{r4-r7,r14}

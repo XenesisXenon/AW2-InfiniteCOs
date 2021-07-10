@@ -3,6 +3,7 @@
 	ForceRank_Slot_Total	equ	4
 
 	;Assign an ID to each Force Rank
+	;X = Implemented
 	ForceRank_Bruiser		equ	0x1	;X
 	ForceRank_Brawler		equ	0x2	;X
 	ForceRank_Sharpshooter		equ	0x3	;X
@@ -28,7 +29,7 @@
 	ForceRank_Mountaineer		equ	0x17	;X
 	ForceRank_Seamanship		equ	0x18	;X
 	ForceRank_Backstab		equ	0x19	;X
-	ForceRank_APCBoost		equ	0x1A
+	ForceRank_APCBoost		equ	0x1A	;X
 	ForceRank_MissileGuard		equ	0x1B
 	ForceRank_CannonGuard		equ	0x1C
 	ForceRank_StarPower		equ	0x1D

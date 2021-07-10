@@ -6,4 +6,5 @@
 	.include "core_dossierpage.asm"
 	.include "core_costat_oam.asm"
 	.include "core_coinfobox_move.asm"
+	.include "core_defdisplay.asm"
 .relativeinclude off

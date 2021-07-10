@@ -34,3 +34,4 @@ coData_Length				equ 260
 coData_Power_Length			equ 68
 MapHeader_Length			equ 0x5C
 coUnitAtrib_Length			equ 624
+coUnitAtrib_COPLength			equ 208

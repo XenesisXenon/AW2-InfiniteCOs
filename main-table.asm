@@ -20,7 +20,5 @@
 	.align 4
 	.include "./datatables/tablepropertyallocation.asm"
 	.align 4
-	.include "./code/defencedisplay/blinkcheckexpanded.asm"
-	.align 4
 	.include "./Event/core_event.asm"
 
