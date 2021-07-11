@@ -17,11 +17,11 @@
 	.align 4
 	.include "./code/covisionexpansion/corecovisionexpansion.asm"
 	.align 4
+	.include "./code/movebonusexpansion/core_movebonusexpansion.asm"
+	.align 4
 	.include "./code/fuelsaveexpansion/corefuelsaveexpansion.asm"
 	.align 4
 	.include "./code/propertybuildbits/corepropertybuildbits.asm"
-	.align 4
-	.include "./code/defencedisplay/coredefdisplay.asm"
 	.align 4
 	.include "./code/propertyoam/tablepropertyoamjump.asm"
 	.align 4
@@ -72,8 +72,6 @@
 	.include "./code/mapcases/coremapcases.asm"
 	.align 4
 	.include "./code/hardtoggle/corehardtoggle.asm"
-	.align 4
-	;.include "./code/defencedisplay/blinkcheckexpanded.asm"
 	.align 4
 	.include "./code/powerchargingmodifier/corepowerSCOPdisable.asm"
 	.align 4
