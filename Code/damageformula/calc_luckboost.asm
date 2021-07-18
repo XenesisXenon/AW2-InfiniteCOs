@@ -11,7 +11,7 @@ Damage_LuckBonus_Boost:
 	;Standard CO Luck
 	ldr	r0,[sp,0x0]
 	ldr	r1,[sp,0x4]
-	bl	LongBLGather_COLuck
+	bl	@LongBLGather_COLuck
 	mov	r6,r0
 	
 	ldr	r1,[sp,0x8]
@@ -21,16 +21,16 @@ Damage_LuckBonus_Boost:
 	;Finish up
 	mov	r0,r6
 	cmp	r0,1
-	bge	Damage_LuckBonus_Boost_End
+	bge	@Damage_LuckBonus_Boost_End
 	mov	r0,1		;Prevents underflow
 	
-Damage_LuckBonus_Boost_End:
+@Damage_LuckBonus_Boost_End:
 	add	sp,0xC
 	pop	{r6}
 	pop	{r1}
 	bx	r1
 	.pool
 	
-LongBLGather_COLuck:
+@LongBLGather_COLuck:
 	push	{r4,r14}
 	LongBL	r4, 0x08042E2E+1

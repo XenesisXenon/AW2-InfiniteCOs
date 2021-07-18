@@ -27,16 +27,16 @@ DefenceBoost_DirectCombat:
 	
 	add	r0,r0,r2
 	cmp	r0,1	
-	bne	DefenceBoost_DirectCombat_False
+	bne	@DefenceBoost_DirectCombat_False
 
 	mov	r0,r6
 	mov	r1,r7
 	mov	r2,Gather_CO_DirectDefenceBonus
 	bl	GatherCOAbility		
-	b	DefenceBoost_DirectCombat_End
-DefenceBoost_DirectCombat_False:
+	b	@DefenceBoost_DirectCombat_End
+@DefenceBoost_DirectCombat_False:
 	mov	r0,0
-DefenceBoost_DirectCombat_End:	
+@DefenceBoost_DirectCombat_End:	
 	pop	{r4-r7}
 	pop	{r1}
 	bx	r1

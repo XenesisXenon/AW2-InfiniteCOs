@@ -26,6 +26,15 @@ DefenceBoost_ArmySize:
 	ldr	r1,=RamTable_FakeUnit
 	cmp	r0,r1
 	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x300
+	cmp	r0,r1
+	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x600
+	cmp	r0,r1
+	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x900
+	cmp	r0,r1
+	beq	@Dossier
 	b	@Game
 	
 @Dossier:

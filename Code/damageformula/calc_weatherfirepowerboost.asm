@@ -10,29 +10,29 @@ FirepowerBoost_Weather:
 	add	r1,0x2C
 	ldrb	r1,[r1]
 	cmp	r1, CurrentWeatherSnow
-	bne	COWeatherFirepowerBoostCheckRain
+	bne	@COWeatherFirepowerBoostCheckRain
 	
 	mov	r1,0xFF
 	and	r0,r1
-	b	COWeatherFirepowerBoostTrue
+	b	@COWeatherFirepowerBoostTrue
 	
-COWeatherFirepowerBoostCheckRain:	
+@COWeatherFirepowerBoostCheckRain:	
 	cmp	r1, CurrentWeatherRain
-	bne	COWeatherFirepowerBoostFalse
+	bne	@COWeatherFirepowerBoostFalse
 	lsr	r0,r0,0x8
-	b	COWeatherFirepowerBoostTrue	
+	b	@COWeatherFirepowerBoostTrue	
 	
-COWeatherFirepowerBoostFalse:	
+@COWeatherFirepowerBoostFalse:	
 	mov	r0,0x0
-COWeatherFirepowerBoostTrue:
+@COWeatherFirepowerBoostTrue:
 	cmp	r0,0x81
-	ble	COWeatherFirepowerBoostEnd
+	ble	@COWeatherFirepowerBoostEnd
 	add	r0,0x80
 	lsl	r0,r0,0x18
 	lsr	r0,r0,0x18
 	sub	r0,0x80
 	
-COWeatherFirepowerBoostEnd:	
+@COWeatherFirepowerBoostEnd:	
 	pop	{r1}
 	bx	r1
 	.pool

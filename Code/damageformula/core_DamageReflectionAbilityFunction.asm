@@ -3,24 +3,24 @@
 
 DamageReflectionAbilityFunction:
 	mov	r0,r5
-	bl	LongBLApplyDamage
+	bl	@LongBLApplyDamage
 	mov	r0,r4
-	bl	LongBLApplyDamage
+	bl	@LongBLApplyDamage
 	mov	r0,r5
 	mov	r1,r4
-	bl	DamageReflectionSubroutine
+	bl	@DamageReflectionSubroutine
 	mov	r0,r4
 	mov	r1,r5
-	bl	DamageReflectionSubroutine
+	bl	@DamageReflectionSubroutine
 	pop	{r4,r5}
 	pop	{r0}
 	bx	r0
 	.pool
 	
-LongBLApplyDamage:
+@LongBLApplyDamage:
 	LongBL	r1,0x0802505C+1
 	
-DamageReflectionSubroutine:
+@DamageReflectionSubroutine:
 	push	{r4,r5,r14}
 	mov	r4,r0
 	mov	r1,r5
@@ -33,7 +33,8 @@ DamageReflectionSubroutine:
 	and	r1,r2
 	sub	r0,r1,r0
 	cmp	r0,0
-	ble	DamageReflectionSubroutineEnd
+	ble	@DamageReflectionSubroutineEnd
+	
 	;Work out the Damage Reflection Amount
 	mov	r3,r0
 	ldr	r0,=BaseUnitMemory
@@ -60,7 +61,7 @@ DamageReflectionSubroutine:
 	bl	GatherCOAbility
 	
 	cmp	r0,0
-	beq	DamageReflectionSubroutineEnd
+	beq	@DamageReflectionSubroutineEnd
 	mul	r0,r3
 	mov	r1,100
 	bl	DivisionFunction
@@ -70,13 +71,13 @@ DamageReflectionSubroutine:
 	mov	r2,0x7F
 	and	r1,r2
 	cmp	r1,0
-	ble	DamageReflectionSubroutineEnd
+	ble	@DamageReflectionSubroutineEnd
 	
 	sub	r0,r1,r0
 	cmp	r0,0
-	bgt	DamageReflectionSubroutineSaveDamage
+	bgt	@DamageReflectionSubroutineSaveDamage
 	mov	r0,1
-DamageReflectionSubroutineSaveDamage:	
+@DamageReflectionSubroutineSaveDamage:	
 	ldr	r1,[r5]
 	ldrb	r1,[r1,0x4]
 	mov	r2,0x80
@@ -85,7 +86,7 @@ DamageReflectionSubroutineSaveDamage:
 	ldr	r1,[r5]
 	strb	r0,[r1,0x4]
 
-DamageReflectionSubroutineEnd:	
+@DamageReflectionSubroutineEnd:	
 	pop	{r4,r5}
 	pop	{r0}
 	bx	r0

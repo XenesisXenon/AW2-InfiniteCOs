@@ -5,13 +5,35 @@ FirepowerBoost_ForceRank:
 	mov	r6,r1
 	mov	r5,r2
 	;Calculate Player Number from Battle Pointer
+	;First check if we're in the dossier rather than a real battle	
 	ldr	r0,[r5]
+	ldr	r1,=RamTable_FakeUnit
+	cmp	r0,r1
+	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x300
+	cmp	r0,r1
+	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x600
+	cmp	r0,r1
+	beq	@Dossier
+	ldr	r1,=RamTable_FakeUnit+0x900
+	cmp	r0,r1
+	beq	@Dossier
+	b	@Game
+
+@Dossier:
+	ldrb	r0,[r0,0xB]	;Loads the PID from the Fake Unit
+	b	@Loop_Setup
+
+@Game:
 	ldr	r1,=0x00001F00
 	and	r0,r1
 	mov	r1,0xC0
 	lsl	r1,r1,0x2
 	sub	r0,r0,r1
 	bl	DivisionFunction
+	
+@Loop_Setup:
 	mov	r7,r0
 	mov	r4,0x0
 
@@ -24,11 +46,11 @@ FirepowerBoost_ForceRank:
 	ldrb	r0,[r0,0x4]
 	mov	r1,0xFF
 	cmp	r0,r1
-	beq	COForceRankFirepowerBoost_TagCO_False
+	beq	@COForceRankFirepowerBoost_TagCO_False
 	ForceRankCheckerFirepowerBackCO	ForceRank_Teamwork,Forcerank_Strength_Teamwork
 	ForceRankCheckerFirepowerBackCO ForceRank_Synergy,Forcerank_Strength_Synergy
 
-COForceRankFirepowerBoost_TagCO_False:
+@COForceRankFirepowerBoost_TagCO_False:
 	;Check whether the current player has any force ranks at all
 	sub	r0,r7,1
 	mov	r1,ForceRank_Slot_Total
@@ -36,16 +58,16 @@ COForceRankFirepowerBoost_TagCO_False:
 	ldr	r1,=CustomForceRankRAM
 	add	r0,r0,r1
 	mov	r2,0
-COForceRankFirepowerBoost_CheckLoopStart:	
+@COForceRankFirepowerBoost_CheckLoopStart:	
 	ldrb	r1,[r0,r2]
 	cmp	r1,0x0
-	bne	COForceRankFirepowerBoost_ForceRank_True
+	bne	@COForceRankFirepowerBoost_ForceRank_True
 	add	r2,1
 	cmp	r2,ForceRank_Slot_Total
-	blt	COForceRankFirepowerBoost_CheckLoopStart
-	b	COForceRankFirepowerBoostEnd
+	blt	@COForceRankFirepowerBoost_CheckLoopStart
+	b	@COForceRankFirepowerBoostEnd
 
-COForceRankFirepowerBoost_ForceRank_True:	
+@COForceRankFirepowerBoost_ForceRank_True:	
 	
 	;Check the Unit is a Direct Unit:
 	ldr	r0,[r5]
@@ -54,12 +76,12 @@ COForceRankFirepowerBoost_ForceRank_True:
 	mov	r2,1
 	bl	GatherUnitAbility
 	cmp	r0,1
-	bne	COForceRankFirepowerBoostDirectUnitFalse	
+	bne	@COForceRankFirepowerBoostDirectUnitFalse	
 	
 	ForceRankCheckerFirepower ForceRank_Bruiser,ForceRank_Strength_Bruiser
 	ForceRankCheckerFirepower ForceRank_Brawler,ForceRank_Strength_Brawler
 
-COForceRankFirepowerBoostDirectUnitFalse:
+@COForceRankFirepowerBoostDirectUnitFalse:
 	;Check the Unit is an Indirect Unit:
 	ldr	r0,[r5]
 	ldrb	r0,[r0]
@@ -67,87 +89,87 @@ COForceRankFirepowerBoostDirectUnitFalse:
 	mov	r2,1
 	bl	GatherUnitAbility
 	cmp	r0,2
-	blt	COForceRankFirepowerBoostIndirectUnitFalse	
+	blt	@COForceRankFirepowerBoostIndirectUnitFalse	
 	
 	ForceRankCheckerFirepower ForceRank_Sharpshooter,ForceRank_Strength_Sharpshooter
 	ForceRankCheckerFirepower ForceRank_Sniper,ForceRank_Strength_Sniper
-COForceRankFirepowerBoostIndirectUnitFalse:
+@COForceRankFirepowerBoostIndirectUnitFalse:
 	;Check the Tile Type the unit is on
 	ldrb	r0,[r5,0x4]
 	mov	r1,0x1F
 	and	r0,r1
 	;Check Terrain
 	cmp	r0, TerrainClass_Mountain
-	beq	COForceRankFirepowerBoost_Mountain_True
+	beq	@COForceRankFirepowerBoost_Mountain_True
 	cmp	r0, TerrainClass_Wood
-	beq	COForceRankFirepowerBoost_Wood_True
+	beq	@COForceRankFirepowerBoost_Wood_True
 	cmp	r0, TerrainClass_Road
-	beq	COForceRankFirepowerBoost_Road_True
+	beq	@COForceRankFirepowerBoost_Road_True
 	cmp	r0, TerrainClass_City
-	beq	COForceRankFirepowerBoost_Urban_True	
+	beq	@COForceRankFirepowerBoost_Urban_True	
 	cmp	r0, TerrainClass_Sea
-	beq	COForceRankFirepowerBoost_Sea_True
+	beq	@COForceRankFirepowerBoost_Sea_True
 	cmp	r0, TerrainClass_HQ
-	beq	COForceRankFirepowerBoost_Urban_True
+	beq	@COForceRankFirepowerBoost_Urban_True
 	cmp	r0, TerrainClass_Airport
-	beq	COForceRankFirepowerBoost_Urban_True
+	beq	@COForceRankFirepowerBoost_Urban_True
 	cmp	r0, TerrainClass_Port
-	beq	COForceRankFirepowerBoost_Urban_True	
+	beq	@COForceRankFirepowerBoost_Urban_True	
 	cmp	r0, TerrainClass_Base
-	beq	COForceRankFirepowerBoost_Urban_True
+	beq	@COForceRankFirepowerBoost_Urban_True
 	cmp	r0, TerrainClass_Lab
-	beq	COForceRankFirepowerBoost_Urban_True
-	b	COForceRankFirepowerBoost_Terrain_End
+	beq	@COForceRankFirepowerBoost_Urban_True
+	b	@COForceRankFirepowerBoost_Terrain_End
 	
-COForceRankFirepowerBoost_Mountain_True:
+@COForceRankFirepowerBoost_Mountain_True:
 	ForceRankCheckerFirepower ForceRank_Mountaineer,ForceRank_Strength_Mountaineer 	
-	b	COForceRankFirepowerBoost_Terrain_End
-COForceRankFirepowerBoost_Wood_True:
+	b	@COForceRankFirepowerBoost_Terrain_End
+@COForceRankFirepowerBoost_Wood_True:
 	ForceRankCheckerFirepower ForceRank_Ranger,ForceRank_Strength_Ranger
-	b	COForceRankFirepowerBoost_Terrain_End
-COForceRankFirepowerBoost_Road_True:
+	b	@COForceRankFirepowerBoost_Terrain_End
+@COForceRankFirepowerBoost_Road_True:
 	ForceRankCheckerFirepower ForceRank_RoadRage,ForceRank_Strength_RoadRage
-	b	COForceRankFirepowerBoost_Terrain_End
-COForceRankFirepowerBoost_Urban_True:
+	b	@COForceRankFirepowerBoost_Terrain_End
+@COForceRankFirepowerBoost_Urban_True:
 	ForceRankCheckerFirepower ForceRank_UrbanFighter,ForceRank_Strength_UrbanFighter
-	b	COForceRankFirepowerBoost_Terrain_End
-COForceRankFirepowerBoost_Sea_True:
+	b	@COForceRankFirepowerBoost_Terrain_End
+@COForceRankFirepowerBoost_Sea_True:
 	ForceRankCheckerFirepower ForceRank_Seamanship,ForceRank_Strength_Seamanship
-	b	COForceRankFirepowerBoost_Terrain_End
-COForceRankFirepowerBoost_Terrain_End:
+	b	@COForceRankFirepowerBoost_Terrain_End
+@COForceRankFirepowerBoost_Terrain_End:
 	;Check Unit for Hidden Status
 	ldr	r0,[r5]
 	ldrb	r0,[r0,0x1]
 	mov	r1,0x20
 	and	r0,r1
 	cmp	r0,0x0
-	beq	COForceRankFirepowerBoost_Hidden_False
+	beq	@COForceRankFirepowerBoost_Hidden_False
 	ForceRankCheckerFirepower ForceRank_Backstab,ForceRank_Strength_Backstab	
 	
-COForceRankFirepowerBoost_Hidden_False:	
+@COForceRankFirepowerBoost_Hidden_False:	
 	;Check the Current Weather Status
 	ldr	r0,=CurrentWeather
 	ldrb	r0,[r0]
 	cmp	r0,CurrentWeatherSnow
-	beq	COForceRankFirepowerBoost_Snow_True
+	beq	@COForceRankFirepowerBoost_Snow_True
 	cmp	r0,CurrentWeatherRain
-	beq	COForceRankFirepowerBoost_Rain_True
+	beq	@COForceRankFirepowerBoost_Rain_True
 	cmp	r0,CurrentWeatherSandstorm
-	beq	COForceRankFirepowerBoost_Sandstorm_True
-	b	COForceRankFirepowerBoost_Weather_End
+	beq	@COForceRankFirepowerBoost_Sandstorm_True
+	b	@COForceRankFirepowerBoost_Weather_End
 	
-COForceRankFirepowerBoost_Snow_True:
+@COForceRankFirepowerBoost_Snow_True:
 	ForceRankCheckerFirepower ForceRank_IceBreaker,ForceRank_Strength_IceBreaker
-	b	COForceRankFirepowerBoost_Weather_End
-COForceRankFirepowerBoost_Rain_True:
+	b	@COForceRankFirepowerBoost_Weather_End
+@COForceRankFirepowerBoost_Rain_True:
 	ForceRankCheckerFirepower ForceRank_HighAndDry,ForceRank_Strength_HighAndDry
-	b	COForceRankFirepowerBoost_Weather_End
-COForceRankFirepowerBoost_Sandstorm_True:
+	b	@COForceRankFirepowerBoost_Weather_End
+@COForceRankFirepowerBoost_Sandstorm_True:
 	ForceRankCheckerFirepower ForceRank_SandScorpion,ForceRank_Strength_SandScorpion
-	b	COForceRankFirepowerBoost_Weather_End
-COForceRankFirepowerBoost_Weather_End:
+	b	@COForceRankFirepowerBoost_Weather_End
+@COForceRankFirepowerBoost_Weather_End:
 	
-COForceRankFirepowerBoostEnd:
+@COForceRankFirepowerBoostEnd:
 	mov	r0,r4
 	pop	{r4-r7}
 	pop	r1

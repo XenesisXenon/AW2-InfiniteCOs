@@ -14,14 +14,14 @@ DefenceBoost_TowerProperty:
 	lsr	r1,r1,0x10
 	and	r0,r1
 	cmp	r0,0x0
-	beq	COTowerDefenceBoost_False
+	beq	@COTowerDefenceBoost_False
 	
 	mov	r0,r6
 	mov	r1,r7
 	mov	r2,r5
 	b	COTowerDefenceBoost_Start	
 	
-COTowerDefenceBoost_False:
+@COTowerDefenceBoost_False:
 	mov	r0,0
 	pop	{r3-r7}
 	pop	{r1}

@@ -63,17 +63,17 @@ DamageDisplayMaximumCalculator:
 	and	r0,r1
 	mov	r7,r4
 	cmp	r0,0x0
-	beq	CoreDamageRangeFalse1
+	beq	@CoreDamageRangeFalse1
 	lsl	r0,r1,0x19
 	lsr	r0,r0,0x19
 	sub	r0,1
 	mov	r1,10
 	bl	DivisionFunction
 	add	r4,r0,1
-	b	CoreDamageRangeFalse2
-CoreDamageRangeFalse1:
+	b	@CoreDamageRangeFalse2
+@CoreDamageRangeFalse1:
 	mov	r4,0x0
-CoreDamageRangeFalse2:	
+@CoreDamageRangeFalse2:	
 	mov	r0,r5
 	bl	LongBLGatherCurrentTerrainDefence ;0x08043304
 	str	r0,[sp,0x0]
@@ -109,14 +109,14 @@ CoreDamageRangeFalse2:
 	str	r0,[sp,0x8]
 	mov	r2,r10
 	cmp	r2,0x1
-	bne	CoreDamageRangeFalse3
+	bne	@CoreDamageRangeFalse3
 	mov	r0,r5
-	bl	LongCoreDamageRange3	;0804338C
+	bl	@LongCoreDamageRange3	;0804338C
 	add	r6,r6,r0
 	
-CoreDamageRangeFalse3:
+@CoreDamageRangeFalse3:
 	mov	r0,r5
-	bl	LongCoreDamageRange4	;0804334C
+	bl	@LongCoreDamageRange4	;0804334C
 	add	r6,r6,r0
 	add	r6,r9
 	mov	r1,0x10
@@ -128,18 +128,18 @@ CoreDamageRangeFalse3:
 	str	r0,[sp,0xC]
 	lsl	r0,r0,0x10
 	cmp	r0,0x0
-	beq	CoreDamageRangeEnd;0x08024DC8 (End)
+	beq	@CoreDamageRangeEnd;0x08024DC8 (End)
 	ldr	r0,=0x03003FC0
 	ldrb	r0,[r0,0x6]
 	cmp	r0,0x0
-	beq	CoreDamageRange4
+	beq	@CoreDamageRange4
 	mov	r2,sp
 	add	r2,0x1C
 	ldr	r2,[r2]
 	cmp	r2,0x0
-	beq	CoreDamageRangeEnd
+	beq	@CoreDamageRangeEnd
 	
-CoreDamageRange4:	
+@CoreDamageRange4:	
 	ldr	r1,[r5]
 	ldr	r0,[r7]
 	sub	r1,r1,r0
@@ -172,36 +172,36 @@ CoreDamageRange4:
 	neg	r0,r0
 	asr	r0,r0,0x8
 	add	r0,0x1
-	bl	LongCoreDamageRange6;0x08042EBC ;Luck Minimum
+	bl	@LongCoreDamageRange6;0x08042EBC ;Luck Minimum
 	mov	r4,r0
 	cmp	r4,0x0
-	beq	CoreDamageRange5
+	beq	@CoreDamageRange5
 	
 	ldr	r0,[sp,0x8]	
-CoreDamageRange5:		
+@CoreDamageRange5:		
 	ldr	r0,[sp,0x8]
 	add	r0,r0,r6
 	strh	r0,[r5,0x16]
 	ldrh	r0,[r5,0x10]
 	cmp	r4,0x0
-	ble	CoreDamageRangeNoNegLuck
+	ble	@CoreDamageRangeNoNegLuck
 	sub	r4,1
 	sub	r0,r0,r4
 	cmp	r0,0x0
-	bgt	CoreDamageRangeNegativeNormal
+	bgt	@CoreDamageRangeNegativeNormal
 	mov	r0,0	
-CoreDamageRangeNegativeNormal:	
+@CoreDamageRangeNegativeNormal:	
 	strh	r0,[r5,0x10]	
-CoreDamageRangeNoNegLuck:	
+@CoreDamageRangeNoNegLuck:	
 
 	lsl	r0,r0,0x10
 	cmp	r0,0x0
-	bge	CoreDamageRangeEnd
+	bge	@CoreDamageRangeEnd
 	mov	r0,0x0
 ;Adds the Max Damage to 0x16
 	strh	r0,[r5,0x16]
 	
-CoreDamageRangeEnd:
+@CoreDamageRangeEnd:
 	add	sp,0x10
 	pop	{r0-r2}
 	add	sp,0x4
@@ -218,11 +218,11 @@ CoreDamageRangeEnd:
 ;	LongBL r1, 0x08043304+1	
 ;LongCoreDamageRange2:
 ;	LongBL r1, 0x08042CF8+1
-LongCoreDamageRange3:
+@LongCoreDamageRange3:
 	LongBL r2, 0x0804338C+1
-LongCoreDamageRange4:
+@LongCoreDamageRange4:
 	LongBL r1, 0x0804334C+1
-LongCoreDamageRange6:
+@LongCoreDamageRange6:
 	LongBL r1, 0x08042EBC+1
 	
 DamageDisplayMaximumDisplay:
@@ -234,9 +234,9 @@ DamageDisplayMaximumDisplay:
 	ldr	r0,=CurrentGameOptions+GameRule_AnimationMode
 	ldrb	r0,[r0]
 	cmp	r0,0x0
-	beq	DamageDisplayMaximumDisplay_FullRange
+	beq	@DamageDisplayMaximumDisplay_FullRange
 	cmp	r0,0x3
-	beq	DamageDisplayMaximumDisplay_FullRange
+	beq	@DamageDisplayMaximumDisplay_FullRange
 
 	;Displays a Combo Box with Standard Damage
 	ldr	r0,[sp]
@@ -245,10 +245,10 @@ DamageDisplayMaximumDisplay:
 	ldrh	r2,[r2,0x14]	;Standard Damage
 	mov	r3,0xD3
 	lsl	r3,r3,0x1
-	bl	LongDamageDisplayMaximumDisplay	
-	b	DamageDisplayMaximumDisplay_End
+	bl	@LongDamageDisplayMaximumDisplay	
+	b	@DamageDisplayMaximumDisplay_End
 
-DamageDisplayMaximumDisplay_FullRange:
+@DamageDisplayMaximumDisplay_FullRange:
 	;Displays a Combo Box with Min + Max Damage
 	ldr	r0,[sp]
 	ldr	r1,[sp,0x4]
@@ -256,7 +256,7 @@ DamageDisplayMaximumDisplay_FullRange:
 	ldrh	r2,[r2,0x10]	;Min Dmg w/-Luck;r2,[r2,0x14]
 	mov	r3,0xD3
 	lsl	r3,r3,0x1
-	bl	LongDamageDisplayMaximumDisplay	
+	bl	@LongDamageDisplayMaximumDisplay	
 	
 	ldr	r0,[sp]
 	ldr	r1,[sp,0x4]
@@ -266,9 +266,9 @@ DamageDisplayMaximumDisplay_FullRange:
 	add	r1,DamageMaxYOffset
 	mov	r3,0xD3
 	lsl	r3,r3,0x1	
-	bl	LongDamageDisplayMaximumDisplay
+	bl	@LongDamageDisplayMaximumDisplay
 	
-DamageDisplayMaximumDisplay_End:
+@DamageDisplayMaximumDisplay_End:
 	add	sp,0xC
 	
 	pop	{r3,r4}
@@ -279,6 +279,6 @@ DamageDisplayMaximumDisplay_End:
 	bx	r0
 	.pool
 	
-LongDamageDisplayMaximumDisplay:
+@LongDamageDisplayMaximumDisplay:
 	LongBL r4,0x08037200+1
 ;Blank Line

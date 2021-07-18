@@ -19,17 +19,17 @@ Core_Firepowerboost:
 
 	add 	r0, 100
 	cmp 	r4, 0
-	ble 	UnitDoesNoDamage
+	ble 	@@UnitDoesNoDamage
 	mul 	r0, r4
 	mov 	r1, 100
 	bl 	DivisionFunction
 	cmp 	r0, 0
-	bne 	UnitDamageCalculationEnd
+	bne 	@@UnitDamageCalculationEnd
 	mov 	r0, 1
-	b 	UnitDamageCalculationEnd
-UnitDoesNoDamage:
+	b 	@@UnitDamageCalculationEnd
+@@UnitDoesNoDamage:
 	mov 	r0, 0
-UnitDamageCalculationEnd:
+@@UnitDamageCalculationEnd:
 	add	sp,0x8
 	pop 	{r4-r6}
 	pop 	{r1}
