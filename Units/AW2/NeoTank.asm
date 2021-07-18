@@ -19,14 +19,16 @@
 	
 
 	setUnitAIType			Unit_Neotank,AIDirectCombat
-	setUnitAIPriorityTarget	Unit_Neotank,AITargetGround
+	setUnitAIPriorityTarget		Unit_Neotank,AITargetGround
 	setUnitAIUnitClass		Unit_Neotank,AITargetGround
 	
-	setUnitDamagePrimary		Unit_Neotank,50,Unit_Infantry
-	setUnitDamagePrimary		Unit_Neotank,45,Unit_Mech
+	setUnitDamagePrimary		Unit_Neotank,35,Unit_Infantry
+	setUnitDamagePrimary		Unit_Neotank,35,Unit_Mech
+	
 	setUnitDamagePrimary		Unit_Neotank,105,Unit_Tank
 	setUnitDamagePrimary		Unit_Neotank,75,Unit_MidTank
 	setUnitDamagePrimary		Unit_Neotank,55,Unit_Neotank
+	
 	setUnitDamagePrimary		Unit_Neotank,115,Unit_Artillery
 	setUnitDamagePrimary		Unit_Neotank,125,Unit_Rockets
 	setUnitDamagePrimary		Unit_Neotank,125,Unit_Missiles
@@ -40,21 +42,23 @@
 	setUnitDamagePrimary		Unit_Neotank,40,Unit_Lander
 	setUnitDamagePrimary		Unit_Neotank,15,Unit_Sub
 
-	setUnitDamageSecondary	Unit_Neotank,125,Unit_Infantry
-	setUnitDamageSecondary	Unit_Neotank,115,Unit_Mech
-	setUnitDamageSecondary	Unit_Neotank,10,Unit_Tank
-	setUnitDamageSecondary	Unit_Neotank,01,Unit_MidTank
-	setUnitDamageSecondary	Unit_Neotank,01,Unit_Neotank
-	setUnitDamageSecondary	Unit_Neotank,65,Unit_Artillery
-	setUnitDamageSecondary	Unit_Neotank,75,Unit_Rockets
-	setUnitDamageSecondary	Unit_Neotank,55,Unit_Missiles
+	setUnitDamageSecondary		Unit_Neotank,125,Unit_Infantry
+	setUnitDamageSecondary		Unit_Neotank,115,Unit_Mech
+	
+	setUnitDamageSecondary		Unit_Neotank,10,Unit_Tank
+	setUnitDamageSecondary		Unit_Neotank,01,Unit_MidTank
+	setUnitDamageSecondary		Unit_Neotank,01,Unit_Neotank
+	
+	setUnitDamageSecondary		Unit_Neotank,65,Unit_Artillery
+	setUnitDamageSecondary		Unit_Neotank,75,Unit_Rockets
+	setUnitDamageSecondary		Unit_Neotank,55,Unit_Missiles
 
-	setUnitDamageSecondary	Unit_Neotank,40,Unit_Recon
-	setUnitDamageSecondary	Unit_Neotank,45,Unit_APC
-	setUnitDamageSecondary	Unit_Neotank,06,Unit_AntiAir
+	setUnitDamageSecondary		Unit_Neotank,65,Unit_Recon
+	setUnitDamageSecondary		Unit_Neotank,65,Unit_APC
+	setUnitDamageSecondary		Unit_Neotank,17,Unit_AntiAir
 
-	setUnitDamageSecondary	Unit_Neotank,10,Unit_Battlecopter
-	setUnitDamageSecondary	Unit_Neotank,40,Unit_TransportCopter
+	setUnitDamageSecondary		Unit_Neotank,22,Unit_Battlecopter
+	setUnitDamageSecondary		Unit_Neotank,55,Unit_TransportCopter
 
-	setUnitInventionDamage	Unit_Neotank,75,01
+	setUnitInventionDamage		Unit_Neotank,75,01
 	

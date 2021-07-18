@@ -22,8 +22,8 @@
 	setUnitAIPriorityTarget	Unit_Cruiser,AITargetAir+AITargetSea+AITargetSub
 	setUnitAIUnitClass	Unit_Cruiser,AITargetSea
 
-	setUnitDamagePrimary		Unit_Cruiser,90,Unit_Sub
-	setUnitDamagePrimary		Unit_Cruiser,90,Unit_DivedSub
+	setUnitDamagePrimary	Unit_Cruiser,90,Unit_Sub
+	setUnitDamagePrimary	Unit_Cruiser,90,Unit_DivedSub
 	
 	setUnitDamageSecondary	Unit_Cruiser,55,Unit_Fighter
 	setUnitDamageSecondary	Unit_Cruiser,65,Unit_Bomber

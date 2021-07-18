@@ -18,16 +18,18 @@
 	setUnitFuelBurn		Unit_Tank,FuelUseageTypeGround
 	
 
-	setUnitAIControl	Unit_Tank,2
+	setUnitAIControl		Unit_Tank,2
 	setUnitAIType			Unit_Tank,AIDirectCombat
-	setUnitAIPriorityTarget	Unit_Tank,AITargetGround
+	setUnitAIPriorityTarget		Unit_Tank,AITargetGround
 	setUnitAIUnitClass		Unit_Tank,AITargetGround
 	
-	setUnitDamagePrimary		Unit_Tank,35,Unit_Infantry
-	setUnitDamagePrimary		Unit_Tank,30,Unit_Mech
+	setUnitDamagePrimary		Unit_Tank,25,Unit_Infantry
+	setUnitDamagePrimary		Unit_Tank,25,Unit_Mech
+	
 	setUnitDamagePrimary		Unit_Tank,55,Unit_Tank
 	setUnitDamagePrimary		Unit_Tank,15,Unit_MidTank
 	setUnitDamagePrimary		Unit_Tank,15,Unit_Neotank
+	
 	setUnitDamagePrimary		Unit_Tank,70,Unit_Artillery
 	setUnitDamagePrimary		Unit_Tank,85,Unit_Rockets
 	setUnitDamagePrimary		Unit_Tank,85,Unit_Missiles
@@ -41,21 +43,23 @@
 	setUnitDamagePrimary		Unit_Tank,10,Unit_Lander
 	setUnitDamagePrimary		Unit_Tank,1,Unit_Sub
 
-	setUnitDamageSecondary	Unit_Tank,75,Unit_Infantry
-	setUnitDamageSecondary	Unit_Tank,75,Unit_Mech
-	setUnitDamageSecondary	Unit_Tank,06,Unit_Tank
-	setUnitDamageSecondary	Unit_Tank,01,Unit_MidTank
-	setUnitDamageSecondary	Unit_Tank,01,Unit_Neotank
-	setUnitDamageSecondary	Unit_Tank,45,Unit_Artillery
-	setUnitDamageSecondary	Unit_Tank,55,Unit_Rockets
-	setUnitDamageSecondary	Unit_Tank,30,Unit_Missiles
+	setUnitDamageSecondary		Unit_Tank,75,Unit_Infantry
+	setUnitDamageSecondary		Unit_Tank,70,Unit_Mech
+	
+	setUnitDamageSecondary		Unit_Tank,06,Unit_Tank
+	setUnitDamageSecondary		Unit_Tank,01,Unit_MidTank
+	setUnitDamageSecondary		Unit_Tank,01,Unit_Neotank
+	
+	setUnitDamageSecondary		Unit_Tank,45,Unit_Artillery
+	setUnitDamageSecondary		Unit_Tank,55,Unit_Rockets
+	setUnitDamageSecondary		Unit_Tank,30,Unit_Missiles
 
-	setUnitDamageSecondary	Unit_Tank,40,Unit_Recon
-	setUnitDamageSecondary	Unit_Tank,45,Unit_APC
-	setUnitDamageSecondary	Unit_Tank,06,Unit_AntiAir
+	setUnitDamageSecondary		Unit_Tank,40,Unit_Recon
+	setUnitDamageSecondary		Unit_Tank,45,Unit_APC
+	setUnitDamageSecondary		Unit_Tank,05,Unit_AntiAir
 
-	setUnitDamageSecondary	Unit_Tank,10,Unit_Battlecopter
-	setUnitDamageSecondary	Unit_Tank,40,Unit_TransportCopter
+	setUnitDamageSecondary		Unit_Tank,10,Unit_Battlecopter
+	setUnitDamageSecondary		Unit_Tank,40,Unit_TransportCopter
 
-	setUnitInventionDamage	Unit_Tank,15,1
+	setUnitInventionDamage		Unit_Tank,15,1
 	

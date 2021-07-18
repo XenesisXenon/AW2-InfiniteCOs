@@ -5,8 +5,8 @@
 	setMapName	AWDoR_MapID + 046,AWDoRMapNames+046
 	setMapUnitList	AWDoR_MapID + 046,AW4_Blitz
 
-	setMapPlayers	AWDoR_MapID + 046,2
-	setMapCase	AWDoR_MapID + 046,CaseAWDORVersus
+	setMapPlayers	AWDoR_MapID + 046,4
+	setMapCase	AWDoR_MapID + 046,Case4P
 	setMapGameVersion	AWDoR_MapID + 046,Game_AWDoR
 
 ;Blank Line

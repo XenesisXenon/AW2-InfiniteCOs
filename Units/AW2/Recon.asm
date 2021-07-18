@@ -39,5 +39,5 @@
 	setUnitDamageSecondary	Unit_Recon,10,Unit_BattleCopter
 	setUnitDamageSecondary	Unit_Recon,35,Unit_TransportCopter
 
-	setUnitInventionDamage	Unit_Recon,00,01
+	setUnitInventionDamage	Unit_Recon,01,01
 

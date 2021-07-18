@@ -26,15 +26,17 @@
 
 	setUnitDamagePrimary		Unit_Rockets,95,Unit_Infantry
 	setUnitDamagePrimary		Unit_Rockets,90,Unit_Mech
+	
 	setUnitDamagePrimary		Unit_Rockets,80,Unit_Tank
 	setUnitDamagePrimary		Unit_Rockets,55,Unit_MidTank
 	setUnitDamagePrimary		Unit_Rockets,50,Unit_Neotank
+	
 	setUnitDamagePrimary		Unit_Rockets,80,Unit_Artillery
 	setUnitDamagePrimary		Unit_Rockets,85,Unit_Rockets
 	setUnitDamagePrimary		Unit_Rockets,90,Unit_Missiles
 
-	setUnitDamagePrimary		Unit_Rockets,80,Unit_Recon
-	setUnitDamagePrimary		Unit_Rockets,90,Unit_APC
+	setUnitDamagePrimary		Unit_Rockets,90,Unit_Recon
+	setUnitDamagePrimary		Unit_Rockets,80,Unit_APC
 	setUnitDamagePrimary		Unit_Rockets,85,Unit_AntiAir
 
 	setUnitDamagePrimary		Unit_Rockets,55,Unit_Battleship

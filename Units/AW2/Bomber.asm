@@ -22,9 +22,11 @@
 
 	setUnitDamagePrimary		Unit_Bomber,110,Unit_Infantry
 	setUnitDamagePrimary		Unit_Bomber,110,Unit_Mech
+	
 	setUnitDamagePrimary		Unit_Bomber,105,Unit_Tank
 	setUnitDamagePrimary		Unit_Bomber,95,Unit_MidTank
 	setUnitDamagePrimary		Unit_Bomber,90,Unit_Neotank
+	
 	setUnitDamagePrimary		Unit_Bomber,105,Unit_Artillery
 	setUnitDamagePrimary		Unit_Bomber,105,Unit_Rockets
 	setUnitDamagePrimary		Unit_Bomber,105,Unit_Missiles

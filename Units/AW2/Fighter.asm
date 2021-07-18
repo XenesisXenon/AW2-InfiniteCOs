@@ -20,8 +20,8 @@
 	setUnitAIPriorityTarget	Unit_Fighter,AITargetAir
 	setUnitAIUnitClass	Unit_Fighter,AITargetAir
 
-	setUnitDamagePrimary	Unit_Fighter,100,Unit_Fighter
+	setUnitDamagePrimary	Unit_Fighter,55,Unit_Fighter
 	setUnitDamagePrimary	Unit_Fighter,100,Unit_Bomber
-	setUnitDamagePrimary	Unit_Fighter,120,Unit_BattleCopter
-	setUnitDamagePrimary	Unit_Fighter,120,Unit_TransportCopter
+	setUnitDamagePrimary	Unit_Fighter,100,Unit_BattleCopter
+	setUnitDamagePrimary	Unit_Fighter,100,Unit_TransportCopter
 	

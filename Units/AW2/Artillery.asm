@@ -27,9 +27,11 @@
 
 	setUnitDamagePrimary		Unit_Artillery,90,Unit_Infantry
 	setUnitDamagePrimary		Unit_Artillery,85,Unit_Mech
+	
 	setUnitDamagePrimary		Unit_Artillery,70,Unit_Tank
 	setUnitDamagePrimary		Unit_Artillery,45,Unit_MidTank
 	setUnitDamagePrimary		Unit_Artillery,40,Unit_Neotank
+	
 	setUnitDamagePrimary		Unit_Artillery,75,Unit_Artillery
 	setUnitDamagePrimary		Unit_Artillery,80,Unit_Rockets
 	setUnitDamagePrimary		Unit_Artillery,80,Unit_Missiles
