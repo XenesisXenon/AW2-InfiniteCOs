@@ -23,6 +23,8 @@
 	.align 4
 	.include "./code/propertybuildbits/corepropertybuildbits.asm"
 	.align 4
+	.include "./code/movecostexpansion/core_movecostexpansion.asm"
+	.align 4
 	.include "./code/propertyoam/tablepropertyoamjump.asm"
 	.align 4
 	.include "./code/maps/coreunitlist.asm"

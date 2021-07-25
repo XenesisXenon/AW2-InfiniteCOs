@@ -5,3 +5,8 @@
 	bx	r0
 	.pool
 
+.org 0x0804688E
+	ldr	r0,=Setup_Rinfo_MovementCosts+1
+	bx	r0
+	.pool
+	

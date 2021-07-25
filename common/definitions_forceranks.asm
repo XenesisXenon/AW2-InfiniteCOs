@@ -32,9 +32,9 @@
 	ForceRank_APCBoost		equ	0x1A	;X
 	ForceRank_MissileGuard		equ	0x1B
 	ForceRank_CannonGuard		equ	0x1C
-	ForceRank_StarPower		equ	0x1D
-	ForceRank_PrairieDog		equ	0x1E
-	ForceRank_Pathfinder		equ	0x1F
+	ForceRank_StarPower		equ	0x1D	;X
+	ForceRank_PrairieDog		equ	0x1E	;X
+	ForceRank_Pathfinder		equ	0x1F	;X
 	ForceRank_Sneaky		equ	0x20	;X
 	ForceRank_Stealthy		equ	0x21	;X
 	ForceRank_Goldrush		equ	0x22	;X
@@ -131,8 +131,8 @@
 	ForceRank_Strength_MissileGuard		equ	1
 	ForceRank_Strength_CannonGuard		equ	2
 	ForceRank_Strength_StarPower		equ	20
-	ForceRank_Strength_PrairieDog		equ	0
-	ForceRank_Strength_Pathfinder		equ	0
+	ForceRank_Strength_PrairieDog		equ	1
+	ForceRank_Strength_Pathfinder		equ	1
 	ForceRank_Strength_Sneaky		equ	1
 	ForceRank_Strength_Stealthy		equ	2
 	ForceRank_Strength_Goldrush		equ	100

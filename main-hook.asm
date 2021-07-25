@@ -68,6 +68,8 @@
 ;	.include "code/dailyitems/hookdailyitems.asm"	
 ;Modification to allow Map Unit Lists to be specific to one CO
 	.include "./code/maps/hookunitlist.asm"
+;Modification to allow for movement cost manipulations
+	.include "./code/movecostexpansion/hook_movecostexpansion.asm"
 ;Modification to Pathfinding to allow for Move but not stop terrain
 	.include "./code/pathfinding/hook_pathfinding.asm"
 ;Map Header Table Pointer Updates
