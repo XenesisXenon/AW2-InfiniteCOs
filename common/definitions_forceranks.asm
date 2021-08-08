@@ -41,7 +41,7 @@
 	ForceRank_HighAndDry		equ	0x23	;X
 	ForceRank_IceBreaker		equ	0x24	;X
 	ForceRank_SandScorpion		equ	0x25	;X
-	ForceRank_Mistwalker		equ	0x26
+	ForceRank_Mistwalker		equ	0x26	;X
 	ForceRank_SoulofHachi		equ	0x27	;X
 	ForceRank_TeamWork		equ	0x28	;X
 	ForceRank_Synergy		equ	0x29	;X

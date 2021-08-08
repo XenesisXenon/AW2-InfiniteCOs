@@ -70,6 +70,8 @@
 	.include "./code/maps/hookunitlist.asm"
 ;Modification to allow for movement cost manipulations
 	.include "./code/movecostexpansion/hook_movecostexpansion.asm"
+;Modification to allow for Attack-order modification expansion
+	.include "./code/attackorderexpansion/hook_attackorderexpansion.asm"
 ;Modification to Pathfinding to allow for Move but not stop terrain
 	.include "./code/pathfinding/hook_pathfinding.asm"
 ;Map Header Table Pointer Updates

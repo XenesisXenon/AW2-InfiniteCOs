@@ -25,6 +25,8 @@
 	.align 4
 	.include "./code/movecostexpansion/core_movecostexpansion.asm"
 	.align 4
+	.include "./code/attackorderexpansion/core_attackorderexpansion.asm"
+	.align 4
 	.include "./code/propertyoam/tablepropertyoamjump.asm"
 	.align 4
 	.include "./code/maps/coreunitlist.asm"
