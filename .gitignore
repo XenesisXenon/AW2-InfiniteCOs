@@ -37,6 +37,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db 
+*.sav
 
 #Local Backups
 *.*~
