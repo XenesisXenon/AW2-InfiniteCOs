@@ -1,13 +1,5 @@
 ;hookaitable.asm
 ;Allows expansion to the list so that more AI tables can be added for Vs mode
-;.org 0x0806185C
-;	.dw	AIRulesVsTable-MaxCOID
-	
-;.org 0x08061826
-;	mov	r1,MaxCOId
-;	mul	r1,r6
-;	add	r1,11
-;	nop
 	
 ;Modification to allow for expansion.	
 .org 0x08061826
@@ -22,4 +14,9 @@
 	
 .org 0x0806185C
 	.pool	
-;Blank Line
+
+.org 0x080617F0
+	.dw	AIRulesVsTable
+	
+.org 0x08061A38
+	.dw	AIRulesVsTable
