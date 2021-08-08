@@ -19,9 +19,14 @@
 .org 0x080865A8
 	mov	r0,CaseMinimum;0x2
 	str	r0,[r4]			;Blanks the Custom Hard Toggle Bit
-	
-.org 0x080865D0
-	str	r0,[r4]			;Blanks the Custom Hard Toggle Bit
+
+.org 0x080865CC
+	ldr	r0,=MapCase_CaseOrder_R_EmptyCase+1;Fixing error when a case is empty
+	bx	r0
+	.pool
+
+;.org 0x080865D0 ;*1 Rolled into above hook for fix
+;	str	r0,[r4]			;Blanks the Custom Hard Toggle Bit
 .org 0x080865D6
 	cmp	r0,CaseMaximum;0x8
 .org 0x080865DA
@@ -34,7 +39,11 @@
 	bx	r0
 	.pool
 	
-;Left Direction	
+.org 0x080864C8
+	ldr	r0,=MapCase_CaseOrder_L_EmptyCase+1;Fixing error when a case is empty
+	bx	r0
+	.pool
+
 ;.org 0x08086498
 ;	str	r0,[r4]			;Blanks the Custom Hard Toggle Bit
 .org 0x080864A0
@@ -42,6 +51,8 @@
 .org 0x080864A4
 	mov	r0,CaseMaximum;0x8
 	str	r0,[r4]			;Blanks the Custom Hard Toggle Bit
+.org 0x080864D2
+	cmp	r0,CaseMinimum-1;0x1
 	
 ;Enables Toggle of "Hard" maps
 ;Checks input on "Select" button

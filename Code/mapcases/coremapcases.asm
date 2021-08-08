@@ -120,6 +120,18 @@ MapCase_CaseOrder_R:
 	bx	r1
 	.pool
 
+MapCase_CaseOrder_R_EmptyCase:
+	ldrh	r0,[r4]	;Iterates map case jumps thru list if one is empty
+	ldr	r1,=List_CaseOrder_R
+	add	r0,r0,r1
+	ldrb	r0,[r0]
+	str	r0,[r4]	;*1
+	lsl	r0,r0,0x10
+	asr	r0,r0,0x10
+	ldr	r2,=0x080865D6+1
+	bx	r2
+	.pool
+
 MapCase_CaseOrder_L:
 	ldrh	r0,[r4]
 	ldr	r1,=List_CaseOrder_L
@@ -132,6 +144,18 @@ MapCase_CaseOrder_L:
 	bx	r1
 	.pool
 
+MapCase_CaseOrder_L_EmptyCase:
+	ldrh	r0,[r4]	;Iterates map case jumps thru list if one is empty
+	ldr	r1,=List_CaseOrder_L
+	add	r0,r0,r1
+	ldrb	r0,[r0]
+	str	r0,[r4]	;*1
+	lsl	r0,r0,0x10
+	asr	r0,r0,0x10
+	ldr	r2,=0x080864D2+1
+	bx	r2
+	.pool
+	
 ;Case Order Notes
 ;AW1 Campaign	0x9
 ;AW2 Campaign	0x1
@@ -166,20 +190,20 @@ List_CaseOrder_R:	;List is ordered by index of what is the next case
 ;CaseWarRoom		equ 0x7
 	.db	CaseWarRoomHack2012
 ;CaseDesignMaps		equ 0x8
-	.db	CaseAW1Campaign
-;CaseExtraOne		equ 0x9
-	.db	CaseCampaign
-;CaseExtraTwo		equ 0xA
-	.db	CaseFireEmblem
-;CaseExtraThree		equ 0xB
-	.db	CaseDesignmaps
-;CaseExtraFour		equ 0xC
-	.db	Case3P
-;CaseExtraFive		equ 0xD
-	.db	CaseAWDSSurvival
-;CaseExtraSix		equ 0xE
 	.db	CaseClassic
-;CaseExtraSeven		equ 0xF
+;CaseExtraOne		equ 0x9 - Campaign (AW1)
+	.db	CaseCampaign
+;CaseExtraTwo		equ 0xA - Campaign (AWDS)
+	.db	CaseDesignMaps
+;CaseExtraThree		equ 0xB - Survival (AWDS)
+	.db	CaseAW1Campaign
+;CaseExtraFour		equ 0xC - 2p/Vs (AWDoR)
+	.db	Case3P
+;CaseExtraFive		equ 0xD - Trial (AWDoR)
+	.db	CaseAWDSSurvival
+;CaseExtraSix		equ 0xE - Fire Emblem
+	.db	CaseClassic
+;CaseExtraSeven		equ 0xF - War Room (AWDS) & War Room Hack 2012
 	.db	CaseAWDoRTrial
 	
 List_CaseOrder_L:
@@ -187,32 +211,32 @@ List_CaseOrder_L:
 ;CaseCampaign	equ 0x1
 	.db	CaseAW1Campaign
 ;CaseClassic		equ 0x2
-	.db	CaseFireEmblem
+	.db	CaseDesignMaps
 ;CaseVersus		equ 0x3
 	.db	CaseClassic
 ;CasePredeployed	equ 0x4
 	.db	Case4P
 ;Case3P			equ 0x5
-	.db	CaseAWDORVersus
+	.db	CaseAWDoRVersus
 ;Case4P			equ 0x6
 	.db	Case3P
 ;CaseWarRoom		equ 0x7
-	.db	CasePreDeployed
+	.db	CasePredeployed
 ;CaseDesignMaps		equ 0x8
-	.db	CaseAWDSSurvival
-;CaseExtraOne		equ 0x9
-	.db	CaseDesignMaps
-;CaseExtraTwo		equ 0xA
-	.db	CaseCampaign
-;CaseExtraThree		equ 0xB
-	.db	CaseAWDoRTrial
-;CaseExtraFour		equ 0xC
-	.db	CaseVersus
-;CaseExtraFive		equ 0xD
-	.db	CaseWarRoomHack2012
-;CaseExtraSix		equ 0xE
 	.db	CaseAWDSCampaign
-;CaseExtraSeven		equ 0xF	
-	.db	CaseWarRoom
+;CaseExtraOne		equ 0x9 - Campaign (AW1)
+	.db	CaseAWDSSurvival
+;CaseExtraTwo		equ 0xA - Campaign (AWDS)
+	.db	CaseCampaign
+;CaseExtraThree		equ 0xB - Survival (AWDS)
+	.db	CaseAWDoRTrial
+;CaseExtraFour		equ 0xC - 2p/Vs (AWDoR)
+	.db	CaseVersus
+;CaseExtraFive		equ 0xD - Trial (AWDoR)
+	.db	CaseWarRoomHack2012
+;CaseExtraSix		equ 0xE - Fire Emblem
+	.db	CaseClassic
+;CaseExtraSeven		equ 0xF - War Room (AWDS) & War Room Hack 2012
+	.db	CaseWarroom
 
 .align 4
