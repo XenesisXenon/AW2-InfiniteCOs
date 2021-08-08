@@ -545,7 +545,7 @@ PowerChargeCalculation_AWDS:
 
 	;This is Damage Inflicted
 	;Gather Opposing Player's Unit Charge Rate
-	ldr	r0,[@AttackerRegister]
+	ldr	r0,[@DefenderRegister]
 	ldrb	r0,[r0]
 	bl	Gather_DSUnitChargeRate
 	
