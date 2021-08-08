@@ -12,6 +12,12 @@
 	add	sp,-0x8
 	str	r2,[sp]
 	str	r3,[sp,0x4]
+	cmp	r6,0	;Add extra check for Inventions, null pointer
+	bne	@UnitBattle_True
+	
+	ldr	r6,=0x030013D0	;Game updates the attacker battle even vs inventions
+	
+@UnitBattle_True:
 	mov	r2,r6
 	ldr	r3,=List_FirepowerCalculations
 	ldr	r6,=Main_StatCalc+1
