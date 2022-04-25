@@ -2,7 +2,7 @@
 String3211:
 	.ascii "   Yes     No",0x0
 String3212:
-	.ascii 0x0B,0x81,"Save current data?",TextNL,0x16
+	.ascii 0x0B,0x81,"Save current data?",TextNL,0x16,0x0
 String3213:
 	.ascii 0x0B,0x81,"Save current data",TextWait,TextWait,TextNL
 	.ascii "over existing data?",0x16,0x0
