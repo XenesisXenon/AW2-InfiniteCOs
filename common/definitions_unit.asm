@@ -101,3 +101,13 @@ GatherUnitMinRange		equ 14
 GatherUnitMovement		equ 9
 GatherUnitClass			equ 24
 GatherUnit_MinRange		equ 14
+
+;AI Behaviour Types
+AIBehaviour_Stay		equ 0	;Won't move until threat in range
+AIBehaviour_AttackHQ		equ 1	;Advances toward enemy HQ
+AIBehaviour_FollowInf		equ 2	;Follows infantry and landers
+AIBehaviour_Properties		equ 3	;Moves to unowned props, silos
+AIBehaviour_Standard		equ 4	;Standard Behaviour
+AIBehaviour_Defence		equ 5	;Groups up with other units/infs
+AIBehaviour_Zoning		equ 6	;General smarter defence behaviour, doesn't work for air units
+AIBehaviour_GuardHQ		equ 7	;Retreats toward allied HQ
