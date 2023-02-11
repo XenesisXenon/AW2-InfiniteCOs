@@ -8,6 +8,8 @@ This project is maintained and built using [ARMIPS](https://github.com/Kingcom/a
 The default compilation assumes an original AW2 ROM named ```aw2-original.gba``` with the CRC32 of ```5AD0E571``` Advance Wars 2: Black Hole Rising (U)
 Compile with ```armips compile.asm```
 
+The patch for the current build can be found in the _Patch/ folder
+
 ## Features
 Current Feature List:
 - Additional Commanding Officers (AW, AWDS, SFW, Custom)
