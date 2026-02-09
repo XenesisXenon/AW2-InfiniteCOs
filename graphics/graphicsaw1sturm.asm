@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsAW1SturmPalette:
-	.import "graphics/CO/AW1Sturm/AW1SturmPalette.bin"
-GraphicsAW1SturmGraphic:
-	.dw GraphicsAW1SturmTop
-	.dw GraphicsAW1SturmBody	
-GraphicsAW1SturmTop:
-	.import "graphics/CO/AW1Sturm/AW1Sturmtop.bin"
-GraphicsAW1SturmBody:	
-	.import "graphics/CO/AW1Sturm/AW1Sturmbody.bin"
-GraphicsAW1SturmFace:	
-	.import "graphics/CO/AW1Sturm/AW1Sturmneutral.bin"
-GraphicsAW1SturmHappyFace:
-	.import "graphics/CO/AW1Sturm/AW1Sturmhappy.bin"
-GraphicsAW1SturmSadFace:
-	.import "graphics/CO/AW1Sturm/AW1Sturmsad.bin"
-;GraphicsAW1SturmName:
-;	.import "graphics/CO/AW1Sturm/AW1Sturmname.bin"
-GraphicsAW1SturmMugshot:
-	.import "graphics/CO/AW1Sturm/AW1Sturmmug.bin"
-;Blank Line
+graphicsaw1sturmpalette:
+	.import "graphics/co/aw1sturm/aw1sturmpalette.bin"
+graphicsaw1sturmgraphic:
+	.dw graphicsaw1sturmtop
+	.dw graphicsaw1sturmbody
+graphicsaw1sturmtop:
+	.import "graphics/co/aw1sturm/aw1sturmtop.bin"
+graphicsaw1sturmbody:
+	.import "graphics/co/aw1sturm/aw1sturmbody.bin"
+graphicsaw1sturmface:
+	.import "graphics/co/aw1sturm/aw1sturmneutral.bin"
+graphicsaw1sturmhappyface:
+	.import "graphics/co/aw1sturm/aw1sturmhappy.bin"
+graphicsaw1sturmsadface:
+	.import "graphics/co/aw1sturm/aw1sturmsad.bin"
+;graphicsaw1sturmname:
+;	.import "graphics/co/aw1sturm/aw1sturmname.bin"
+graphicsaw1sturmmugshot:
+	.import "graphics/co/aw1sturm/aw1sturmmug.bin"
+;blank line

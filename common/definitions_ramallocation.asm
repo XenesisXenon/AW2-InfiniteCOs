@@ -13,7 +13,7 @@ ChecksumSaveBuffer	equ 0x02002000
 CurrentBattleMapsPoints	equ 0x0200C420
 
 CurrentGameSetupMenu	equ 0x02017C54
-	.include	"definitions_ramallocation_VersusSetup.asm"
+	.include	"definitions_ramallocation_versussetup.asm"
 TileBG0Buffer		equ 0x0201BC50
 TileBG1Buffer		equ 0x0201C450
 TileBG2Buffer		equ 0x0201CC50

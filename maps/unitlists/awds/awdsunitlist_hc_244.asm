@@ -1,0 +1,72 @@
+;AWDSUnitList_HC_244.bin
+	;Unit Type, X co-ordinate, Y co-ordinate, HP, Ammo, Fuel, AI Type
+AWDSUnitList_HC_244:
+	@@UnitArmyStart ArmyOrangeStar
+	@@UnitBasic Unit_Infantry,4,18,AIUnitDefensive
+	@@UnitBasic Unit_Infantry,1,15,AIUnitDefensive
+	@@UnitBasic Unit_Mech,3,14,AIUnitDefensive
+	@@UnitBasic Unit_Mech,3,12,AIUnitDefensive
+	@@UnitBasic Unit_Mech,5,16,AIUnitDefensive
+	@@UnitBasic Unit_Mech,7,16,AIUnitDefensive
+	@@UnitBasic Unit_Mech,4,8,AIUnitDefensive
+	@@UnitBasic Unit_Mech,15,8,AIUnitDefensive
+	@@UnitBasic Unit_Mech,4,19,AIUnitDefensive
+	@@UnitBasic Unit_Mech,0,15,AIUnitDefensive
+	@@UnitBasic Unit_APC,3,17,AIUnitDefensive
+	@@UnitBasic Unit_APC,4,15,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,3,6,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,16,10,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,10,17,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,11,3,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,15,6,AIUnitDefensive
+	@@UnitBasic Unit_Rockets,2,10,AIUnitDefensive
+	@@UnitBasic Unit_Rockets,16,13,AIUnitDefensive
+	@@UnitBasic Unit_Rockets,5,3,AIUnitDefensive
+	@@UnitBasic Unit_Rockets,2,17,AIUnitDefensive
+	@@UnitBasic Unit_Rockets,13,4,AIUnitDefensive
+	@@UnitBasic Unit_AntiAir,0,17,AIUnitDefensive
+	@@UnitBasic Unit_AntiAir,2,19,AIUnitDefensive
+	@@UnitBasic Unit_Missiles,0,19,AIUnitDefensive
+
+	@@UnitArmyStart ArmyBlueMoon
+	@@UnitBasic Unit_Infantry,19,3,AIUnitDefensive
+	@@UnitBasic Unit_Infantry,17,0,AIUnitDefensive
+	@@UnitBasic Unit_Recon,18,4,AIUnitDefensive
+	@@UnitBasic Unit_Recon,15,1,AIUnitDefensive
+	@@UnitBasic Unit_Tank,16,0,AIUnitDefensive
+	@@UnitBasic Unit_Tank,19,4,AIUnitDefensive
+	@@UnitBasic Unit_Tank,18,0,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,18,3,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,16,1,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,6,9,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,10,6,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,9,13,AIUnitDefensive
+	@@UnitBasic Unit_MidTank,13,11,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,19,0,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,18,1,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,7,6,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,13,7,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,12,13,AIUnitDefensive
+	@@UnitBasic Unit_Neotank,6,12,AIUnitDefensive
+	@@UnitBasic Unit_Megatank,17,2,AIUnitDefensive
+	@@UnitBasic Unit_Megatank,7,8,AIUnitDefensive
+	@@UnitBasic Unit_Megatank,12,11,AIUnitDefensive
+	@@UnitBasic Unit_APC,17,1,AIUnitDefensive
+	@@UnitBasic Unit_APC,18,2,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,19,2,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,15,0,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,7,10,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,9,7,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,12,9,AIUnitDefensive
+	@@UnitBasic Unit_Artillery,10,12,AIUnitDefensive
+	@@UnitBasic Unit_AntiAir,17,3,AIUnitDefensive
+	@@UnitBasic Unit_AntiAir,16,2,AIUnitDefensive
+	@@UnitBasic Unit_BlackBoat,6,10,AIUnitDefensive
+	@@UnitBasic Unit_BlackBoat,13,9,AIUnitDefensive
+	@@UnitBasic Unit_BlackBoat,11,6,AIUnitDefensive
+	@@UnitBasic Unit_BlackBoat,10,13,AIUnitDefensive
+	@@UnitBasic Unit_Oozium,19,1,AIUnitDefensive
+	@@UnitBasic Unit_Oozium,9,12,AIUnitDefensive
+	@@UnitBasic Unit_Oozium,10,7,AIUnitDefensive
+
+	@@UnitListEnd

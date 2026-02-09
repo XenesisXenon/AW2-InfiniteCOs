@@ -1,21 +1,21 @@
 ;graphicsawdsjugger.asm
-GraphicsAWDSGrimmPalette:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmPalette.bin"
-GraphicsAWDSGrimmGraphic:
-	.dw GraphicsAWDSGrimmTop
-	.dw GraphicsAWDSGrimmBody	
-GraphicsAWDSGrimmTop:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmtop.bin"
-GraphicsAWDSGrimmBody:	
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmbody.bin"
-GraphicsAWDSGrimmFace:	
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmneutral.bin"
-GraphicsAWDSGrimmHappyFace:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmhappy.bin"
-GraphicsAWDSGrimmSadFace:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmsad.bin"
-GraphicsAWDSGrimmName:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmname.bin"
-GraphicsAWDSGrimmMugshot:
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmmug.bin"
-;Blank Line
+graphicsawdsgrimmpalette:
+	.import "graphics/co/awdsgrimm/awdsgrimmpalette.bin"
+graphicsawdsgrimmgraphic:
+	.dw graphicsawdsgrimmtop
+	.dw graphicsawdsgrimmbody
+graphicsawdsgrimmtop:
+	.import "graphics/co/awdsgrimm/awdsgrimmtop.bin"
+graphicsawdsgrimmbody:
+	.import "graphics/co/awdsgrimm/awdsgrimmbody.bin"
+graphicsawdsgrimmface:
+	.import "graphics/co/awdsgrimm/awdsgrimmneutral.bin"
+graphicsawdsgrimmhappyface:
+	.import "graphics/co/awdsgrimm/awdsgrimmhappy.bin"
+graphicsawdsgrimmsadface:
+	.import "graphics/co/awdsgrimm/awdsgrimmsad.bin"
+graphicsawdsgrimmname:
+	.import "graphics/co/awdsgrimm/awdsgrimmname.bin"
+graphicsawdsgrimmmugshot:
+	.import "graphics/co/awdsgrimm/awdsgrimmmug.bin"
+;blank line

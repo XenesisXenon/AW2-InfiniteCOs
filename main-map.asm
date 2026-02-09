@@ -1,5 +1,5 @@
 ;main-map.asm
 
 	.include "maps/maplist.asm"
-	;.include "Campaign/campaignlist.asm"
+	;.include "campaign/campaignlist.asm"
 	

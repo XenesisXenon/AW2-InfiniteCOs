@@ -1,1270 +1,1270 @@
 ;coremaps.asm"
-	RandomUnitTableTestTable equ	1
+	randomunittabletesttable equ	1
 
-;List of map data files to be included
+;list of map data files to be included
 	.align 4
 
-;List of Map Files to be included
-MapAW2BeanIsland:
-	.import "maps/mapfiles/AW2/AW2_CL2_BeanIsland.bin"
-MapWRH2_BankRobbery:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_BankRobbery.bin"
-MapWRH2_BarracudaBay:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_BarracudaBay.bin"
-MapWRH2_BattleBridge:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_BattleBridge.bin"
-MapWRH2_BeachHead:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_BeachHead.bin"
-MapWRH2_Bombardier:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Bombardier.bin"
-MapWRH2_CityOfGold:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_CityOfGold.bin"
-MapWRH2_CometCatcher:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_CometCatcher.bin"
-MapWRH2_CrescentIsle:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_CrescentIsle.bin"
-MapWRH2_FeelingBlue:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_FeelingBlue.bin"
-MapWRH2_FortIsthmus:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_FortIsthmus.bin"
-MapWRH2_FrostBight:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_FrostBight.bin"
-MapWRH2_Ganglands:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Ganglands.bin"
-MapWRH2_IronKnuckle:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_IronKnuckle.bin"
-MapWRH2_IslandNation:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_IslandNation.bin"
-MapWRH2_LegionPeninsula:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_LegionPeninsula.bin"
-MapWRH2_LongBridge:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_LongBridge.bin"
-MapWRH2_Marshlands:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Marshlands.bin"
-MapWRH2_MialsCape:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_MialsCape.bin"
-MapWRH2_OldWounds:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_OldWounds.bin"
-MapWRH2_ReverseSpannIsland:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_ReverseSpannIsland.bin"
-MapWRH2_RiverSide:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_RiverSide.bin"
-MapWRH2_SiloStorm:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_SiloStorm.bin"
-MapWRH2_SnowDay:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_SnowDay.bin"
-MapWRH2_SorrowsBluff:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_SorrowsBluff.bin"
-MapWRH2_SplitMountain:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_SplitMountain.bin"
-MapWRH2_Talysman:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Talysman.bin"
-MapWRH2_UnderSiege:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_UnderSiege.bin"
-MapWRH2_UnholyAlliance:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_UnholyAlliance.bin"
-MapWRH2_Waza:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Waza.bin"
-MapWRH2_Whirlpool:
-	.import "maps/mapfiles/WarRoomHack2/WRH2_Whirlpool.bin"
+;list of map files to be included
+mapaw2beanisland:
+	.import "maps/mapfiles/aw2/aw2_cl2_beanisland.bin"
+mapwrh2_bankrobbery:
+	.import "maps/mapfiles/warroomhack2/wrh2_bankrobbery.bin"
+mapwrh2_barracudabay:
+	.import "maps/mapfiles/warroomhack2/wrh2_barracudabay.bin"
+mapwrh2_battlebridge:
+	.import "maps/mapfiles/warroomhack2/wrh2_battlebridge.bin"
+mapwrh2_beachhead:
+	.import "maps/mapfiles/warroomhack2/wrh2_beachhead.bin"
+mapwrh2_bombardier:
+	.import "maps/mapfiles/warroomhack2/wrh2_bombardier.bin"
+mapwrh2_cityofgold:
+	.import "maps/mapfiles/warroomhack2/wrh2_cityofgold.bin"
+mapwrh2_cometcatcher:
+	.import "maps/mapfiles/warroomhack2/wrh2_cometcatcher.bin"
+mapwrh2_crescentisle:
+	.import "maps/mapfiles/warroomhack2/wrh2_crescentisle.bin"
+mapwrh2_feelingblue:
+	.import "maps/mapfiles/warroomhack2/wrh2_feelingblue.bin"
+mapwrh2_fortisthmus:
+	.import "maps/mapfiles/warroomhack2/wrh2_fortisthmus.bin"
+mapwrh2_frostbight:
+	.import "maps/mapfiles/warroomhack2/wrh2_frostbight.bin"
+mapwrh2_ganglands:
+	.import "maps/mapfiles/warroomhack2/wrh2_ganglands.bin"
+mapwrh2_ironknuckle:
+	.import "maps/mapfiles/warroomhack2/wrh2_ironknuckle.bin"
+mapwrh2_islandnation:
+	.import "maps/mapfiles/warroomhack2/wrh2_islandnation.bin"
+mapwrh2_legionpeninsula:
+	.import "maps/mapfiles/warroomhack2/wrh2_legionpeninsula.bin"
+mapwrh2_longbridge:
+	.import "maps/mapfiles/warroomhack2/wrh2_longbridge.bin"
+mapwrh2_marshlands:
+	.import "maps/mapfiles/warroomhack2/wrh2_marshlands.bin"
+mapwrh2_mialscape:
+	.import "maps/mapfiles/warroomhack2/wrh2_mialscape.bin"
+mapwrh2_oldwounds:
+	.import "maps/mapfiles/warroomhack2/wrh2_oldwounds.bin"
+mapwrh2_reversespannisland:
+	.import "maps/mapfiles/warroomhack2/wrh2_reversespannisland.bin"
+mapwrh2_riverside:
+	.import "maps/mapfiles/warroomhack2/wrh2_riverside.bin"
+mapwrh2_silostorm:
+	.import "maps/mapfiles/warroomhack2/wrh2_silostorm.bin"
+mapwrh2_snowday:
+	.import "maps/mapfiles/warroomhack2/wrh2_snowday.bin"
+mapwrh2_sorrowsbluff:
+	.import "maps/mapfiles/warroomhack2/wrh2_sorrowsbluff.bin"
+mapwrh2_splitmountain:
+	.import "maps/mapfiles/warroomhack2/wrh2_splitmountain.bin"
+mapwrh2_talysman:
+	.import "maps/mapfiles/warroomhack2/wrh2_talysman.bin"
+mapwrh2_undersiege:
+	.import "maps/mapfiles/warroomhack2/wrh2_undersiege.bin"
+mapwrh2_unholyalliance:
+	.import "maps/mapfiles/warroomhack2/wrh2_unholyalliance.bin"
+mapwrh2_waza:
+	.import "maps/mapfiles/warroomhack2/wrh2_waza.bin"
+mapwrh2_whirlpool:
+	.import "maps/mapfiles/warroomhack2/wrh2_whirlpool.bin"
 
-MapAW1_Test:
-MapAW1_115_TroopOrders:
-	.import "maps/mapfiles/AW1/AW1_115_TroopOrders.map"
-MapAW1_116_TerrainIntel:
-	.import "maps/mapfiles/AW1/AW1_116_TerrainIntel.map"
-MapAW1_117_BaseCapture:
-	.import "maps/mapfiles/AW1/AW1_117_BaseCapture.map"
-MapAW1_118_UnitRepair:
-	.import "maps/mapfiles/AW1/AW1_118_UnitRepair.map"
-MapAW1_119_APCABCs:
-	.import "maps/mapfiles/AW1/AW1_119_APCABCs.map"
-MapAW1_120_TankOps:
-	.import "maps/mapfiles/AW1/AW1_120_TankOps.map"
-MapAW1_121_CopterTactics:
-	.import "maps/mapfiles/AW1/AW1_121_CopterTactics.map"
-MapAW1_122_AirAssault:
-	.import "maps/mapfiles/AW1/AW1_122_AirAssault.map"
-MapAW1_123_AirDefence:
-	.import "maps/mapfiles/AW1/AW1_123_AirDefence.map"
-MapAW1_124_Dogfights:
-	.import "maps/mapfiles/AW1/AW1_124_Dogfights.map"
-MapAW1_125_NavalForces:
-	.import "maps/mapfiles/AW1/AW1_125_NavalForces.map"
-MapAW1_126_ClimateStatus:
-	.import "maps/mapfiles/AW1/AW1_126_ClimateStatus.map"
-MapAW1_127_FogOfWar:
-	.import "maps/mapfiles/AW1/AW1_127_FogOfWar.map"
-MapAW1_128_SpecialIntel:
-	.import "maps/mapfiles/AW1/AW1_128_SpecialIntel.map"
-MapAW1_129_ItsWar:
-	.import "maps/mapfiles/AW1/AW1_129_ItsWar.map"
-MapAW1_130_Gunfighter:
-	.import "maps/mapfiles/AW1/AW1_130_Gunfighter.map"
-MapAW1_131_AirAce:
-	.import "maps/mapfiles/AW1/AW1_131_AirAce.map"
-MapAW1_132_MaxStrikesA:
-	.import "maps/mapfiles/AW1/AW1_132_MaxStrikesA.map"
-MapAW1_133_MaxsFolly:
-	.import "maps/mapfiles/AW1/AW1_133_MaxsFolly.map"
-MapAW1_134_OlafsNavy:
-	.import "maps/mapfiles/AW1/AW1_134_OlafsNavy.map"
-MapAW1_135_OlafsSeaStrike:
-	.import "maps/mapfiles/AW1/AW1_135_OlafsSeaStrike.map"
-MapAW1_136_MaxStrikesB:
-	.import "maps/mapfiles/AW1/AW1_136_MaxStrikesB.map"
-MapAW1_137_Sniper:
-	.import "maps/mapfiles/AW1/AW1_137_Sniper.map"
-MapAW1_138_BlizzardBattle:
-	.import "maps/mapfiles/AW1/AW1_138_BlizzardBattle.map"
-MapAW1_139_HistoryLesson:
-	.import "maps/mapfiles/AW1/AW1_139_HistoryLesson.map"
-MapAW1_140_SamisDebut:
-	.import "maps/mapfiles/AW1/AW1_140_SamisDebut.map"
+mapaw1_test:
+mapaw1_115_trooporders:
+	.import "maps/mapfiles/aw1/aw1_115_trooporders.map"
+mapaw1_116_terrainintel:
+	.import "maps/mapfiles/aw1/aw1_116_terrainintel.map"
+mapaw1_117_basecapture:
+	.import "maps/mapfiles/aw1/aw1_117_basecapture.map"
+mapaw1_118_unitrepair:
+	.import "maps/mapfiles/aw1/aw1_118_unitrepair.map"
+mapaw1_119_apcabcs:
+	.import "maps/mapfiles/aw1/aw1_119_apcabcs.map"
+mapaw1_120_tankops:
+	.import "maps/mapfiles/aw1/aw1_120_tankops.map"
+mapaw1_121_coptertactics:
+	.import "maps/mapfiles/aw1/aw1_121_coptertactics.map"
+mapaw1_122_airassault:
+	.import "maps/mapfiles/aw1/aw1_122_airassault.map"
+mapaw1_123_airdefence:
+	.import "maps/mapfiles/aw1/aw1_123_airdefence.map"
+mapaw1_124_dogfights:
+	.import "maps/mapfiles/aw1/aw1_124_dogfights.map"
+mapaw1_125_navalforces:
+	.import "maps/mapfiles/aw1/aw1_125_navalforces.map"
+mapaw1_126_climatestatus:
+	.import "maps/mapfiles/aw1/aw1_126_climatestatus.map"
+mapaw1_127_fogofwar:
+	.import "maps/mapfiles/aw1/aw1_127_fogofwar.map"
+mapaw1_128_specialintel:
+	.import "maps/mapfiles/aw1/aw1_128_specialintel.map"
+mapaw1_129_itswar:
+	.import "maps/mapfiles/aw1/aw1_129_itswar.map"
+mapaw1_130_gunfighter:
+	.import "maps/mapfiles/aw1/aw1_130_gunfighter.map"
+mapaw1_131_airace:
+	.import "maps/mapfiles/aw1/aw1_131_airace.map"
+mapaw1_132_maxstrikesa:
+	.import "maps/mapfiles/aw1/aw1_132_maxstrikesa.map"
+mapaw1_133_maxsfolly:
+	.import "maps/mapfiles/aw1/aw1_133_maxsfolly.map"
+mapaw1_134_olafsnavy:
+	.import "maps/mapfiles/aw1/aw1_134_olafsnavy.map"
+mapaw1_135_olafsseastrike:
+	.import "maps/mapfiles/aw1/aw1_135_olafsseastrike.map"
+mapaw1_136_maxstrikesb:
+	.import "maps/mapfiles/aw1/aw1_136_maxstrikesb.map"
+mapaw1_137_sniper:
+	.import "maps/mapfiles/aw1/aw1_137_sniper.map"
+mapaw1_138_blizzardbattle:
+	.import "maps/mapfiles/aw1/aw1_138_blizzardbattle.map"
+mapaw1_139_historylesson:
+	.import "maps/mapfiles/aw1/aw1_139_historylesson.map"
+mapaw1_140_samisdebut:
+	.import "maps/mapfiles/aw1/aw1_140_samisdebut.map"
 
-MapAW1_141_KanbeiArrives:
-	.import "maps/mapfiles/AW1/AW1_141_KanbeiArrives.map"
-MapAW1_142_MightyKanbei:
-	.import "maps/mapfiles/AW1/AW1_142_MightyKanbei.map"
-MapAW1_143_KanbeisError:
-	.import "maps/mapfiles/AW1/AW1_143_KanbeisError.map"
-MapAW1_144_DivideandConquer:
-	.import "maps/mapfiles/AW1/AW1_144_DivideandConquer.map"
-MapAW1_145_SamiMarchesOn:
-	.import "maps/mapfiles/AW1/AW1_145_SamiMarchesOn.map"
-MapAW1_146_SonjasGoal:
-	.import "maps/mapfiles/AW1/AW1_146_SonjasGoal.map"
-MapAW1_147_CaptainDrakeA:
-	.import "maps/mapfiles/AW1/AW1_147_CaptainDrakeA.map"
-MapAW1_148_CaptainDrakeB:
-	.import "maps/mapfiles/AW1/AW1_148_CaptainDrakeB.map"
-MapAW1_149_CaptainDrakeC:
-	.import "maps/mapfiles/AW1/AW1_149_CaptainDrakeC.map"
-MapAW1_150_NavalClashA:
-	.import "maps/mapfiles/AW1/AW1_150_NavalClashA.map"
-MapAW1_151_NavalClashB:
-	.import "maps/mapfiles/AW1/AW1_151_NavalClashB.map"
-MapAW1_152_NavalClashC:
-	.import "maps/mapfiles/AW1/AW1_152_NavalClashC.map"
-MapAW1_153_WingsOfVictoryA:
-	.import "maps/mapfiles/AW1/AW1_153_WingsOfVictoryA.map"
-MapAW1_154_WingsOfVictoryB:
-	.import "maps/mapfiles/AW1/AW1_154_WingsOfVictoryB.map"
-MapAW1_155_WingsOfVictoryC:
-	.import "maps/mapfiles/AW1/AW1_155_WingsOfVictoryC.map"
-MapAW1_156_BattleMysteryA:
-	.import "maps/mapfiles/AW1/AW1_156_BattleMysteryA.map"
-MapAW1_157_BattleMysteryB:
-	.import "maps/mapfiles/AW1/AW1_157_BattleMysteryB.map"
-MapAW1_158_BattleMysteryC:
-	.import "maps/mapfiles/AW1/AW1_158_BattleMysteryC.map"
-MapAW1_159_AndyTimesTwo:
-	.import "maps/mapfiles/AW1/AW1_159_AndyTimesTwo.map"
-MapAW1_160_Enigma:
-	.import "maps/mapfiles/AW1/AW1_160_Enigma.map"
-MapAW1_161_TheFinalBattle:
-	.import "maps/mapfiles/AW1/AW1_161_TheFinalBattle.map"
-MapAW1_162_Rivals:
-	.import "maps/mapfiles/AW1/AW1_162_Rivals.map"
+mapaw1_141_kanbeiarrives:
+	.import "maps/mapfiles/aw1/aw1_141_kanbeiarrives.map"
+mapaw1_142_mightykanbei:
+	.import "maps/mapfiles/aw1/aw1_142_mightykanbei.map"
+mapaw1_143_kanbeiserror:
+	.import "maps/mapfiles/aw1/aw1_143_kanbeiserror.map"
+mapaw1_144_divideandconquer:
+	.import "maps/mapfiles/aw1/aw1_144_divideandconquer.map"
+mapaw1_145_samimarcheson:
+	.import "maps/mapfiles/aw1/aw1_145_samimarcheson.map"
+mapaw1_146_sonjasgoal:
+	.import "maps/mapfiles/aw1/aw1_146_sonjasgoal.map"
+mapaw1_147_captaindrakea:
+	.import "maps/mapfiles/aw1/aw1_147_captaindrakea.map"
+mapaw1_148_captaindrakeb:
+	.import "maps/mapfiles/aw1/aw1_148_captaindrakeb.map"
+mapaw1_149_captaindrakec:
+	.import "maps/mapfiles/aw1/aw1_149_captaindrakec.map"
+mapaw1_150_navalclasha:
+	.import "maps/mapfiles/aw1/aw1_150_navalclasha.map"
+mapaw1_151_navalclashb:
+	.import "maps/mapfiles/aw1/aw1_151_navalclashb.map"
+mapaw1_152_navalclashc:
+	.import "maps/mapfiles/aw1/aw1_152_navalclashc.map"
+mapaw1_153_wingsofvictorya:
+	.import "maps/mapfiles/aw1/aw1_153_wingsofvictorya.map"
+mapaw1_154_wingsofvictoryb:
+	.import "maps/mapfiles/aw1/aw1_154_wingsofvictoryb.map"
+mapaw1_155_wingsofvictoryc:
+	.import "maps/mapfiles/aw1/aw1_155_wingsofvictoryc.map"
+mapaw1_156_battlemysterya:
+	.import "maps/mapfiles/aw1/aw1_156_battlemysterya.map"
+mapaw1_157_battlemysteryb:
+	.import "maps/mapfiles/aw1/aw1_157_battlemysteryb.map"
+mapaw1_158_battlemysteryc:
+	.import "maps/mapfiles/aw1/aw1_158_battlemysteryc.map"
+mapaw1_159_andytimestwo:
+	.import "maps/mapfiles/aw1/aw1_159_andytimestwo.map"
+mapaw1_160_enigma:
+	.import "maps/mapfiles/aw1/aw1_160_enigma.map"
+mapaw1_161_thefinalbattle:
+	.import "maps/mapfiles/aw1/aw1_161_thefinalbattle.map"
+mapaw1_162_rivals:
+	.import "maps/mapfiles/aw1/aw1_162_rivals.map"
 
 	
-MapAWDS_038_PipesAplenty:
-	.import "maps/mapfiles/AW3/AWDS_038.map"
-MapAWDS_039_FrigidFinale:
-	.import "maps/mapfiles/AW3/AWDS_039.map"
-MapAWDS_040_HachisLand:
-	.import "maps/mapfiles/AW3/AWDS_040.map"
-MapAWDS_041_NellsLand:
-	.import "maps/mapfiles/AW3/AWDS_041.map"
-MapAWDS_042_SturmsLand:
-	.import "maps/mapfiles/AW3/AWDS_042.map"
-MapAWDS_043_LashsLand:
-	.import "maps/mapfiles/AW3/AWDS_043.map"
+mapawds_038_pipesaplenty:
+	.import "maps/mapfiles/aw3/awds_038.map"
+mapawds_039_frigidfinale:
+	.import "maps/mapfiles/aw3/awds_039.map"
+mapawds_040_hachisland:
+	.import "maps/mapfiles/aw3/awds_040.map"
+mapawds_041_nellsland:
+	.import "maps/mapfiles/aw3/awds_041.map"
+mapawds_042_sturmsland:
+	.import "maps/mapfiles/aw3/awds_042.map"
+mapawds_043_lashsland:
+	.import "maps/mapfiles/aw3/awds_043.map"
 	
-MapAWDS_064_TrifectaIsles:
-	.import "maps/mapfiles/AW3/AWDS_064.map"
-MapAWDS_065_OceanPrison:
-	.import "maps/mapfiles/AW3/AWDS_065.map"
-MapAWDS_066_NarrowRidge:
-	.import "maps/mapfiles/AW3/AWDS_066.map"
-MapAWDS_067_Deadlakes:
-	.import "maps/mapfiles/AW3/AWDS_067.map"
-MapAWDS_068_NoExitIsles:
-	.import "maps/mapfiles/AW3/AWDS_068.map"
-MapAWDS_069_ArrowPoint:
-	.import "maps/mapfiles/AW3/AWDS_069.map"
-MapAWDS_070_CraterReef:
-	.import "maps/mapfiles/AW3/AWDS_070.map"
-MapAWDS_071_LostRoad:
-	.import "maps/mapfiles/AW3/AWDS_071.map"
-MapAWDS_072_CapitalClash:
-	.import "maps/mapfiles/AW3/AWDS_072.map"
-MapAWDS_073_IslandsAgogo:
-	.import "maps/mapfiles/AW3/AWDS_073.map"
-MapAWDS_074_GrandBattle:
-	.import "maps/mapfiles/AW3/AWDS_074.map"
+mapawds_064_trifectaisles:
+	.import "maps/mapfiles/aw3/awds_064.map"
+mapawds_065_oceanprison:
+	.import "maps/mapfiles/aw3/awds_065.map"
+mapawds_066_narrowridge:
+	.import "maps/mapfiles/aw3/awds_066.map"
+mapawds_067_deadlakes:
+	.import "maps/mapfiles/aw3/awds_067.map"
+mapawds_068_noexitisles:
+	.import "maps/mapfiles/aw3/awds_068.map"
+mapawds_069_arrowpoint:
+	.import "maps/mapfiles/aw3/awds_069.map"
+mapawds_070_craterreef:
+	.import "maps/mapfiles/aw3/awds_070.map"
+mapawds_071_lostroad:
+	.import "maps/mapfiles/aw3/awds_071.map"
+mapawds_072_capitalclash:
+	.import "maps/mapfiles/aw3/awds_072.map"
+mapawds_073_islandsagogo:
+	.import "maps/mapfiles/aw3/awds_073.map"
+mapawds_074_grandbattle:
+	.import "maps/mapfiles/aw3/awds_074.map"
 
-MapAWDS_099_FanIsle:
-	.import "maps/mapfiles/AW3/AWDS_099.map"
-MapAWDS_100_GridlockGlen:
-	.import "maps/mapfiles/AW3/AWDS_100.map"
-MapAWDS_101_KidneyIsland:
-	.import "maps/mapfiles/AW3/AWDS_101.map"
+mapawds_099_fanisle:
+	.import "maps/mapfiles/aw3/awds_099.map"
+mapawds_100_gridlockglen:
+	.import "maps/mapfiles/aw3/awds_100.map"
+mapawds_101_kidneyisland:
+	.import "maps/mapfiles/aw3/awds_101.map"
 	
-MapAWDS_127_MarineCross:
-	.import "maps/mapfiles/AW3/AWDS_127.map"
-MapAWDS_128_AxleRoads:
-	.import "maps/mapfiles/AW3/AWDS_128.map"
-MapAWDS_129_WormCanal:
-	.import "maps/mapfiles/AW3/AWDS_129.map"
-MapAWDS_130_BrokenLand:
-	.import "maps/mapfiles/AW3/AWDS_130.map"
-MapAWDS_131_RoughTerrain:
-	.import "maps/mapfiles/AW3/AWDS_131.map"
-MapAWDS_132_DeepForest:
-	.import "maps/mapfiles/AW3/AWDS_132.map"
-MapAWDS_133_ScrambleIsle:
-	.import "maps/mapfiles/AW3/AWDS_133.map"
-MapAWDS_134_DangerPool:
-	.import "maps/mapfiles/AW3/AWDS_134.map"
-MapAWDS_135_DarkCity:
-	.import "maps/mapfiles/AW3/AWDS_135.map"
-MapAWDS_136_CloverPond:
-	.import "maps/mapfiles/AW3/AWDS_136.map"
-MapAWDS_137_CrossCape:
-	.import "maps/mapfiles/AW3/AWDS_137.map"
+mapawds_127_marinecross:
+	.import "maps/mapfiles/aw3/awds_127.map"
+mapawds_128_axleroads:
+	.import "maps/mapfiles/aw3/awds_128.map"
+mapawds_129_wormcanal:
+	.import "maps/mapfiles/aw3/awds_129.map"
+mapawds_130_brokenland:
+	.import "maps/mapfiles/aw3/awds_130.map"
+mapawds_131_roughterrain:
+	.import "maps/mapfiles/aw3/awds_131.map"
+mapawds_132_deepforest:
+	.import "maps/mapfiles/aw3/awds_132.map"
+mapawds_133_scrambleisle:
+	.import "maps/mapfiles/aw3/awds_133.map"
+mapawds_134_dangerpool:
+	.import "maps/mapfiles/aw3/awds_134.map"
+mapawds_135_darkcity:
+	.import "maps/mapfiles/aw3/awds_135.map"
+mapawds_136_cloverpond:
+	.import "maps/mapfiles/aw3/awds_136.map"
+mapawds_137_crosscape:
+	.import "maps/mapfiles/aw3/awds_137.map"
 	
-MapAWDS_168_LittleLion:
-	.import "maps/mapfiles/AW3/AWDS_168.map"	
-MapAWDS_169_Megalopolis:
-	.import "maps/mapfiles/AW3/AWDS_169.map"	
-MapAWDS_170_Pipeline:
-	.import "maps/mapfiles/AW3/AWDS_170.map"	
-MapAWDS_171_RabbitIsland:
-	.import "maps/mapfiles/AW3/AWDS_171.map"	
-MapAWDS_172_WateryDowns:
-	.import "maps/mapfiles/AW3/AWDS_172.map"	
-MapAWDS_173_FortressIsle:
-	.import "maps/mapfiles/AW3/AWDS_173.map"	
-MapAWDS_174_TrebleRidge:
-	.import "maps/mapfiles/AW3/AWDS_174.map"	
-MapAWDS_175_FourAcres:
-	.import "maps/mapfiles/AW3/AWDS_175.map"	
-MapAWDS_176_FinalBattle:
-	.import "maps/mapfiles/AW3/AWDS_176.map"	
-MapAWDS_177_JellyIsland:
-	.import "maps/mapfiles/AW3/AWDS_177.map"	
-MapAWDS_178_Whiplash:
-	.import "maps/mapfiles/AW3/AWDS_178.map"	
-MapAWDS_179_SiloNation:
-	.import "maps/mapfiles/AW3/AWDS_179.map"	
-MapAWDS_180_RiskyDuo:
-	.import "maps/mapfiles/AW3/AWDS_180.map"	
-MapAWDS_181_HelixPeninsula:
-	.import "maps/mapfiles/AW3/AWDS_181.map"	
-MapAWDS_182_JellyIslandDS:
-	.import "maps/mapfiles/AW3/AWDS_182.map"	
-MapAWDS_183_WhiplashDS:
-	.import "maps/mapfiles/AW3/AWDS_183.map"	
-MapAWDS_184_SiloNationDS:
-	.import "maps/mapfiles/AW3/AWDS_184.map"	
-MapAWDS_185_RiskyDuoDS:
-	.import "maps/mapfiles/AW3/AWDS_185.map"	
-MapAWDS_186_HelixDS:
-	.import "maps/mapfiles/AW3/AWDS_186.map"	
+mapawds_168_littlelion:
+	.import "maps/mapfiles/aw3/awds_168.map"
+mapawds_169_megalopolis:
+	.import "maps/mapfiles/aw3/awds_169.map"
+mapawds_170_pipeline:
+	.import "maps/mapfiles/aw3/awds_170.map"
+mapawds_171_rabbitisland:
+	.import "maps/mapfiles/aw3/awds_171.map"
+mapawds_172_waterydowns:
+	.import "maps/mapfiles/aw3/awds_172.map"
+mapawds_173_fortressisle:
+	.import "maps/mapfiles/aw3/awds_173.map"
+mapawds_174_trebleridge:
+	.import "maps/mapfiles/aw3/awds_174.map"
+mapawds_175_fouracres:
+	.import "maps/mapfiles/aw3/awds_175.map"
+mapawds_176_finalbattle:
+	.import "maps/mapfiles/aw3/awds_176.map"
+mapawds_177_jellyisland:
+	.import "maps/mapfiles/aw3/awds_177.map"
+mapawds_178_whiplash:
+	.import "maps/mapfiles/aw3/awds_178.map"
+mapawds_179_silonation:
+	.import "maps/mapfiles/aw3/awds_179.map"
+mapawds_180_riskyduo:
+	.import "maps/mapfiles/aw3/awds_180.map"
+mapawds_181_helixpeninsula:
+	.import "maps/mapfiles/aw3/awds_181.map"
+mapawds_182_jellyislandds:
+	.import "maps/mapfiles/aw3/awds_182.map"
+mapawds_183_whiplashds:
+	.import "maps/mapfiles/aw3/awds_183.map"
+mapawds_184_silonationds:
+	.import "maps/mapfiles/aw3/awds_184.map"
+mapawds_185_riskyduods:
+	.import "maps/mapfiles/aw3/awds_185.map"
+mapawds_186_helixds:
+	.import "maps/mapfiles/aw3/awds_186.map"
 	
-MapAWDS_187_RedHeart:
-	.import "maps/mapfiles/AW3/AWDS_187.map"	
-MapAWDS_188_ConvoyCape:
-	.import "maps/mapfiles/AW3/AWDS_188.map"	
-MapAWDS_189_CannonLand:
-	.import "maps/mapfiles/AW3/AWDS_189.map"	
-MapAWDS_190_SiloSweep:
-	.import "maps/mapfiles/AW3/AWDS_190.map"	
-MapAWDS_191_BadPangea:
-	.import "maps/mapfiles/AW3/AWDS_191.map"	
-MapAWDS_192_MrFixIt:
-	.import "maps/mapfiles/AW3/AWDS_192.map"	
-MapAWDS_193_FrozenPipes:
-	.import "maps/mapfiles/AW3/AWDS_193.map"	
-MapAWDS_194_Chokepoint:
-	.import "maps/mapfiles/AW3/AWDS_194.map"	
-MapAWDS_195_AircraftHunt:
-	.import "maps/mapfiles/AW3/AWDS_195.map"	
-MapAWDS_196_CapeSplinter:
-	.import "maps/mapfiles/AW3/AWDS_196.map"	
-MapAWDS_197_RainOfPain:
-	.import "maps/mapfiles/AW3/AWDS_197.map"	
-MapAWDS_198_LakeFever:
-	.import "maps/mapfiles/AW3/AWDS_198.map"	
-MapAWDS_199_OpenRoad:
-	.import "maps/mapfiles/AW3/AWDS_199.map"	
-MapAWDS_200_LoneWolf:
-	.import "maps/mapfiles/AW3/AWDS_200.map"	
-MapAWDS_201_FencedIn:
-	.import "maps/mapfiles/AW3/AWDS_201.map"	
-MapAWDS_202_ColdShoulder:
-	.import "maps/mapfiles/AW3/AWDS_202.map"	
-MapAWDS_203_TheMiddleman:
-	.import "maps/mapfiles/AW3/AWDS_203.map"	
-MapAWDS_204_RiverRaid:
-	.import "maps/mapfiles/AW3/AWDS_204.map"	
-MapAWDS_205_LastStand:
-	.import "maps/mapfiles/AW3/AWDS_205.map"	
-MapAWDS_206_PursuitPlains:
-	.import "maps/mapfiles/AW3/AWDS_206.map"	
-MapAWDS_207_FogHunter:
-	.import "maps/mapfiles/AW3/AWDS_207.map"	
-MapAWDS_208_TheGooping:
-	.import "maps/mapfiles/AW3/AWDS_208.map"	
-MapAWDS_209_SingleFileIsle:
-	.import "maps/mapfiles/AW3/AWDS_209.map"	
-MapAWDS_210_CrowdedPlain:
-	.import "maps/mapfiles/AW3/AWDS_210.map"	
-MapAWDS_211_NarrowRoad:
-	.import "maps/mapfiles/AW3/AWDS_211.map"	
-MapAWDS_212_CrystalField:
-	.import "maps/mapfiles/AW3/AWDS_212.map"	
-MapAWDS_213_StealthFight:
-	.import "maps/mapfiles/AW3/AWDS_213.map"	
-MapAWDS_214_TacticalDecoy:
-	.import "maps/mapfiles/AW3/AWDS_214.map"	
-MapAWDS_215_GritsGambit:
-	.import "maps/mapfiles/AW3/AWDS_215.map"	
-MapAWDS_216_ForestFrenzy:
-	.import "maps/mapfiles/AW3/AWDS_216.map"	
-MapAWDS_217_TripleThreat:
-	.import "maps/mapfiles/AW3/AWDS_217.map"	
-MapAWDS_218_FiveMileIsle:
-	.import "maps/mapfiles/AW3/AWDS_218.map"	
-MapAWDS_219_TheSwarm:
-	.import "maps/mapfiles/AW3/AWDS_219.map"
+mapawds_187_redheart:
+	.import "maps/mapfiles/aw3/awds_187.map"
+mapawds_188_convoycape:
+	.import "maps/mapfiles/aw3/awds_188.map"
+mapawds_189_cannonland:
+	.import "maps/mapfiles/aw3/awds_189.map"
+mapawds_190_silosweep:
+	.import "maps/mapfiles/aw3/awds_190.map"
+mapawds_191_badpangea:
+	.import "maps/mapfiles/aw3/awds_191.map"
+mapawds_192_mrfixit:
+	.import "maps/mapfiles/aw3/awds_192.map"
+mapawds_193_frozenpipes:
+	.import "maps/mapfiles/aw3/awds_193.map"
+mapawds_194_chokepoint:
+	.import "maps/mapfiles/aw3/awds_194.map"
+mapawds_195_aircrafthunt:
+	.import "maps/mapfiles/aw3/awds_195.map"
+mapawds_196_capesplinter:
+	.import "maps/mapfiles/aw3/awds_196.map"
+mapawds_197_rainofpain:
+	.import "maps/mapfiles/aw3/awds_197.map"
+mapawds_198_lakefever:
+	.import "maps/mapfiles/aw3/awds_198.map"
+mapawds_199_openroad:
+	.import "maps/mapfiles/aw3/awds_199.map"
+mapawds_200_lonewolf:
+	.import "maps/mapfiles/aw3/awds_200.map"
+mapawds_201_fencedin:
+	.import "maps/mapfiles/aw3/awds_201.map"
+mapawds_202_coldshoulder:
+	.import "maps/mapfiles/aw3/awds_202.map"
+mapawds_203_themiddleman:
+	.import "maps/mapfiles/aw3/awds_203.map"
+mapawds_204_riverraid:
+	.import "maps/mapfiles/aw3/awds_204.map"
+mapawds_205_laststand:
+	.import "maps/mapfiles/aw3/awds_205.map"
+mapawds_206_pursuitplains:
+	.import "maps/mapfiles/aw3/awds_206.map"
+mapawds_207_foghunter:
+	.import "maps/mapfiles/aw3/awds_207.map"
+mapawds_208_thegooping:
+	.import "maps/mapfiles/aw3/awds_208.map"
+mapawds_209_singlefileisle:
+	.import "maps/mapfiles/aw3/awds_209.map"
+mapawds_210_crowdedplain:
+	.import "maps/mapfiles/aw3/awds_210.map"
+mapawds_211_narrowroad:
+	.import "maps/mapfiles/aw3/awds_211.map"
+mapawds_212_crystalfield:
+	.import "maps/mapfiles/aw3/awds_212.map"
+mapawds_213_stealthfight:
+	.import "maps/mapfiles/aw3/awds_213.map"
+mapawds_214_tacticaldecoy:
+	.import "maps/mapfiles/aw3/awds_214.map"
+mapawds_215_gritsgambit:
+	.import "maps/mapfiles/aw3/awds_215.map"
+mapawds_216_forestfrenzy:
+	.import "maps/mapfiles/aw3/awds_216.map"
+mapawds_217_triplethreat:
+	.import "maps/mapfiles/aw3/awds_217.map"
+mapawds_218_fivemileisle:
+	.import "maps/mapfiles/aw3/awds_218.map"
+mapawds_219_theswarm:
+	.import "maps/mapfiles/aw3/awds_219.map"
 	
-MapAWDS_223_JakesTrial:
-	.import "maps/mapfiles/AW3/AWDS_223.map"
-MapAWDS_224_TheNewBlack:
-	.import "maps/mapfiles/AW3/AWDS_224.map"
-MapAWDS_225_MaxAttacks:
-	.import "maps/mapfiles/AW3/AWDS_225.map"
-MapAWDS_226_ReclaimtheSkies:
-	.import "maps/mapfiles/AW3/AWDS_226.map"
-MapAWDS_227_NeverendingWar:
-	.import "maps/mapfiles/AW3/AWDS_227.map"
-MapAWDS_228_TheOceanBlue:
-	.import "maps/mapfiles/AW3/AWDS_228.map"
-MapAWDS_229_FogRollsIn:
-	.import "maps/mapfiles/AW3/AWDS_229.map"
-MapAWDS_230_TagBattle:
-	.import "maps/mapfiles/AW3/AWDS_230.map"
-MapAWDS_231_VictoryorDeath:
-	.import "maps/mapfiles/AW3/AWDS_231.map"
-MapAWDS_232_BlackBoatsAhoy:
-	.import "maps/mapfiles/AW3/AWDS_232.map"
-MapAWDS_233_LightningStrikes:
-	.import "maps/mapfiles/AW3/AWDS_233.map"
-MapAWDS_234_FrozenFortress:
-	.import "maps/mapfiles/AW3/AWDS_234.map"
-MapAWDS_235_VerdantHills:
-	.import "maps/mapfiles/AW3/AWDS_235.map"
-MapAWDS_236_SnowHunters:
-	.import "maps/mapfiles/AW3/AWDS_236.map"
-MapAWDS_237_OmensandSigns:
-	.import "maps/mapfiles/AW3/AWDS_237.map"
-MapAWDS_238_IntotheWoods:
-	.import "maps/mapfiles/AW3/AWDS_238.map"
-MapAWDS_239_MuckAmok:
-	.import "maps/mapfiles/AW3/AWDS_239.map"
-MapAWDS_240_HealingTouch:
-	.import "maps/mapfiles/AW3/AWDS_240.map"
-MapAWDS_241_CrystalCalamity:
-	.import "maps/mapfiles/AW3/AWDS_241.map"
-MapAWDS_242_DarkAmbition:
-	.import "maps/mapfiles/AW3/AWDS_242.map"
-MapAWDS_243_PincerStrike:
-	.import "maps/mapfiles/AW3/AWDS_243.map"
-MapAWDS_244_RingofFire:
-	.import "maps/mapfiles/AW3/AWDS_244.map"
-MapAWDS_245_Surrounded:
-	.import "maps/mapfiles/AW3/AWDS_245.map"
-MapAWDS_246_FortheFuture:
-	.import "maps/mapfiles/AW3/AWDS_246.map"
-MapAWDS_247_MeanstoanEnd:
-	.import "maps/mapfiles/AW3/AWDS_247.map"
-MapAWDS_248_TheLongMarch:
-	.import "maps/mapfiles/AW3/AWDS_248.map"
-MapAWDS_249_LashsTest:
-	.import "maps/mapfiles/AW3/AWDS_249.map"
-MapAWDS_250_SpiralGarden:
-	.import "maps/mapfiles/AW3/AWDS_250.map"
-MapAWDS_251:
-	.import "maps/mapfiles/AW3/AWDS_251.map"
-MapAWDS_252:
-	.import "maps/mapfiles/AW3/AWDS_252.map"
-MapAWDS_253:
-	.import "maps/mapfiles/AW3/AWDS_253.map"
-MapAWDS_254:
-	.import "maps/mapfiles/AW3/AWDS_254.map"
-MapAWDS_255:
-	.import "maps/mapfiles/AW3/AWDS_255.map"
-MapAWDS_HC223:
-	.import "maps/mapfiles/AW3/AWDS_HC223.map"
-MapAWDS_HC225:
-	.import "maps/mapfiles/AW3/AWDS_HC225.map"
-MapAWDS_HC227:
-	.import "maps/mapfiles/AW3/AWDS_HC227.map"
-MapAWDS_HC229:
-	.import "maps/mapfiles/AW3/AWDS_HC229.map"
+mapawds_223_jakestrial:
+	.import "maps/mapfiles/aw3/awds_223.map"
+mapawds_224_thenewblack:
+	.import "maps/mapfiles/aw3/awds_224.map"
+mapawds_225_maxattacks:
+	.import "maps/mapfiles/aw3/awds_225.map"
+mapawds_226_reclaimtheskies:
+	.import "maps/mapfiles/aw3/awds_226.map"
+mapawds_227_neverendingwar:
+	.import "maps/mapfiles/aw3/awds_227.map"
+mapawds_228_theoceanblue:
+	.import "maps/mapfiles/aw3/awds_228.map"
+mapawds_229_fogrollsin:
+	.import "maps/mapfiles/aw3/awds_229.map"
+mapawds_230_tagbattle:
+	.import "maps/mapfiles/aw3/awds_230.map"
+mapawds_231_victoryordeath:
+	.import "maps/mapfiles/aw3/awds_231.map"
+mapawds_232_blackboatsahoy:
+	.import "maps/mapfiles/aw3/awds_232.map"
+mapawds_233_lightningstrikes:
+	.import "maps/mapfiles/aw3/awds_233.map"
+mapawds_234_frozenfortress:
+	.import "maps/mapfiles/aw3/awds_234.map"
+mapawds_235_verdanthills:
+	.import "maps/mapfiles/aw3/awds_235.map"
+mapawds_236_snowhunters:
+	.import "maps/mapfiles/aw3/awds_236.map"
+mapawds_237_omensandsigns:
+	.import "maps/mapfiles/aw3/awds_237.map"
+mapawds_238_intothewoods:
+	.import "maps/mapfiles/aw3/awds_238.map"
+mapawds_239_muckamok:
+	.import "maps/mapfiles/aw3/awds_239.map"
+mapawds_240_healingtouch:
+	.import "maps/mapfiles/aw3/awds_240.map"
+mapawds_241_crystalcalamity:
+	.import "maps/mapfiles/aw3/awds_241.map"
+mapawds_242_darkambition:
+	.import "maps/mapfiles/aw3/awds_242.map"
+mapawds_243_pincerstrike:
+	.import "maps/mapfiles/aw3/awds_243.map"
+mapawds_244_ringoffire:
+	.import "maps/mapfiles/aw3/awds_244.map"
+mapawds_245_surrounded:
+	.import "maps/mapfiles/aw3/awds_245.map"
+mapawds_246_forthefuture:
+	.import "maps/mapfiles/aw3/awds_246.map"
+mapawds_247_meanstoanend:
+	.import "maps/mapfiles/aw3/awds_247.map"
+mapawds_248_thelongmarch:
+	.import "maps/mapfiles/aw3/awds_248.map"
+mapawds_249_lashstest:
+	.import "maps/mapfiles/aw3/awds_249.map"
+mapawds_250_spiralgarden:
+	.import "maps/mapfiles/aw3/awds_250.map"
+mapawds_251:
+	.import "maps/mapfiles/aw3/awds_251.map"
+mapawds_252:
+	.import "maps/mapfiles/aw3/awds_252.map"
+mapawds_253:
+	.import "maps/mapfiles/aw3/awds_253.map"
+mapawds_254:
+	.import "maps/mapfiles/aw3/awds_254.map"
+mapawds_255:
+	.import "maps/mapfiles/aw3/awds_255.map"
+mapawds_hc223:
+	.import "maps/mapfiles/aw3/awds_hc223.map"
+mapawds_hc225:
+	.import "maps/mapfiles/aw3/awds_hc225.map"
+mapawds_hc227:
+	.import "maps/mapfiles/aw3/awds_hc227.map"
+mapawds_hc229:
+	.import "maps/mapfiles/aw3/awds_hc229.map"
 	
-MapCustom_FE8_C10B:
-	.import "maps/mapfiles/Custom/FE8_10B.map"
+mapcustom_fe8_c10b:
+	.import "maps/mapfiles/custom/fe8_10b.map"
 	
-MapCustom_TileTest:	
-	.import "maps/mapfiles/Custom/tilealloctest.map"
+mapcustom_tiletest:
+	.import "maps/mapfiles/custom/tilealloctest.map"
 
-MapAW4_Campaign1:
-	.import "maps/mapfiles/AW4/cmp01.map"
+mapaw4_campaign1:
+	.import "maps/mapfiles/aw4/cmp01.map"
 	.align 4
-MapAW4_Campaign2:
-	.import "maps/mapfiles/AW4/cmp02.map"
+mapaw4_campaign2:
+	.import "maps/mapfiles/aw4/cmp02.map"
 	.align 4
-MapAW4_Campaign3:
-	.import "maps/mapfiles/AW4/cmp03.map"
+mapaw4_campaign3:
+	.import "maps/mapfiles/aw4/cmp03.map"
 	.align 4
-MapAW4_Campaign4:
-	.import "maps/mapfiles/AW4/cmp04.map"
+mapaw4_campaign4:
+	.import "maps/mapfiles/aw4/cmp04.map"
 	.align 4
-MapAW4_Campaign5:
-	.import "maps/mapfiles/AW4/cmp05.map"
+mapaw4_campaign5:
+	.import "maps/mapfiles/aw4/cmp05.map"
 	.align 4
-MapAW4_Campaign6:
-	.import "maps/mapfiles/AW4/cmp06.map"
+mapaw4_campaign6:
+	.import "maps/mapfiles/aw4/cmp06.map"
 	.align 4
-MapAW4_Campaign7:
-	.import "maps/mapfiles/AW4/cmp07.map"
+mapaw4_campaign7:
+	.import "maps/mapfiles/aw4/cmp07.map"
 	.align 4
-MapAW4_Campaign8:
-	.import "maps/mapfiles/AW4/cmp08.map"
+mapaw4_campaign8:
+	.import "maps/mapfiles/aw4/cmp08.map"
 	.align 4
-MapAW4_Campaign9:
-	.import "maps/mapfiles/AW4/cmp09.map"
+mapaw4_campaign9:
+	.import "maps/mapfiles/aw4/cmp09.map"
 	.align 4
-MapAW4_Campaign10:
-	.import "maps/mapfiles/AW4/cmp10.map"
+mapaw4_campaign10:
+	.import "maps/mapfiles/aw4/cmp10.map"
 	.align 4
-MapAW4_Campaign11:
-	.import "maps/mapfiles/AW4/cmp11.map"
+mapaw4_campaign11:
+	.import "maps/mapfiles/aw4/cmp11.map"
 	.align 4
-MapAW4_Campaign12:
-	.import "maps/mapfiles/AW4/cmp12.map"
+mapaw4_campaign12:
+	.import "maps/mapfiles/aw4/cmp12.map"
 	.align 4
-MapAW4_Campaign13:
-	.import "maps/mapfiles/AW4/cmp13.map"
+mapaw4_campaign13:
+	.import "maps/mapfiles/aw4/cmp13.map"
 	.align 4
-MapAW4_Campaign14:
-	.import "maps/mapfiles/AW4/cmp14.map"
+mapaw4_campaign14:
+	.import "maps/mapfiles/aw4/cmp14.map"
 	.align 4
-MapAW4_Campaign15:
-	.import "maps/mapfiles/AW4/cmp15.map"
+mapaw4_campaign15:
+	.import "maps/mapfiles/aw4/cmp15.map"
 	.align 4
-MapAW4_Campaign16:
-	.import "maps/mapfiles/AW4/cmp16.map"
+mapaw4_campaign16:
+	.import "maps/mapfiles/aw4/cmp16.map"
 	.align 4
-MapAW4_Campaign17:
-	.import "maps/mapfiles/AW4/cmp17.map"
+mapaw4_campaign17:
+	.import "maps/mapfiles/aw4/cmp17.map"
 	.align 4
-MapAW4_Campaign18:
-	.import "maps/mapfiles/AW4/cmp18.map"
+mapaw4_campaign18:
+	.import "maps/mapfiles/aw4/cmp18.map"
 	.align 4
-MapAW4_Campaign19:
-	.import "maps/mapfiles/AW4/cmp19.map"
+mapaw4_campaign19:
+	.import "maps/mapfiles/aw4/cmp19.map"
 	.align 4
-MapAW4_Campaign20:
-	.import "maps/mapfiles/AW4/cmp20.map"
+mapaw4_campaign20:
+	.import "maps/mapfiles/aw4/cmp20.map"
 	.align 4
-MapAW4_Campaign21:
-	.import "maps/mapfiles/AW4/cmp21.map"
+mapaw4_campaign21:
+	.import "maps/mapfiles/aw4/cmp21.map"
 	.align 4
-MapAW4_Campaign22:
-	.import "maps/mapfiles/AW4/cmp22.map"
+mapaw4_campaign22:
+	.import "maps/mapfiles/aw4/cmp22.map"
 	.align 4
-MapAW4_Campaign23:
-	.import "maps/mapfiles/AW4/cmp23.map"
+mapaw4_campaign23:
+	.import "maps/mapfiles/aw4/cmp23.map"
 	.align 4
-MapAW4_Campaign24:
-	.import "maps/mapfiles/AW4/cmp24.map"
+mapaw4_campaign24:
+	.import "maps/mapfiles/aw4/cmp24.map"
 	.align 4
-MapAW4_Campaign25:
-	.import "maps/mapfiles/AW4/cmp25.map"
+mapaw4_campaign25:
+	.import "maps/mapfiles/aw4/cmp25.map"
 	.align 4
-MapAW4_Campaign26:
-	.import "maps/mapfiles/AW4/cmp26.map"
+mapaw4_campaign26:
+	.import "maps/mapfiles/aw4/cmp26.map"
 	.align 4
-MapAW4_ShadeCoast:
-	.import "maps/mapfiles/AW4/nakazawa04.map"
+mapaw4_shadecoast:
+	.import "maps/mapfiles/aw4/nakazawa04.map"
 	.align 4
-MapAW4_CatIsland:
-	.import "maps/mapfiles/AW4/nakazawa05.map"
+mapaw4_catisland:
+	.import "maps/mapfiles/aw4/nakazawa05.map"
 	.align 4
-MapAW4_MouseIsland:
-	.import "maps/mapfiles/AW4/nakazawa07.map"
+mapaw4_mouseisland:
+	.import "maps/mapfiles/aw4/nakazawa07.map"
 	.align 4
-MapAW4_WeddingRing:
-	.import "maps/mapfiles/AW4/nakazawa09.map"
+mapaw4_weddingring:
+	.import "maps/mapfiles/aw4/nakazawa09.map"
 	.align 4
-MapAW4_ExtremeEdge:
-	.import "maps/mapfiles/AW4/nakazawa11.map"
+mapaw4_extremeedge:
+	.import "maps/mapfiles/aw4/nakazawa11.map"
 	.align 4
-MapAW4_DestinyOcean:
-	.import "maps/mapfiles/AW4/nakazawa12.map"
+mapaw4_destinyocean:
+	.import "maps/mapfiles/aw4/nakazawa12.map"
 	.align 4
-MapAW4_ClownIsland:
-	.import "maps/mapfiles/AW4/nakazawa16.map"
+mapaw4_clownisland:
+	.import "maps/mapfiles/aw4/nakazawa16.map"
 	.align 4
-MapAW4_FireAndWater:
-	.import "maps/mapfiles/AW4/nakazawa19.map"
+mapaw4_fireandwater:
+	.import "maps/mapfiles/aw4/nakazawa19.map"
 	.align 4
-MapAW4_IntricateMap:
-	.import "maps/mapfiles/AW4/nakazawa21.map"
+mapaw4_intricatemap:
+	.import "maps/mapfiles/aw4/nakazawa21.map"
 	.align 4
-MapAW4_CentreRiver:
-	.import "maps/mapfiles/AW4/nakazawa29.map"
+mapaw4_centreriver:
+	.import "maps/mapfiles/aw4/nakazawa29.map"
 	.align 4
-MapAW4_BoxedIn:
-	.import "maps/mapfiles/AW4/nakazawa30.map"
+mapaw4_boxedin:
+	.import "maps/mapfiles/aw4/nakazawa30.map"
 	.align 4
-MapAW4_SlimeCove:
-	.import "maps/mapfiles/AW4/nakazawa32.map"
+mapaw4_slimecove:
+	.import "maps/mapfiles/aw4/nakazawa32.map"
 	.align 4
-MapAW4_SpannerIsle:
-	.import "maps/mapfiles/AW4/nakazawa40.map"
+mapaw4_spannerisle:
+	.import "maps/mapfiles/aw4/nakazawa40.map"
 	.align 4
-MapAW4_RobotIsle:
-	.import "maps/mapfiles/AW4/nakazawa42.map"
+mapaw4_robotisle:
+	.import "maps/mapfiles/aw4/nakazawa42.map"
 	.align 4
-MapAW4_Unknown1:
-	.import "maps/mapfiles/AW4/nakazawa53.map"
+mapaw4_unknown1:
+	.import "maps/mapfiles/aw4/nakazawa53.map"
 	.align 4
-MapAW4_FaceIsland:
-	.import "maps/mapfiles/AW4/muramatu00.map"
+mapaw4_faceisland:
+	.import "maps/mapfiles/aw4/muramatu00.map"
 	.align 4
-MapAW4_ClearIsland:
-	.import "maps/mapfiles/AW4/muramatu07.map"
+mapaw4_clearisland:
+	.import "maps/mapfiles/aw4/muramatu07.map"
 	.align 4
-MapAW4_MetroIsland:
-	.import "maps/mapfiles/AW4/muramatu08.map"
+mapaw4_metroisland:
+	.import "maps/mapfiles/aw4/muramatu08.map"
 	.align 4
-MapAW4_BladeIsles:
-	.import "maps/mapfiles/AW4/muramatu10.map"
+mapaw4_bladeisles:
+	.import "maps/mapfiles/aw4/muramatu10.map"
 	.align 4
-MapAW4_FelineBasin:
-	.import "maps/mapfiles/AW4/muramatu17.map"
+mapaw4_felinebasin:
+	.import "maps/mapfiles/aw4/muramatu17.map"
 	.align 4
-MapAW4_SpectacleMap:
-	.import "maps/mapfiles/AW4/muramatu22.map"
+mapaw4_spectaclemap:
+	.import "maps/mapfiles/aw4/muramatu22.map"
 	.align 4
-MapAW4_AntipodeMap:
-	.import "maps/mapfiles/AW4/muramatu33.map"
+mapaw4_antipodemap:
+	.import "maps/mapfiles/aw4/muramatu33.map"
 	.align 4
-MapAW4_PretzelMap:
-	.import "maps/mapfiles/AW4/muramatu36.map"
+mapaw4_pretzelmap:
+	.import "maps/mapfiles/aw4/muramatu36.map"
 	.align 4
-MapAW4_HeavenMap:
-	.import "maps/mapfiles/AW4/muramatu37.map"
+mapaw4_heavenmap:
+	.import "maps/mapfiles/aw4/muramatu37.map"
 	.align 4
-MapAW4_JesterMap:
-	.import "maps/mapfiles/AW4/muramatu38.map"
+mapaw4_jestermap:
+	.import "maps/mapfiles/aw4/muramatu38.map"
 	.align 4
-MapAW4_SplitIsland:
-	.import "maps/mapfiles/AW4/muramatu52.map"
+mapaw4_splitisland:
+	.import "maps/mapfiles/aw4/muramatu52.map"
 	.align 4
-MapAW4_UpAndUnder:
-	.import "maps/mapfiles/AW4/Jeff.map"
+mapaw4_upandunder:
+	.import "maps/mapfiles/aw4/jeff.map"
 	
 	.align 4
-MapAW4_CentralLake:
-	.import "maps/mapfiles/AW4/Jeff2.map"
+mapaw4_centrallake:
+	.import "maps/mapfiles/aw4/jeff2.map"
 	
 	.align 4
-MapAW4_BellowIslands:
-	.import "maps/mapfiles/AW4/hayashi01.map"
+mapaw4_bellowislands:
+	.import "maps/mapfiles/aw4/hayashi01.map"
 	
 	.align 4
-MapAW4_ScissorBasin:
-	.import "maps/mapfiles/AW4/hayashi02.map"
+mapaw4_scissorbasin:
+	.import "maps/mapfiles/aw4/hayashi02.map"
 	
 	.align 4
-MapAW4_RingMountain:
-	.import "maps/mapfiles/AW4/hayashi03.map"
+mapaw4_ringmountain:
+	.import "maps/mapfiles/aw4/hayashi03.map"
 	
 	.align 4
-MapAW4_WhirlPeaks:
-	.import "maps/mapfiles/AW4/hayashi04.map"
+mapaw4_whirlpeaks:
+	.import "maps/mapfiles/aw4/hayashi04.map"
 	
 	.align 4
-MapAW4_ScatterIsles:
-	.import "maps/mapfiles/AW4/hayashi09.map"
+mapaw4_scatterisles:
+	.import "maps/mapfiles/aw4/hayashi09.map"
 	
 	.align 4
-MapAW4_TennisIsland:
-	.import "maps/mapfiles/AW4/hayashi14.map"
+mapaw4_tennisisland:
+	.import "maps/mapfiles/aw4/hayashi14.map"
 	
 	.align 4
-MapAW4_EerieIsland:
-	.import "maps/mapfiles/AW4/hayashi18.map"
+mapaw4_eerieisland:
+	.import "maps/mapfiles/aw4/hayashi18.map"
 	
 	.align 4
-MapAW4_DIsland:
-	.import "maps/mapfiles/AW4/hayashi20.map"
+mapaw4_disland:
+	.import "maps/mapfiles/aw4/hayashi20.map"
 	
 	.align 4
-MapAW4_EqualIsland:
-	.import "maps/mapfiles/AW4/hayashi23.map"
+mapaw4_equalisland:
+	.import "maps/mapfiles/aw4/hayashi23.map"
 	
 	.align 4
-MapAW4_Hori2:
-	.import "maps/mapfiles/AW4/hori02.map"
+mapaw4_hori2:
+	.import "maps/mapfiles/aw4/hori02.map"
 	
 	.align 4
-MapAW4_ScenicRoute:
-	.import "maps/mapfiles/AW4/nisikawa3.map"
+mapaw4_scenicroute:
+	.import "maps/mapfiles/aw4/nisikawa3.map"
 	
 	.align 4
-MapAW4_PittedMap:
-	.import "maps/mapfiles/AW4/nisikawa5.map"
+mapaw4_pittedmap:
+	.import "maps/mapfiles/aw4/nisikawa5.map"
 	
 	.align 4
-MapAW4_InnerWheel:
-	.import "maps/mapfiles/AW4/nisikawa7.map"
+mapaw4_innerwheel:
+	.import "maps/mapfiles/aw4/nisikawa7.map"
 	
 	.align 4
-MapAW4_TripleRoad:
-	.import "maps/mapfiles/AW4/nisikawa8.map"
+mapaw4_tripleroad:
+	.import "maps/mapfiles/aw4/nisikawa8.map"
 	
 	.align 4
-MapAW4_Pentagram:
-	.import "maps/mapfiles/AW4/5thElements.map"
+mapaw4_pentagram:
+	.import "maps/mapfiles/aw4/5thelements.map"
 	
 	.align 4
-MapAW4_CrossIsles:
-	.import "maps/mapfiles/AW4/atoll.map"
+mapaw4_crossisles:
+	.import "maps/mapfiles/aw4/atoll.map"
 	
 	.align 4
-MapAW4_UFO:
-	.import "maps/mapfiles/AW4/3on3.map"
+mapaw4_ufo:
+	.import "maps/mapfiles/aw4/3on3.map"
 	
 	.align 4
-MapAW4_PowerBalance:
-	.import "maps/mapfiles/AW4/Balance.map"
+mapaw4_powerbalance:
+	.import "maps/mapfiles/aw4/balance.map"
 	
 	.align 4
-MapAW4_FourForests:
-	.import "maps/mapfiles/AW4/Blitz.map"
+mapaw4_fourforests:
+	.import "maps/mapfiles/aw4/blitz.map"
 	
 	.align 4
-MapAW4_DeepDefence:
-	.import "maps/mapfiles/AW4/bouei2rain.map"
+mapaw4_deepdefence:
+	.import "maps/mapfiles/aw4/bouei2rain.map"
 	
 	.align 4
-MapAW4_BarrenPlains:
-	.import "maps/mapfiles/AW4/Chaaarge.map"
+mapaw4_barrenplains:
+	.import "maps/mapfiles/aw4/chaaarge.map"
 	
 	.align 4
-MapAW4_CrossPaths:
-	.import "maps/mapfiles/AW4/clothrun.map"
+mapaw4_crosspaths:
+	.import "maps/mapfiles/aw4/clothrun.map"
 	
 	.align 4
-MapAW4_MarineBattle:
-	.import "maps/mapfiles/AW4/daikaisen.map"
+mapaw4_marinebattle:
+	.import "maps/mapfiles/aw4/daikaisen.map"
 	
 	.align 4
-MapAW4_ForestIsland:
-	.import "maps/mapfiles/AW4/daisuke07.map"
+mapaw4_forestisland:
+	.import "maps/mapfiles/aw4/daisuke07.map"
 	
 	.align 4
-MapAW4_GreatLake:
-	.import "maps/mapfiles/AW4/daisuke09.map"
+mapaw4_greatlake:
+	.import "maps/mapfiles/aw4/daisuke09.map"
 	
 	.align 4
-MapAW4_DoubleBridge:
-	.import "maps/mapfiles/AW4/daisuke12.map"
+mapaw4_doublebridge:
+	.import "maps/mapfiles/aw4/daisuke12.map"
 	
 	.align 4
-MapAW4_GridIslands:
-	.import "maps/mapfiles/AW4/daisuke16.map"
+mapaw4_gridislands:
+	.import "maps/mapfiles/aw4/daisuke16.map"
 	
 	.align 4
-MapAW4_MarineBridge:
-	.import "maps/mapfiles/AW4/daisuke17.map"
+mapaw4_marinebridge:
+	.import "maps/mapfiles/aw4/daisuke17.map"
 	
 	.align 4
-MapAW4_WingCape:
-	.import "maps/mapfiles/AW4/daisuke23.map"
+mapaw4_wingcape:
+	.import "maps/mapfiles/aw4/daisuke23.map"
 	
 	.align 4
-MapAW4_DesertDuel:
-	.import "maps/mapfiles/AW4/eruaramein.map"
+mapaw4_desertduel:
+	.import "maps/mapfiles/aw4/eruaramein.map"
 	
 	.align 4
-MapAW4_MissileGarden:
-	.import "maps/mapfiles/AW4/Garden.map"
+mapaw4_missilegarden:
+	.import "maps/mapfiles/aw4/garden.map"
 	
 	.align 4
-MapAW4_GroundClash:
-	.import "maps/mapfiles/AW4/jyourikusen.map"	
+mapaw4_groundclash:
+	.import "maps/mapfiles/aw4/jyourikusen.map"
 	.align 4
-MapAW4_HighPlains:
-	.import "maps/mapfiles/AW4/kawatoheigen.map"
+mapaw4_highplains:
+	.import "maps/mapfiles/aw4/kawatoheigen.map"
 	
 	.align 4
-MapAW4_GiraffeMap:
-	.import "maps/mapfiles/AW4/kirinmap.map"
+mapaw4_giraffemap:
+	.import "maps/mapfiles/aw4/kirinmap.map"
 	
 	.align 4
-MapAW4_Mermaid:
-	.import "maps/mapfiles/AW4/mermaid.map"
+mapaw4_mermaid:
+	.import "maps/mapfiles/aw4/mermaid.map"
 	
 	.align 4
-MapAW4_CoastAssault:
-	.import "maps/mapfiles/AW4/minidday.map"
+mapaw4_coastassault:
+	.import "maps/mapfiles/aw4/minidday.map"
 	
 	.align 4
-MapAW4_Missile:
-	.import "maps/mapfiles/AW4/Missile.map"
+mapaw4_missile:
+	.import "maps/mapfiles/aw4/missile.map"
 	
 	.align 4
-MapAW4_MountainMap:
-	.import "maps/mapfiles/AW4/Mountain.map"
+mapaw4_mountainmap:
+	.import "maps/mapfiles/aw4/mountain.map"
 	
 	.align 4
-MapAW4_8BridgeIsles:
-	.import "maps/mapfiles/AW4/no8.map"
+mapaw4_8bridgeisles:
+	.import "maps/mapfiles/aw4/no8.map"
 	
 	.align 4
-MapAW4_ButterflyIsle:
-	.import "maps/mapfiles/AW4/papiyontou.map"
+mapaw4_butterflyisle:
+	.import "maps/mapfiles/aw4/papiyontou.map"
 	
 	.align 4
-MapAW4_PlasmaBubble:
-	.import "maps/mapfiles/AW4/plasmapuzzle.map"
-
-	.align 4
-MapAW4_Resistance:
-	.import "maps/mapfiles/AW4/rejisutansu.map"
-	
-	.align 4
-MapAW4_MountainPass:
-	.import "maps/mapfiles/AW4/ryu01.map"
-	
-	.align 4
-MapAW4_StripedMap:
-	.import "maps/mapfiles/AW4/stripe.map"
-	
-	.align 4
-MapAW4_Hourglass:
-	.import "maps/mapfiles/AW4/sunadokei.map"
-	
-	.align 4
-MapAW4_ObstacleMap:
-	.import "maps/mapfiles/AW4/syougaibutu.map"
-	
-	.align 4
-MapAW4_Chessboard:
-	.import "maps/mapfiles/AW4/syougiban.map"
-	
-	.align 4
-MapAW4_RotorBattle:
-	.import "maps/mapfiles/AW4/T_STAR.map"
-	
-	.align 4
-MapAW4_FourLeafIsle:
-	.import "maps/mapfiles/AW4/tei01.map"
-	
-	.align 4
-MapAW4_TimeMap:
-	.import "maps/mapfiles/AW4/tokinmap.map"
-	
-	.align 4
-MapAW4_Tournament1:
-	.import "maps/mapfiles/AW4/tournament1.map"
-	
-	.align 4
-MapAW4_Tournament2:
-	.import "maps/mapfiles/AW4/tournament2.map"
-	
-	.align 4
-MapAW4_TR22:
-	.import "maps/mapfiles/AW4/TR22.map"
-	
-	.align 4
-MapAW4_TriangleLake:
-	.import "maps/mapfiles/AW4/TR28.map"
-	
-	.align 4
-MapAW4_TR35:
-	.import "maps/mapfiles/AW4/TR35.map"
-	
-	.align 4
-MapAW4_Triskeli:
-	.import "maps/mapfiles/AW4/Triskelion.map"
-	
-	.align 4
-MapAW4_PlugMountain:
-	.import "maps/mapfiles/AW4/tuukinnotomo1.map"
-	
-	.align 4
-MapAW4_BasinForest:
-	.import "maps/mapfiles/AW4/tuukinnotomo2.map"
-	
-	.align 4
-MapAW4_DualRiver:
-	.import "maps/mapfiles/AW4/tuukinnotomo3.map"
-	
-	.align 4
-MapAW4_WhirlpoolIsle:
-	.import "maps/mapfiles/AW4/uzumaki1.map"
-	
-	.align 4
-MapAW4_PlasmaPeaks:
-	.import "maps/mapfiles/AW4/Vale.map"
-	
-	.align 4
-MapAW4_VforVictory:
-	.import "maps/mapfiles/AW4/victory.map"
-	
-	.align 4
-MapAW4_TangledWeb:
-	.import "maps/mapfiles/AW4/WonderWeb.map"
-	
-	.align 4
-MapAW4_CutgrassIsle:
-	.import "maps/mapfiles/AW4/yasuhara01.map"
-	
-	.align 4
-MapAW4_MarchingMap:
-	.import "maps/mapfiles/AW4/yasuhara02.map"
-	
-	.align 4
-MapAW4_BattleStadium:
-	.import "maps/mapfiles/AW4/yasuhara03.map"
-	
-	.align 4
-MapAW4_Yasuhara04:
-	.import "maps/mapfiles/AW4/yasuhara04.map"
-	
-	.align 4
-MapAW4_CombMap:
-	.import "maps/mapfiles/AW4/yongokushi.map"
-	
-	.align 4
-MapAW4_GeometricMap:
-	.import "maps/mapfiles/AW4/zzz_maeda03.map"
-	
-	.align 4
-MapAW4_BurgerIsle:
-	.import "maps/mapfiles/AW4/zzz_maeda05.map"
-	
-	.align 4
-MapAW4_MetroMap:
-	.import "maps/mapfiles/AW4/zzz_maeda06.map"
-	
-	.align 4
-Map_FE7_C11:
-	.import "maps/mapfiles/FireEmblem7/C11E.map"
+mapaw4_plasmabubble:
+	.import "maps/mapfiles/aw4/plasmapuzzle.map"
 
 	.align 4
-;List of Map Unit Lists to be included
-	.include "maps/unitlists/WarRoomHack2/WRH2_BankRobbery_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_Bombardier_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_BarracudaBay_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_CityOfGold_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_FortIsthmus_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_LegionPeninsula_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_OldWounds_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_Riverside_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_SorrowsBluff_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_Talysman_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_Waza_Unitlist.asm"
-	.include "maps/unitlists/WarRoomHack2/WRH2_Whirlpool_Unitlist.asm"
+mapaw4_resistance:
+	.import "maps/mapfiles/aw4/rejisutansu.map"
+	
+	.align 4
+mapaw4_mountainpass:
+	.import "maps/mapfiles/aw4/ryu01.map"
+	
+	.align 4
+mapaw4_stripedmap:
+	.import "maps/mapfiles/aw4/stripe.map"
+	
+	.align 4
+mapaw4_hourglass:
+	.import "maps/mapfiles/aw4/sunadokei.map"
+	
+	.align 4
+mapaw4_obstaclemap:
+	.import "maps/mapfiles/aw4/syougaibutu.map"
+	
+	.align 4
+mapaw4_chessboard:
+	.import "maps/mapfiles/aw4/syougiban.map"
+	
+	.align 4
+mapaw4_rotorbattle:
+	.import "maps/mapfiles/aw4/t_star.map"
+	
+	.align 4
+mapaw4_fourleafisle:
+	.import "maps/mapfiles/aw4/tei01.map"
+	
+	.align 4
+mapaw4_timemap:
+	.import "maps/mapfiles/aw4/tokinmap.map"
+	
+	.align 4
+mapaw4_tournament1:
+	.import "maps/mapfiles/aw4/tournament1.map"
+	
+	.align 4
+mapaw4_tournament2:
+	.import "maps/mapfiles/aw4/tournament2.map"
+	
+	.align 4
+mapaw4_tr22:
+	.import "maps/mapfiles/aw4/tr22.map"
+	
+	.align 4
+mapaw4_trianglelake:
+	.import "maps/mapfiles/aw4/tr28.map"
+	
+	.align 4
+mapaw4_tr35:
+	.import "maps/mapfiles/aw4/tr35.map"
+	
+	.align 4
+mapaw4_triskeli:
+	.import "maps/mapfiles/aw4/triskelion.map"
+	
+	.align 4
+mapaw4_plugmountain:
+	.import "maps/mapfiles/aw4/tuukinnotomo1.map"
+	
+	.align 4
+mapaw4_basinforest:
+	.import "maps/mapfiles/aw4/tuukinnotomo2.map"
+	
+	.align 4
+mapaw4_dualriver:
+	.import "maps/mapfiles/aw4/tuukinnotomo3.map"
+	
+	.align 4
+mapaw4_whirlpoolisle:
+	.import "maps/mapfiles/aw4/uzumaki1.map"
+	
+	.align 4
+mapaw4_plasmapeaks:
+	.import "maps/mapfiles/aw4/vale.map"
+	
+	.align 4
+mapaw4_vforvictory:
+	.import "maps/mapfiles/aw4/victory.map"
+	
+	.align 4
+mapaw4_tangledweb:
+	.import "maps/mapfiles/aw4/wonderweb.map"
+	
+	.align 4
+mapaw4_cutgrassisle:
+	.import "maps/mapfiles/aw4/yasuhara01.map"
+	
+	.align 4
+mapaw4_marchingmap:
+	.import "maps/mapfiles/aw4/yasuhara02.map"
+	
+	.align 4
+mapaw4_battlestadium:
+	.import "maps/mapfiles/aw4/yasuhara03.map"
+	
+	.align 4
+mapaw4_yasuhara04:
+	.import "maps/mapfiles/aw4/yasuhara04.map"
+	
+	.align 4
+mapaw4_combmap:
+	.import "maps/mapfiles/aw4/yongokushi.map"
+	
+	.align 4
+mapaw4_geometricmap:
+	.import "maps/mapfiles/aw4/zzz_maeda03.map"
+	
+	.align 4
+mapaw4_burgerisle:
+	.import "maps/mapfiles/aw4/zzz_maeda05.map"
+	
+	.align 4
+mapaw4_metromap:
+	.import "maps/mapfiles/aw4/zzz_maeda06.map"
+	
+	.align 4
+map_fe7_c11:
+	.import "maps/mapfiles/fireemblem7/c11e.map"
 
-;AW1 Raw Converted Unit Lists
-	;Field Training
-	.include "maps/unitlists/AW1/AW1_FT01_TroopOrders.asm"
-	.include "maps/unitlists/AW1/AW1_FT02_TerrainIntel.asm"
-	.include "maps/unitlists/AW1/AW1_FT03_BaseCapture.asm"
-	.include "maps/unitlists/AW1/AW1_FT04_UnitRepair.asm"
-	.include "maps/unitlists/AW1/AW1_FT05_APCABCs.asm"
-	.include "maps/unitlists/AW1/AW1_FT06_TankOps.asm"
-	.include "maps/unitlists/AW1/AW1_FT07_CopterTactics.asm"
-	.include "maps/unitlists/AW1/AW1_FT08_AirAssault.asm"
-	.include "maps/unitlists/AW1/AW1_FT09_AirDefence.asm"
-	.include "maps/unitlists/AW1/AW1_FT10_Dogfights.asm"
-	.include "maps/unitlists/AW1/AW1_FT11_NavalForces.asm"
-	.include "maps/unitlists/AW1/AW1_FT12_ClimateStatus.asm"
-	.include "maps/unitlists/AW1/AW1_FT13_FogOfWar.asm"
-	.include "maps/unitlists/AW1/AW1_FT14_SpecialIntel.asm"
-	;Campaign
-	.include "maps/unitlists/AW1/AW1_C01_ItsWar.asm"
-	.include "maps/unitlists/AW1/AW1_C02_Gunfighter.asm"
-	.include "maps/unitlists/AW1/AW1_C03_AirAce.asm"
-	.include "maps/unitlists/AW1/AW1_C04A_MaxStrikesA.asm"
-	.include "maps/unitlists/AW1/AW1_C04B_MaxStrikesB.asm"
-	.include "maps/unitlists/AW1/AW1_C05A_MaxsFolly.asm"
-	.include "maps/unitlists/AW1/AW1_C05B_Sniper.asm"
-	.include "maps/unitlists/AW1/AW1_C06A_OlafsNavy.asm"
-	.include "maps/unitlists/AW1/AW1_C06B_BlizzardBattle.asm"
-	.include "maps/unitlists/AW1/AW1_C07A_OlafsSeaStrike.asm"
-	.include "maps/unitlists/AW1/AW1_C07B_HistoryLesson.asm"
-	.include "maps/unitlists/AW1/AW1_C08_SamisDebut.asm"
-	.include "maps/unitlists/AW1/AW1_C09_KanbeiArrives.asm"
-	.include "maps/unitlists/AW1/AW1_C10_MightyKanbei.asm"
-	.include "maps/unitlists/AW1/AW1_C11_KanbeisError.asm"
-	.include "maps/unitlists/AW1/AW1_C12_DivideAndConquer.asm"
-	.include "maps/unitlists/AW1/AW1_C13_SamiMarchesOn.asm"
-	.include "maps/unitlists/AW1/AW1_C14_SonjasGoal.asm"
-	.include "maps/unitlists/AW1/AW1_C15A_CaptainDrakeA.asm"
-	.include "maps/unitlists/AW1/AW1_C15B_CaptainDrakeB.asm"
-	.include "maps/unitlists/AW1/AW1_C15C_CaptainDrakeC.asm"
-	.include "maps/unitlists/AW1/AW1_C16A_NavalClashA.asm"
-	.include "maps/unitlists/AW1/AW1_C16B_NavalClashB.asm"
-	.include "maps/unitlists/AW1/AW1_C16C_NavalClashC.asm"
-	.include "maps/unitlists/AW1/AW1_C17A_WingsOfVictoryA.asm"
-	.include "maps/unitlists/AW1/AW1_C17B_WingsOfVictoryB.asm"
-	.include "maps/unitlists/AW1/AW1_C17C_WingsOfVictory.asm"
-	.include "maps/unitlists/AW1/AW1_C18A_BattleMysteryA.asm"
-	.include "maps/unitlists/AW1/AW1_C18B_BattleMysteryB.asm"
-	.include "maps/unitlists/AW1/AW1_C18C_BattleMysteryC.asm"
-	.include "maps/unitlists/AW1/AW1_C19_AndyTimesTwo.asm"
-	.include "maps/unitlists/AW1/AW1_C20_Enigma.asm"
-	.include "maps/unitlists/AW1/AW1_C21_TheFinalBattle.asm"
-	.include "maps/unitlists/AW1/AW1_C22_Rivals.asm"
-	;Advance Campaign
-	.include "maps/unitlists/AW1/AW1_AC01_ItsWar.asm"
-	.include "maps/unitlists/AW1/AW1_AC02_Gunfighter.asm"
-	.include "maps/unitlists/AW1/AW1_AC03_AirAce.asm"
-	.include "maps/unitlists/AW1/AW1_AC04A_MaxStrikesA.asm"
-	.include "maps/unitlists/AW1/AW1_AC04B_MaxStrikesB.asm"
-	.include "maps/unitlists/AW1/AW1_AC05A_MaxsFolly.asm"
-	.include "maps/unitlists/AW1/AW1_AC05B_Sniper.asm"
-	.include "maps/unitlists/AW1/AW1_AC06A_OlafsNavy.asm"
-	.include "maps/unitlists/AW1/AW1_AC06B_BlizzardBattle.asm"
-	.include "maps/unitlists/AW1/AW1_AC07A_OlafsSeaStrike.asm"
-	.include "maps/unitlists/AW1/AW1_AC07B_HistoryLesson.asm"
-	.include "maps/unitlists/AW1/AW1_AC08_SamisDebut.asm"
-	.include "maps/unitlists/AW1/AW1_AC09_KanbeiArrives.asm"
-	.include "maps/unitlists/AW1/AW1_AC10_MightyKanbei.asm"
-	.include "maps/unitlists/AW1/AW1_AC11_KanbeisError.asm"
-	.include "maps/unitlists/AW1/AW1_AC12_DivideAndConquer.asm"
-	.include "maps/unitlists/AW1/AW1_AC13_SamiMarchesOn.asm"
-	.include "maps/unitlists/AW1/AW1_AC14_SonjasGoal.asm"
-	.include "maps/unitlists/AW1/AW1_AC15A_CaptainDrakeA.asm"
-	.include "maps/unitlists/AW1/AW1_AC15B_CaptainDrake.asm"
-	.include "maps/unitlists/AW1/AW1_AC15C_CaptainDrakeC.asm"
-	.include "maps/unitlists/AW1/AW1_AC16A_NavalClashA.asm"
-	.include "maps/unitlists/AW1/AW1_AC16B_NavalClashB.asm"
-	.include "maps/unitlists/AW1/AW1_AC16C_NavalClashC.asm"
-	.include "maps/unitlists/AW1/AW1_AC17A_WingsOfVictoryA.asm"
-	.include "maps/unitlists/AW1/AW1_AC17B_WingsOfVictoryB.asm"
-	.include "maps/unitlists/AW1/AW1_AC17C_WingsOfVictoryC.asm"
-	.include "maps/unitlists/AW1/AW1_AC18A_BattleMysteryA.asm"
-	.include "maps/unitlists/AW1/AW1_AC18B_BattleMysteryB.asm"
-	.include "maps/unitlists/AW1/AW1_AC18C_BattleMysteryC.asm"
-	.include "maps/unitlists/AW1/AW1_AC19_AndyTimesTwo.asm"
-	.include "maps/unitlists/AW1/AW1_AC20_Enigma.asm"
-	.include "maps/unitlists/AW1/AW1_AC21_TheFinalBattle.asm"
-	.include "maps/unitlists/AW1/AW1_AC22_Rivals.asm"
+	.align 4
+;list of map unit lists to be included
+	.include "maps/unitlists/warroomhack2/wrh2_bankrobbery_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_bombardier_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_barracudabay_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_cityofgold_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_fortisthmus_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_legionpeninsula_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_oldwounds_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_riverside_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_sorrowsbluff_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_talysman_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_waza_unitlist.asm"
+	.include "maps/unitlists/warroomhack2/wrh2_whirlpool_unitlist.asm"
+
+;aw1 raw converted unit lists
+	;field training
+	.include "maps/unitlists/aw1/aw1_ft01_trooporders.asm"
+	.include "maps/unitlists/aw1/aw1_ft02_terrainintel.asm"
+	.include "maps/unitlists/aw1/aw1_ft03_basecapture.asm"
+	.include "maps/unitlists/aw1/aw1_ft04_unitrepair.asm"
+	.include "maps/unitlists/aw1/aw1_ft05_apcabcs.asm"
+	.include "maps/unitlists/aw1/aw1_ft06_tankops.asm"
+	.include "maps/unitlists/aw1/aw1_ft07_coptertactics.asm"
+	.include "maps/unitlists/aw1/aw1_ft08_airassault.asm"
+	.include "maps/unitlists/aw1/aw1_ft09_airdefence.asm"
+	.include "maps/unitlists/aw1/aw1_ft10_dogfights.asm"
+	.include "maps/unitlists/aw1/aw1_ft11_navalforces.asm"
+	.include "maps/unitlists/aw1/aw1_ft12_climatestatus.asm"
+	.include "maps/unitlists/aw1/aw1_ft13_fogofwar.asm"
+	.include "maps/unitlists/aw1/aw1_ft14_specialintel.asm"
+	;campaign
+	.include "maps/unitlists/aw1/aw1_c01_itswar.asm"
+	.include "maps/unitlists/aw1/aw1_c02_gunfighter.asm"
+	.include "maps/unitlists/aw1/aw1_c03_airace.asm"
+	.include "maps/unitlists/aw1/aw1_c04a_maxstrikesa.asm"
+	.include "maps/unitlists/aw1/aw1_c04b_maxstrikesb.asm"
+	.include "maps/unitlists/aw1/aw1_c05a_maxsfolly.asm"
+	.include "maps/unitlists/aw1/aw1_c05b_sniper.asm"
+	.include "maps/unitlists/aw1/aw1_c06a_olafsnavy.asm"
+	.include "maps/unitlists/aw1/aw1_c06b_blizzardbattle.asm"
+	.include "maps/unitlists/aw1/aw1_c07a_olafsseastrike.asm"
+	.include "maps/unitlists/aw1/aw1_c07b_historylesson.asm"
+	.include "maps/unitlists/aw1/aw1_c08_samisdebut.asm"
+	.include "maps/unitlists/aw1/aw1_c09_kanbeiarrives.asm"
+	.include "maps/unitlists/aw1/aw1_c10_mightykanbei.asm"
+	.include "maps/unitlists/aw1/aw1_c11_kanbeiserror.asm"
+	.include "maps/unitlists/aw1/aw1_c12_divideandconquer.asm"
+	.include "maps/unitlists/aw1/aw1_c13_samimarcheson.asm"
+	.include "maps/unitlists/aw1/aw1_c14_sonjasgoal.asm"
+	.include "maps/unitlists/aw1/aw1_c15a_captaindrakea.asm"
+	.include "maps/unitlists/aw1/aw1_c15b_captaindrakeb.asm"
+	.include "maps/unitlists/aw1/aw1_c15c_captaindrakec.asm"
+	.include "maps/unitlists/aw1/aw1_c16a_navalclasha.asm"
+	.include "maps/unitlists/aw1/aw1_c16b_navalclashb.asm"
+	.include "maps/unitlists/aw1/aw1_c16c_navalclashc.asm"
+	.include "maps/unitlists/aw1/aw1_c17a_wingsofvictorya.asm"
+	.include "maps/unitlists/aw1/aw1_c17b_wingsofvictoryb.asm"
+	.include "maps/unitlists/aw1/aw1_c17c_wingsofvictory.asm"
+	.include "maps/unitlists/aw1/aw1_c18a_battlemysterya.asm"
+	.include "maps/unitlists/aw1/aw1_c18b_battlemysteryb.asm"
+	.include "maps/unitlists/aw1/aw1_c18c_battlemysteryc.asm"
+	.include "maps/unitlists/aw1/aw1_c19_andytimestwo.asm"
+	.include "maps/unitlists/aw1/aw1_c20_enigma.asm"
+	.include "maps/unitlists/aw1/aw1_c21_thefinalbattle.asm"
+	.include "maps/unitlists/aw1/aw1_c22_rivals.asm"
+	;advance campaign
+	.include "maps/unitlists/aw1/aw1_ac01_itswar.asm"
+	.include "maps/unitlists/aw1/aw1_ac02_gunfighter.asm"
+	.include "maps/unitlists/aw1/aw1_ac03_airace.asm"
+	.include "maps/unitlists/aw1/aw1_ac04a_maxstrikesa.asm"
+	.include "maps/unitlists/aw1/aw1_ac04b_maxstrikesb.asm"
+	.include "maps/unitlists/aw1/aw1_ac05a_maxsfolly.asm"
+	.include "maps/unitlists/aw1/aw1_ac05b_sniper.asm"
+	.include "maps/unitlists/aw1/aw1_ac06a_olafsnavy.asm"
+	.include "maps/unitlists/aw1/aw1_ac06b_blizzardbattle.asm"
+	.include "maps/unitlists/aw1/aw1_ac07a_olafsseastrike.asm"
+	.include "maps/unitlists/aw1/aw1_ac07b_historylesson.asm"
+	.include "maps/unitlists/aw1/aw1_ac08_samisdebut.asm"
+	.include "maps/unitlists/aw1/aw1_ac09_kanbeiarrives.asm"
+	.include "maps/unitlists/aw1/aw1_ac10_mightykanbei.asm"
+	.include "maps/unitlists/aw1/aw1_ac11_kanbeiserror.asm"
+	.include "maps/unitlists/aw1/aw1_ac12_divideandconquer.asm"
+	.include "maps/unitlists/aw1/aw1_ac13_samimarcheson.asm"
+	.include "maps/unitlists/aw1/aw1_ac14_sonjasgoal.asm"
+	.include "maps/unitlists/aw1/aw1_ac15a_captaindrakea.asm"
+	.include "maps/unitlists/aw1/aw1_ac15b_captaindrake.asm"
+	.include "maps/unitlists/aw1/aw1_ac15c_captaindrakec.asm"
+	.include "maps/unitlists/aw1/aw1_ac16a_navalclasha.asm"
+	.include "maps/unitlists/aw1/aw1_ac16b_navalclashb.asm"
+	.include "maps/unitlists/aw1/aw1_ac16c_navalclashc.asm"
+	.include "maps/unitlists/aw1/aw1_ac17a_wingsofvictorya.asm"
+	.include "maps/unitlists/aw1/aw1_ac17b_wingsofvictoryb.asm"
+	.include "maps/unitlists/aw1/aw1_ac17c_wingsofvictoryc.asm"
+	.include "maps/unitlists/aw1/aw1_ac18a_battlemysterya.asm"
+	.include "maps/unitlists/aw1/aw1_ac18b_battlemysteryb.asm"
+	.include "maps/unitlists/aw1/aw1_ac18c_battlemysteryc.asm"
+	.include "maps/unitlists/aw1/aw1_ac19_andytimestwo.asm"
+	.include "maps/unitlists/aw1/aw1_ac20_enigma.asm"
+	.include "maps/unitlists/aw1/aw1_ac21_thefinalbattle.asm"
+	.include "maps/unitlists/aw1/aw1_ac22_rivals.asm"
 
 	.include "maps/unitlists/test/randomtable.asm"
 
-;AWDS Raw Converted Unit Lists
-	;Predeployed
-	.include "maps/unitlists/AWDS/AWDSUnitList_064.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_065.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_066.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_067.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_068.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_069.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_070.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_071.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_072.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_073.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_074.asm"
-	;Survival
-	.include "maps/unitlists/AWDS/AWDSUnitList_187.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_188.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_189.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_190.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_191.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_192.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_193.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_194.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_195.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_196.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_197.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_198.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_199.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_200.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_201.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_202.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_203.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_204.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_205.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_206.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_207.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_208.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_209.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_210.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_211.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_212.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_213.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_214.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_215.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_216.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_217.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_218.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_219.asm"
-	;Campaign
-	.include "maps/unitlists/AWDS/AWDSUnitList_223.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_224.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_225.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_226.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_227.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_228.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_229.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_230.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_231.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_232.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_233.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_234.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_235.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_236.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_237.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_238.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_239.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_240.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_241.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_242.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_243.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_244.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_245.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_246.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_247.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_248.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_249.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_250.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_251.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_252.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_253.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_254.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_255.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_223.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_224.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_225.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_226.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_227.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_228.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_229.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_230.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_231.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_232.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_233.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_234.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_235.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_236.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_237.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_238.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_239.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_240.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_241.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_242.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_243.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_244.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_245.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_246.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_247.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_248.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_249.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_250.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_251.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_252.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_253.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_254.asm"
-	.include "maps/unitlists/AWDS/AWDSUnitList_HC_255.asm"
-;AW4 Raw Unit List Rips	
-;	.include "maps/unitlists/AW4/AW4_cmp01_01_008.asm"
-;	.include "maps/unitlists/AW4/AW4_cmp01_02_009.asm"
-;	.include "maps/unitlists/AW4/AW4_cmp01_007.asm"
-;	.include "maps/unitlists/AW4/AW4_cmp02_010.asm"
-;	.include "maps/unitlists/AW4/AW4_cmp03_011.asm"
-;	.include "maps/unitlists/AW4/AW4_cmp04_012.asm"
-;.include "maps/unitlists/AW4/AW4_cmp05_013.asm"
-;.include "maps/unitlists/AW4/AW4_cmp06_01_015.asm"
-;.include "maps/unitlists/AW4/AW4_cmp06_014.asm"
-;.include "maps/unitlists/AW4/AW4_cmp07_016.asm"
-;.include "maps/unitlists/AW4/AW4_cmp08_017.asm"
-;.include "maps/unitlists/AW4/AW4_cmp09_018.asm"
-;.include "maps/unitlists/AW4/AW4_cmp10_019.asm"
-;.include "maps/unitlists/AW4/AW4_cmp11_020.asm"
-;.include "maps/unitlists/AW4/AW4_cmp12_021.asm"
-;.include "maps/unitlists/AW4/AW4_cmp13_022.asm"
-;.include "maps/unitlists/AW4/AW4_cmp14_023.asm"
-;.include "maps/unitlists/AW4/AW4_cmp15_024.asm"
-;.include "maps/unitlists/AW4/AW4_cmp16_025.asm"
-;.include "maps/unitlists/AW4/AW4_cmp17_026.asm"
-;.include "maps/unitlists/AW4/AW4_cmp18_027.asm"
-;.include "maps/unitlists/AW4/AW4_cmp19_028.asm"
-;.include "maps/unitlists/AW4/AW4_cmp20_029.asm"
-;.include "maps/unitlists/AW4/AW4_cmp21_030.asm"
-;.include "maps/unitlists/AW4/AW4_cmp22_031.asm"
-;.include "maps/unitlists/AW4/AW4_cmp23_032.asm"
-;.include "maps/unitlists/AW4/AW4_cmp24_01_034.asm"
-;.include "maps/unitlists/AW4/AW4_cmp24_02_035.asm"
-;.include "maps/unitlists/AW4/AW4_cmp24_03_036.asm"
-;.include "maps/unitlists/AW4/AW4_cmp24_033.asm"
-;.include "maps/unitlists/AW4/AW4_cmp25_01_038.asm"
-;.include "maps/unitlists/AW4/AW4_cmp25_037.asm"
-;.include "maps/unitlists/AW4/AW4_cmp26_039.asm"
-;.include "maps/unitlists/AW4/AW4_daikaisen_040.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke30_01_041.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke30_02_042.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke48_043.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke52_044.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke56_045.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke57_046.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke58_047.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke59_048.asm"
-;.include "maps/unitlists/AW4/AW4_daisuke60_049.asm"
-;.include "maps/unitlists/AW4/AW4_edit0507_050.asm"
-;.include "maps/unitlists/AW4/AW4_edit05072_051.asm"
-.include "maps/unitlists/AW4/AW4_eruaramein_052.asm"
-;.include "maps/unitlists/AW4/AW4_Ezload_053.asm"
-;.include "maps/unitlists/AW4/AW4_G_JET_054.asm"
-;.include "maps/unitlists/AW4/AW4_G-JET_055.asm"
-;.include "maps/unitlists/AW4/AW4_gocircle_056.asm"
-;.include "maps/unitlists/AW4/AW4_guringurin_057.asm"
-;.include "maps/unitlists/AW4/AW4_hairpin_058.asm"
-;.include "maps/unitlists/AW4/AW4_ichihachimap_059.asm"
-;.include "maps/unitlists/AW4/AW4_jisouhou_060.asm"
-.include "maps/unitlists/AW4/AW4_jyourikusen_061.asm"
-.include "maps/unitlists/AW4/AW4_kawatoheigen_062.asm"
-.include "maps/unitlists/AW4/AW4_kirinmap_063.asm"
-.include "maps/unitlists/AW4/AW4_minidday_064.asm"
-.include "maps/unitlists/AW4/AW4_missile_065.asm"
-.include "maps/unitlists/AW4/AW4_Mountain_066.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu25_067.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu27_068.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu28_069.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu29_070.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu30_071.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu31_072.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu32_073.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu53_074.asm"
-;.include "maps/unitlists/AW4/AW4_muramatu70_075.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa01_076.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa02_077.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa03_078.asm"
-.include "maps/unitlists/AW4/AW4_nakazawa04_079.asm"
-.include "maps/unitlists/AW4/AW4_nakazawa05_080.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa06_081.asm"
-.include "maps/unitlists/AW4/AW4_nakazawa08_082.asm"
-.include "maps/unitlists/AW4/AW4_nakazawa09_083.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa12_084.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa14_085.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa18_086.asm"
-;.include "maps/unitlists/AW4/AW4_nakazawa21_087.asm"
-;.include "maps/unitlists/AW4/AW4_nisikawa1_088.asm"
-;.include "maps/unitlists/AW4/AW4_nisikawa2_089.asm"
-;.include "maps/unitlists/AW4/AW4_No_155.asm"
-.include "maps/unitlists/AW4/AW4_No8_090.asm"
-;.include "maps/unitlists/AW4/AW4_plasmaimpact_091.asm"
-;.include "maps/unitlists/AW4/AW4_plasmamap_092.asm"
-.include "maps/unitlists/AW4/AW4_plasmapuzzle_093.asm"
-;.include "maps/unitlists/AW4/AW4_plasmazuru_094.asm"
-;.include "maps/unitlists/AW4/AW4_reinforcement_test_095.asm"
-.include "maps/unitlists/AW4/AW4_rejisutansu_096.asm"
-.include "maps/unitlists/AW4/AW4_ryu01_097.asm"
-;.include "maps/unitlists/AW4/AW4_sakuttomap_098.asm"
-;.include "maps/unitlists/AW4/AW4_Sky4_099.asm"
-.include "maps/unitlists/AW4/AW4_stripe_100.asm"
-;.include "maps/unitlists/AW4/AW4_sunadokei_101.asm"
-.include "maps/unitlists/AW4/AW4_syougiban_102.asm"
-.include "maps/unitlists/AW4/AW4_T_STAR_103.asm"
-;.include "maps/unitlists/AW4/AW4_TeardropIsles_104.asm"
-;.include "maps/unitlists/AW4/AW4_test_105.asm"
-.include "maps/unitlists/AW4/AW4_tokinmap_106.asm"
-.include "maps/unitlists/AW4/AW4_tournament1_107.asm"
-.include "maps/unitlists/AW4/AW4_tournament2_108.asm"
-.include "maps/unitlists/AW4/AW4_TR22_109.asm"
-.include "maps/unitlists/AW4/AW4_TR28_110.asm"
-.include "maps/unitlists/AW4/AW4_TR35_111.asm"
-.include "maps/unitlists/AW4/AW4_Triskelion_112.asm"
-.include "maps/unitlists/AW4/AW4_T-STAR_113.asm"
-.include "maps/unitlists/AW4/AW4_uzumaki1_114.asm"
-.include "maps/unitlists/AW4/AW4_Vale_115.asm"
-.include "maps/unitlists/AW4/AW4_victory_116.asm"
-;.include "maps/unitlists/AW4/AW4_w2_classic16_dispos_117.asm"
-;.include "maps/unitlists/AW4/AW4_w2_classic17_dispos_118.asm"
-;.include "maps/unitlists/AW4/AW4_w2_msp01_dispos_119.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p01_dispos_120.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p02_dispos_121.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p03_dispos_122.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p04_dispos_123.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p05_dispos_124.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p06_dispos_125.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p07_dispos_126.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p08_dispos_127.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p09_dispos_128.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p10_dispos_129.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s2p11_dispos_130.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s3p01_dispos_131.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s3p02_dispos_132.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s3p03_dispos_133.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s4p01_dispos_134.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s4p02_dispos_135.asm"
-;.include "maps/unitlists/AW4/AW4_w2_s4p03_dispos_136.asm"
-;.include "maps/unitlists/AW4/AW4_w2_t2p02_dispos_137.asm"
-;.include "maps/unitlists/AW4/AW4_w2_t2p06_dispos_138.asm"
-;.include "maps/unitlists/AW4/AW4_w2_test08_dispos_139.asm"
-;.include "maps/unitlists/AW4/AW4_w2_test09_dispos_140.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s2p01_dispos_141.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s2p02_dispos_142.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s2p03_dispos_143.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s3p01_dispos_144.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s3p02_dispos_145.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s3p03_dispos_146.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s4p01_dispos_147.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s4p02_dispos_148.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s4p03_dispos_149.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s4p04_dispos_150.asm"
-;.include "maps/unitlists/AW4/AW4_w3_s4p05_dispos_151.asm"
-.include "maps/unitlists/AW4/AW4_WonderWeb_152.asm"
-.include "maps/unitlists/AW4/AW4_yongokushi_153.asm"
-;.include "maps/unitlists/AW4/AW4_zzz_maeda09_154.asm"
-.include "maps/unitlists/AW4/AW4_3on3_156.asm"
-.include "maps/unitlists/AW4/AW4_5thElements_157.asm"
-;.include "maps/unitlists/AW4/AW4_044_158.asm"
-;.include "maps/unitlists/AW4/AW4_045_159.asm"
-;.include "maps/unitlists/AW4/AW4_046_160.asm"
-.include "maps/unitlists/AW4/AW4_Atoll_161.asm"
-.include "maps/unitlists/AW4/AW4_Balance_162.asm"
-;.include "maps/unitlists/AW4/AW4_Beached_000.asm"
-;.include "maps/unitlists/AW4/AW4_BHD_001.asm"
-;.include "maps/unitlists/AW4/AW4_Bigfoot_002.asm"
-.include "maps/unitlists/AW4/AW4_Blitz_003.asm"
-.include "maps/unitlists/AW4/AW4_bouei2rain_004.asm"
-.include "maps/unitlists/AW4/AW4_Chaaarge_005.asm"
-.include "maps/unitlists/AW4/AW4_clothrun_006.asm"
+;awds raw converted unit lists
+	;predeployed
+	.include "maps/unitlists/awds/awdsunitlist_064.asm"
+	.include "maps/unitlists/awds/awdsunitlist_065.asm"
+	.include "maps/unitlists/awds/awdsunitlist_066.asm"
+	.include "maps/unitlists/awds/awdsunitlist_067.asm"
+	.include "maps/unitlists/awds/awdsunitlist_068.asm"
+	.include "maps/unitlists/awds/awdsunitlist_069.asm"
+	.include "maps/unitlists/awds/awdsunitlist_070.asm"
+	.include "maps/unitlists/awds/awdsunitlist_071.asm"
+	.include "maps/unitlists/awds/awdsunitlist_072.asm"
+	.include "maps/unitlists/awds/awdsunitlist_073.asm"
+	.include "maps/unitlists/awds/awdsunitlist_074.asm"
+	;survival
+	.include "maps/unitlists/awds/awdsunitlist_187.asm"
+	.include "maps/unitlists/awds/awdsunitlist_188.asm"
+	.include "maps/unitlists/awds/awdsunitlist_189.asm"
+	.include "maps/unitlists/awds/awdsunitlist_190.asm"
+	.include "maps/unitlists/awds/awdsunitlist_191.asm"
+	.include "maps/unitlists/awds/awdsunitlist_192.asm"
+	.include "maps/unitlists/awds/awdsunitlist_193.asm"
+	.include "maps/unitlists/awds/awdsunitlist_194.asm"
+	.include "maps/unitlists/awds/awdsunitlist_195.asm"
+	.include "maps/unitlists/awds/awdsunitlist_196.asm"
+	.include "maps/unitlists/awds/awdsunitlist_197.asm"
+	.include "maps/unitlists/awds/awdsunitlist_198.asm"
+	.include "maps/unitlists/awds/awdsunitlist_199.asm"
+	.include "maps/unitlists/awds/awdsunitlist_200.asm"
+	.include "maps/unitlists/awds/awdsunitlist_201.asm"
+	.include "maps/unitlists/awds/awdsunitlist_202.asm"
+	.include "maps/unitlists/awds/awdsunitlist_203.asm"
+	.include "maps/unitlists/awds/awdsunitlist_204.asm"
+	.include "maps/unitlists/awds/awdsunitlist_205.asm"
+	.include "maps/unitlists/awds/awdsunitlist_206.asm"
+	.include "maps/unitlists/awds/awdsunitlist_207.asm"
+	.include "maps/unitlists/awds/awdsunitlist_208.asm"
+	.include "maps/unitlists/awds/awdsunitlist_209.asm"
+	.include "maps/unitlists/awds/awdsunitlist_210.asm"
+	.include "maps/unitlists/awds/awdsunitlist_211.asm"
+	.include "maps/unitlists/awds/awdsunitlist_212.asm"
+	.include "maps/unitlists/awds/awdsunitlist_213.asm"
+	.include "maps/unitlists/awds/awdsunitlist_214.asm"
+	.include "maps/unitlists/awds/awdsunitlist_215.asm"
+	.include "maps/unitlists/awds/awdsunitlist_216.asm"
+	.include "maps/unitlists/awds/awdsunitlist_217.asm"
+	.include "maps/unitlists/awds/awdsunitlist_218.asm"
+	.include "maps/unitlists/awds/awdsunitlist_219.asm"
+	;campaign
+	.include "maps/unitlists/awds/awdsunitlist_223.asm"
+	.include "maps/unitlists/awds/awdsunitlist_224.asm"
+	.include "maps/unitlists/awds/awdsunitlist_225.asm"
+	.include "maps/unitlists/awds/awdsunitlist_226.asm"
+	.include "maps/unitlists/awds/awdsunitlist_227.asm"
+	.include "maps/unitlists/awds/awdsunitlist_228.asm"
+	.include "maps/unitlists/awds/awdsunitlist_229.asm"
+	.include "maps/unitlists/awds/awdsunitlist_230.asm"
+	.include "maps/unitlists/awds/awdsunitlist_231.asm"
+	.include "maps/unitlists/awds/awdsunitlist_232.asm"
+	.include "maps/unitlists/awds/awdsunitlist_233.asm"
+	.include "maps/unitlists/awds/awdsunitlist_234.asm"
+	.include "maps/unitlists/awds/awdsunitlist_235.asm"
+	.include "maps/unitlists/awds/awdsunitlist_236.asm"
+	.include "maps/unitlists/awds/awdsunitlist_237.asm"
+	.include "maps/unitlists/awds/awdsunitlist_238.asm"
+	.include "maps/unitlists/awds/awdsunitlist_239.asm"
+	.include "maps/unitlists/awds/awdsunitlist_240.asm"
+	.include "maps/unitlists/awds/awdsunitlist_241.asm"
+	.include "maps/unitlists/awds/awdsunitlist_242.asm"
+	.include "maps/unitlists/awds/awdsunitlist_243.asm"
+	.include "maps/unitlists/awds/awdsunitlist_244.asm"
+	.include "maps/unitlists/awds/awdsunitlist_245.asm"
+	.include "maps/unitlists/awds/awdsunitlist_246.asm"
+	.include "maps/unitlists/awds/awdsunitlist_247.asm"
+	.include "maps/unitlists/awds/awdsunitlist_248.asm"
+	.include "maps/unitlists/awds/awdsunitlist_249.asm"
+	.include "maps/unitlists/awds/awdsunitlist_250.asm"
+	.include "maps/unitlists/awds/awdsunitlist_251.asm"
+	.include "maps/unitlists/awds/awdsunitlist_252.asm"
+	.include "maps/unitlists/awds/awdsunitlist_253.asm"
+	.include "maps/unitlists/awds/awdsunitlist_254.asm"
+	.include "maps/unitlists/awds/awdsunitlist_255.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_223.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_224.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_225.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_226.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_227.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_228.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_229.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_230.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_231.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_232.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_233.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_234.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_235.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_236.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_237.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_238.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_239.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_240.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_241.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_242.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_243.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_244.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_245.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_246.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_247.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_248.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_249.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_250.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_251.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_252.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_253.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_254.asm"
+	.include "maps/unitlists/awds/awdsunitlist_hc_255.asm"
+;aw4 raw unit list rips
+;	.include "maps/unitlists/aw4/aw4_cmp01_01_008.asm"
+;	.include "maps/unitlists/aw4/aw4_cmp01_02_009.asm"
+;	.include "maps/unitlists/aw4/aw4_cmp01_007.asm"
+;	.include "maps/unitlists/aw4/aw4_cmp02_010.asm"
+;	.include "maps/unitlists/aw4/aw4_cmp03_011.asm"
+;	.include "maps/unitlists/aw4/aw4_cmp04_012.asm"
+;.include "maps/unitlists/aw4/aw4_cmp05_013.asm"
+;.include "maps/unitlists/aw4/aw4_cmp06_01_015.asm"
+;.include "maps/unitlists/aw4/aw4_cmp06_014.asm"
+;.include "maps/unitlists/aw4/aw4_cmp07_016.asm"
+;.include "maps/unitlists/aw4/aw4_cmp08_017.asm"
+;.include "maps/unitlists/aw4/aw4_cmp09_018.asm"
+;.include "maps/unitlists/aw4/aw4_cmp10_019.asm"
+;.include "maps/unitlists/aw4/aw4_cmp11_020.asm"
+;.include "maps/unitlists/aw4/aw4_cmp12_021.asm"
+;.include "maps/unitlists/aw4/aw4_cmp13_022.asm"
+;.include "maps/unitlists/aw4/aw4_cmp14_023.asm"
+;.include "maps/unitlists/aw4/aw4_cmp15_024.asm"
+;.include "maps/unitlists/aw4/aw4_cmp16_025.asm"
+;.include "maps/unitlists/aw4/aw4_cmp17_026.asm"
+;.include "maps/unitlists/aw4/aw4_cmp18_027.asm"
+;.include "maps/unitlists/aw4/aw4_cmp19_028.asm"
+;.include "maps/unitlists/aw4/aw4_cmp20_029.asm"
+;.include "maps/unitlists/aw4/aw4_cmp21_030.asm"
+;.include "maps/unitlists/aw4/aw4_cmp22_031.asm"
+;.include "maps/unitlists/aw4/aw4_cmp23_032.asm"
+;.include "maps/unitlists/aw4/aw4_cmp24_01_034.asm"
+;.include "maps/unitlists/aw4/aw4_cmp24_02_035.asm"
+;.include "maps/unitlists/aw4/aw4_cmp24_03_036.asm"
+;.include "maps/unitlists/aw4/aw4_cmp24_033.asm"
+;.include "maps/unitlists/aw4/aw4_cmp25_01_038.asm"
+;.include "maps/unitlists/aw4/aw4_cmp25_037.asm"
+;.include "maps/unitlists/aw4/aw4_cmp26_039.asm"
+;.include "maps/unitlists/aw4/aw4_daikaisen_040.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke30_01_041.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke30_02_042.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke48_043.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke52_044.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke56_045.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke57_046.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke58_047.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke59_048.asm"
+;.include "maps/unitlists/aw4/aw4_daisuke60_049.asm"
+;.include "maps/unitlists/aw4/aw4_edit0507_050.asm"
+;.include "maps/unitlists/aw4/aw4_edit05072_051.asm"
+.include "maps/unitlists/aw4/aw4_eruaramein_052.asm"
+;.include "maps/unitlists/aw4/aw4_ezload_053.asm"
+;.include "maps/unitlists/aw4/aw4_g_jet_054.asm"
+;.include "maps/unitlists/aw4/aw4_g-jet_055.asm"
+;.include "maps/unitlists/aw4/aw4_gocircle_056.asm"
+;.include "maps/unitlists/aw4/aw4_guringurin_057.asm"
+;.include "maps/unitlists/aw4/aw4_hairpin_058.asm"
+;.include "maps/unitlists/aw4/aw4_ichihachimap_059.asm"
+;.include "maps/unitlists/aw4/aw4_jisouhou_060.asm"
+.include "maps/unitlists/aw4/aw4_jyourikusen_061.asm"
+.include "maps/unitlists/aw4/aw4_kawatoheigen_062.asm"
+.include "maps/unitlists/aw4/aw4_kirinmap_063.asm"
+.include "maps/unitlists/aw4/aw4_minidday_064.asm"
+.include "maps/unitlists/aw4/aw4_missile_065.asm"
+.include "maps/unitlists/aw4/aw4_mountain_066.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu25_067.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu27_068.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu28_069.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu29_070.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu30_071.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu31_072.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu32_073.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu53_074.asm"
+;.include "maps/unitlists/aw4/aw4_muramatu70_075.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa01_076.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa02_077.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa03_078.asm"
+.include "maps/unitlists/aw4/aw4_nakazawa04_079.asm"
+.include "maps/unitlists/aw4/aw4_nakazawa05_080.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa06_081.asm"
+.include "maps/unitlists/aw4/aw4_nakazawa08_082.asm"
+.include "maps/unitlists/aw4/aw4_nakazawa09_083.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa12_084.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa14_085.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa18_086.asm"
+;.include "maps/unitlists/aw4/aw4_nakazawa21_087.asm"
+;.include "maps/unitlists/aw4/aw4_nisikawa1_088.asm"
+;.include "maps/unitlists/aw4/aw4_nisikawa2_089.asm"
+;.include "maps/unitlists/aw4/aw4_no_155.asm"
+.include "maps/unitlists/aw4/aw4_no8_090.asm"
+;.include "maps/unitlists/aw4/aw4_plasmaimpact_091.asm"
+;.include "maps/unitlists/aw4/aw4_plasmamap_092.asm"
+.include "maps/unitlists/aw4/aw4_plasmapuzzle_093.asm"
+;.include "maps/unitlists/aw4/aw4_plasmazuru_094.asm"
+;.include "maps/unitlists/aw4/aw4_reinforcement_test_095.asm"
+.include "maps/unitlists/aw4/aw4_rejisutansu_096.asm"
+.include "maps/unitlists/aw4/aw4_ryu01_097.asm"
+;.include "maps/unitlists/aw4/aw4_sakuttomap_098.asm"
+;.include "maps/unitlists/aw4/aw4_sky4_099.asm"
+.include "maps/unitlists/aw4/aw4_stripe_100.asm"
+;.include "maps/unitlists/aw4/aw4_sunadokei_101.asm"
+.include "maps/unitlists/aw4/aw4_syougiban_102.asm"
+.include "maps/unitlists/aw4/aw4_t_star_103.asm"
+;.include "maps/unitlists/aw4/aw4_teardropisles_104.asm"
+;.include "maps/unitlists/aw4/aw4_test_105.asm"
+.include "maps/unitlists/aw4/aw4_tokinmap_106.asm"
+.include "maps/unitlists/aw4/aw4_tournament1_107.asm"
+.include "maps/unitlists/aw4/aw4_tournament2_108.asm"
+.include "maps/unitlists/aw4/aw4_tr22_109.asm"
+.include "maps/unitlists/aw4/aw4_tr28_110.asm"
+.include "maps/unitlists/aw4/aw4_tr35_111.asm"
+.include "maps/unitlists/aw4/aw4_triskelion_112.asm"
+.include "maps/unitlists/aw4/aw4_t-star_113.asm"
+.include "maps/unitlists/aw4/aw4_uzumaki1_114.asm"
+.include "maps/unitlists/aw4/aw4_vale_115.asm"
+.include "maps/unitlists/aw4/aw4_victory_116.asm"
+;.include "maps/unitlists/aw4/aw4_w2_classic16_dispos_117.asm"
+;.include "maps/unitlists/aw4/aw4_w2_classic17_dispos_118.asm"
+;.include "maps/unitlists/aw4/aw4_w2_msp01_dispos_119.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p01_dispos_120.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p02_dispos_121.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p03_dispos_122.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p04_dispos_123.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p05_dispos_124.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p06_dispos_125.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p07_dispos_126.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p08_dispos_127.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p09_dispos_128.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p10_dispos_129.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s2p11_dispos_130.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s3p01_dispos_131.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s3p02_dispos_132.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s3p03_dispos_133.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s4p01_dispos_134.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s4p02_dispos_135.asm"
+;.include "maps/unitlists/aw4/aw4_w2_s4p03_dispos_136.asm"
+;.include "maps/unitlists/aw4/aw4_w2_t2p02_dispos_137.asm"
+;.include "maps/unitlists/aw4/aw4_w2_t2p06_dispos_138.asm"
+;.include "maps/unitlists/aw4/aw4_w2_test08_dispos_139.asm"
+;.include "maps/unitlists/aw4/aw4_w2_test09_dispos_140.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s2p01_dispos_141.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s2p02_dispos_142.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s2p03_dispos_143.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s3p01_dispos_144.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s3p02_dispos_145.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s3p03_dispos_146.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s4p01_dispos_147.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s4p02_dispos_148.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s4p03_dispos_149.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s4p04_dispos_150.asm"
+;.include "maps/unitlists/aw4/aw4_w3_s4p05_dispos_151.asm"
+.include "maps/unitlists/aw4/aw4_wonderweb_152.asm"
+.include "maps/unitlists/aw4/aw4_yongokushi_153.asm"
+;.include "maps/unitlists/aw4/aw4_zzz_maeda09_154.asm"
+.include "maps/unitlists/aw4/aw4_3on3_156.asm"
+.include "maps/unitlists/aw4/aw4_5thelements_157.asm"
+;.include "maps/unitlists/aw4/aw4_044_158.asm"
+;.include "maps/unitlists/aw4/aw4_045_159.asm"
+;.include "maps/unitlists/aw4/aw4_046_160.asm"
+.include "maps/unitlists/aw4/aw4_atoll_161.asm"
+.include "maps/unitlists/aw4/aw4_balance_162.asm"
+;.include "maps/unitlists/aw4/aw4_beached_000.asm"
+;.include "maps/unitlists/aw4/aw4_bhd_001.asm"
+;.include "maps/unitlists/aw4/aw4_bigfoot_002.asm"
+.include "maps/unitlists/aw4/aw4_blitz_003.asm"
+.include "maps/unitlists/aw4/aw4_bouei2rain_004.asm"
+.include "maps/unitlists/aw4/aw4_chaaarge_005.asm"
+.include "maps/unitlists/aw4/aw4_clothrun_006.asm"
 
-	.include "maps/unitlists/FireEmblem7/FE7_011_Unitlist.asm"
+	.include "maps/unitlists/fireemblem7/fe7_011_unitlist.asm"
 
 
-;Random Unit List Test Table
+;random unit list test table
 	.relativeinclude on
 	.include "unitrandomtables/randomtesttable.asm"
 	.relativeinclude off
 .align 4
-UnitListRandomList:
+unitlistrandomlist:
 	.dw	0
-	.dw	RandomTestTable
+	.dw	randomtesttable
 
 
-;Blank Line
+;blank line

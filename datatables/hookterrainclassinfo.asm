@@ -1,42 +1,42 @@
 ;hookterrainclassinfo.asm"
-;Loads the Tables that provide the R-Info Panels
-;And terrain defence stats
+;loads the tables that provide the r-info panels
+;and terrain defence stats
 
-.org 0x085D583C
-Table_TerrainClass:
-	.include "datatables/TerrainClassInfo/00_TerrainInfoNull.asm"
-	.include "datatables/TerrainClassInfo/01_TerrainInfoPlain.asm"
-	.include "datatables/TerrainClassInfo/02_TerrainInfoRiver.asm"
-	.include "datatables/TerrainClassInfo/03_TerrainInfoMountain.asm"
-	.include "datatables/TerrainClassInfo/04_TerrainInfoForest.asm"
-	.include "datatables/TerrainClassInfo/05_TerrainInfoRoad.asm"
-	.include "datatables/TerrainClassInfo/06_TerrainInfoCity.asm"
-	.include "datatables/TerrainClassInfo/07_TerrainInfoSea.asm"
-	.include "datatables/TerrainClassInfo/08_TerrainInfoHQ.asm"
-	.include "datatables/TerrainClassInfo/09_TerrainInfoKanji.asm"
-	.include "datatables/TerrainClassInfo/10_TerrainInfoAirport.asm"
-	.include "datatables/TerrainClassInfo/11_TerrainInfoPort.asm"
-	.include "datatables/TerrainClassInfo/12_TerrainInfoBridge.asm"
-	.include "datatables/TerrainClassInfo/13_TerrainInfoShoal.asm"
-	.include "datatables/TerrainClassInfo/14_TerrainInfoBase.asm"
-	.include "datatables/TerrainClassInfo/15_TerrainInfoPipeline.asm"
-	.include "datatables/TerrainClassInfo/16_TerrainInfoPipelineSeam.asm"
-	.include "datatables/TerrainClassInfo/17_TerrainInfoSilo.asm"
-	.include "datatables/TerrainClassInfo/18_TerrainInfoSiloUsed.asm"
-	.include "datatables/TerrainClassInfo/19_TerrainInfoReef.asm"
-	.include "datatables/TerrainClassInfo/20_TerrainInfoLab.asm"
-	.include "datatables/TerrainClassInfo/21_TerrainInfoMiniCannonS.asm"
-	;.include "datatables/TerrainClassInfo/22_TerrainInfoMiniCannonN.asm"
-	.include "datatables/TerrainClassInfo/TerrainInfo_AWDS_Tower.asm"	;22
-	;.include "datatables/TerrainClassInfo/23_TerrainInfoMiniCannonW.asm"
-	.include "datatables/TerrainClassInfo/TerrainInfo_AW4_Ruins.asm"	;23
-	;.include "datatables/TerrainClassInfo/24_TerrainInfoMiniCannonE.asm"
-	.include "datatables/TerrainClassInfo/TerrainInfo_AW4_Wasteland.asm"	;24
-	.include "datatables/TerrainClassInfo/25_TerrainInfoLaser.asm"
-	.include "datatables/TerrainClassInfo/26_TerrainInfoBlackCannonS.asm"
-	.include "datatables/TerrainClassInfo/27_TerrainInfoBlackCannonN.asm"
-	.include "datatables/TerrainClassInfo/28_TerrainInfoVolcano.asm"
-	.include "datatables/TerrainClassInfo/29_TerrainInfoFactory.asm"
-	.include "datatables/TerrainClassInfo/30_TerrainInfoDeathray.asm"
-	.include "datatables/TerrainClassInfo/31_TerrainInfoReskinnableTile.asm"
+.org 0x085d583c
+table_terrainclass:
+	.include "datatables/terrainclassinfo/00_terraininfonull.asm"
+	.include "datatables/terrainclassinfo/01_terraininfoplain.asm"
+	.include "datatables/terrainclassinfo/02_terraininforiver.asm"
+	.include "datatables/terrainclassinfo/03_terraininfomountain.asm"
+	.include "datatables/terrainclassinfo/04_terraininfoforest.asm"
+	.include "datatables/terrainclassinfo/05_terraininforoad.asm"
+	.include "datatables/terrainclassinfo/06_terraininfocity.asm"
+	.include "datatables/terrainclassinfo/07_terraininfosea.asm"
+	.include "datatables/terrainclassinfo/08_terraininfohq.asm"
+	.include "datatables/terrainclassinfo/09_terraininfokanji.asm"
+	.include "datatables/terrainclassinfo/10_terraininfoairport.asm"
+	.include "datatables/terrainclassinfo/11_terraininfoport.asm"
+	.include "datatables/terrainclassinfo/12_terraininfobridge.asm"
+	.include "datatables/terrainclassinfo/13_terraininfoshoal.asm"
+	.include "datatables/terrainclassinfo/14_terraininfobase.asm"
+	.include "datatables/terrainclassinfo/15_terraininfopipeline.asm"
+	.include "datatables/terrainclassinfo/16_terraininfopipelineseam.asm"
+	.include "datatables/terrainclassinfo/17_terraininfosilo.asm"
+	.include "datatables/terrainclassinfo/18_terraininfosiloused.asm"
+	.include "datatables/terrainclassinfo/19_terraininforeef.asm"
+	.include "datatables/terrainclassinfo/20_terraininfolab.asm"
+	.include "datatables/terrainclassinfo/21_terraininfominicannons.asm"
+	;.include "datatables/terrainclassinfo/22_terraininfominicannonn.asm"
+	.include "datatables/terrainclassinfo/terraininfo_awds_tower.asm"	;22
+	;.include "datatables/terrainclassinfo/23_terraininfominicannonw.asm"
+	.include "datatables/terrainclassinfo/terraininfo_aw4_ruins.asm"	;23
+	;.include "datatables/terrainclassinfo/24_terraininfominicannone.asm"
+	.include "datatables/terrainclassinfo/terraininfo_aw4_wasteland.asm"	;24
+	.include "datatables/terrainclassinfo/25_terraininfolaser.asm"
+	.include "datatables/terrainclassinfo/26_terraininfoblackcannons.asm"
+	.include "datatables/terrainclassinfo/27_terraininfoblackcannonn.asm"
+	.include "datatables/terrainclassinfo/28_terraininfovolcano.asm"
+	.include "datatables/terrainclassinfo/29_terraininfofactory.asm"
+	.include "datatables/terrainclassinfo/30_terraininfodeathray.asm"
+	.include "datatables/terrainclassinfo/31_terraininforeskinnabletile.asm"
 	

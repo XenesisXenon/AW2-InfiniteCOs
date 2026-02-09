@@ -1,0 +1,19 @@
+;C23_Include.asm
+.relativeinclude on
+	.include "c23_0_event_0.asm"
+	.include "c23_0_trigger.asm"
+	.include "c23_1_trigger.asm"
+	.include "c23_2_trigger.asm"
+	.include "c23_3_event_0.asm"
+	.include "c23_3_trigger.asm"
+	.include "c23_4_trigger.asm"
+	.include "c23_5_event_0.asm"
+	.include "c23_5_event_0a.asm"
+	.include "c23_5_event_0b.asm"
+	.include "c23_5_event_1.asm"
+	.include "c23_5_trigger.asm"
+	.include "c23_terms.asm"
+	.include "c23_worldmap_0a.asm"
+	.include "c23_worldmap_0b.asm"
+	.include "c23_worldmap.asm"
+.relativeinclude off

@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsSFWBillygatesPalette:
-	.import "graphics/CO/SFWBillygates/SFWBillygatesPalette.bin"
-GraphicsSFWBillygatesGraphic:
-	.dw GraphicsSFWBillygatesTop
-	.dw GraphicsSFWBillygatesBody	
-GraphicsSFWBillygatesTop:
-	.import "graphics/CO/SFWBillygates/SFWBillygatestop.bin"
-GraphicsSFWBillygatesBody:	
-	.import "graphics/CO/SFWBillygates/SFWBillygatesbody.bin"
-GraphicsSFWBillygatesFace:	
-	.import "graphics/CO/SFWBillygates/SFWBillygatesneutral.bin"
-GraphicsSFWBillygatesHappyFace:
-	.import "graphics/CO/SFWBillygates/SFWBillygateshappy.bin"
-GraphicsSFWBillygatesSadFace:
-	.import "graphics/CO/SFWBillygates/SFWBillygatessad.bin"
-GraphicsSFWBillygatesName:
-	.import "graphics/CO/SFWBillygates/Billygatesname.bin"
-GraphicsSFWBillygatesMugshot:
-	.import "graphics/CO/SFWBillygates/SFWBillygatesmug.bin"
-;Blank Line
+graphicssfwbillygatespalette:
+	.import "graphics/co/sfwbillygates/sfwbillygatespalette.bin"
+graphicssfwbillygatesgraphic:
+	.dw graphicssfwbillygatestop
+	.dw graphicssfwbillygatesbody
+graphicssfwbillygatestop:
+	.import "graphics/co/sfwbillygates/sfwbillygatestop.bin"
+graphicssfwbillygatesbody:
+	.import "graphics/co/sfwbillygates/sfwbillygatesbody.bin"
+graphicssfwbillygatesface:
+	.import "graphics/co/sfwbillygates/sfwbillygatesneutral.bin"
+graphicssfwbillygateshappyface:
+	.import "graphics/co/sfwbillygates/sfwbillygateshappy.bin"
+graphicssfwbillygatessadface:
+	.import "graphics/co/sfwbillygates/sfwbillygatessad.bin"
+graphicssfwbillygatesname:
+	.import "graphics/co/sfwbillygates/billygatesname.bin"
+graphicssfwbillygatesmugshot:
+	.import "graphics/co/sfwbillygates/sfwbillygatesmug.bin"
+;blank line

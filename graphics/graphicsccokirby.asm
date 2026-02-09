@@ -1,25 +1,25 @@
 ;graphicsaw1sturm.asm
-GraphicsCCOKirbyPalette:
-	.import "graphics/CO/CCOKirby/CCOKirbyPalette.bin"
-GraphicsCCOKirbyGraphic:
-	.dw GraphicsCCOKirbyTop
-	.dw GraphicsCCOKirbyBody	
-GraphicsCCOKirbyTop:
-	.import "graphics/CO/OutrealmCO/Outrealmbody.bin"
-;	.import "graphics/CO/CCOKirby/CCOKirbytop.bin"
-GraphicsCCOKirbyBody:	
-	.import "graphics/CO/CCOKirby/CCOKirbybody.bin"
-GraphicsCCOKirbyFace:
-GraphicsCCOKirbyHappyFace:
-GraphicsCCOKirbySadFace:
-	.import "graphics/CO/CCOKirby/CCOKirbyneutral.bin"
+graphicsccokirbypalette:
+	.import "graphics/co/ccokirby/ccokirbypalette.bin"
+graphicsccokirbygraphic:
+	.dw graphicsccokirbytop
+	.dw graphicsccokirbybody
+graphicsccokirbytop:
+	.import "graphics/co/outrealmco/outrealmbody.bin"
+;	.import "graphics/co/ccokirby/ccokirbytop.bin"
+graphicsccokirbybody:
+	.import "graphics/co/ccokirby/ccokirbybody.bin"
+graphicsccokirbyface:
+graphicsccokirbyhappyface:
+graphicsccokirbysadface:
+	.import "graphics/co/ccokirby/ccokirbyneutral.bin"
 
-;	.import "graphics/CO/CCOKirby/CCOKirbyhappy.bin"
+;	.import "graphics/co/ccokirby/ccokirbyhappy.bin"
 
-;	.import "graphics/CO/CCOKirby/CCOKirbysad.bin"
-;GraphicsCCOKirbyName:
-;	.import "graphics/CO/CCOKirby/CCOKirbyname.bin"
-GraphicsCCOKirbyMugshot:
-	.import "graphics/CO/OutrealmCO/outrealmmug.bin	
-;	.import "graphics/CO/CCOKirby/CCOKirbymug.bin"
-;Blank Line
+;	.import "graphics/co/ccokirby/ccokirbysad.bin"
+;graphicsccokirbyname:
+;	.import "graphics/co/ccokirby/ccokirbyname.bin"
+graphicsccokirbymugshot:
+	.import "graphics/co/outrealmco/outrealmmug.bin
+;	.import "graphics/co/ccokirby/ccokirbymug.bin"
+;blank line

@@ -1,21 +1,21 @@
-;Outrealm CO Blank Template
+;outrealm co blank template
 
-GraphicsOutrealmPalette:
-	.dh	0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF
-	.dh	0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF,0x7FF
-GraphicsOutrealmCOGraphic:
-	.dw GraphicsOutrealmTop
-	.dw GraphicsOutrealmBody
+graphicsoutrealmpalette:
+	.dh	0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff
+	.dh	0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff
+graphicsoutrealmcographic:
+	.dw graphicsoutrealmtop
+	.dw graphicsoutrealmbody
 	
-GraphicsOutrealmTop:
-	.import "graphics/CO/OutrealmCO/outrealmtop.bin"
-GraphicsOutrealmBody:	
-	.import "graphics/CO/OutrealmCO/outrealmbody.bin"
-GraphicsOutrealmFace:	
-	.import "graphics/CO/OutrealmCO/outrealmneutral.bin"
-GraphicsOutrealmName:
-	.import "graphics/CO/OutrealmCO/outrealmname.bin"	
-GraphicsOutrealmMug:
-	.import "graphics/CO/OutrealmCO/outrealmmug.bin"
+graphicsoutrealmtop:
+	.import "graphics/co/outrealmco/outrealmtop.bin"
+graphicsoutrealmbody:
+	.import "graphics/co/outrealmco/outrealmbody.bin"
+graphicsoutrealmface:
+	.import "graphics/co/outrealmco/outrealmneutral.bin"
+graphicsoutrealmname:
+	.import "graphics/co/outrealmco/outrealmname.bin"
+graphicsoutrealmmug:
+	.import "graphics/co/outrealmco/outrealmmug.bin"
 	
 ;

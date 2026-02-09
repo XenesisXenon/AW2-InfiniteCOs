@@ -1,12 +1,12 @@
 ;Common Definitions
 
 ;Maximum Number of Commanding Officers
-MaxCOId equ 71
+MaxCOId equ 72
 Total_CO_AW2 equ 19
 Total_CO_AW1 equ 12
 Total_CO_AW3 equ 27
 Total_CO_SFW equ 3
-Total_CO_CCO equ 5
+Total_CO_CCO equ 6
 
 IsSad 	equ (MaxCOID+1)*2
 IsHappy equ MaxCOID+1
@@ -92,6 +92,7 @@ COCCOWalter	equ 68
 ;COCCOZed	equ 69
 COCCOEliwood	equ 70
 COCCONergal	equ 71
+COCCOTransmog equ 72
 
 ;Power States
 COMode_Daily	equ 0

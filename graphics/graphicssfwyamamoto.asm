@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsSFWYamamotoPalette:
-	.import "graphics/CO/SFWYamamoto/SFWYamamotoPalette.bin"
-GraphicsSFWYamamotoGraphic:
-	.dw GraphicsSFWYamamotoTop
-	.dw GraphicsSFWYamamotoBody	
-GraphicsSFWYamamotoTop:
-	.import "graphics/CO/SFWYamamoto/SFWYamamototop.bin"
-GraphicsSFWYamamotoBody:	
-	.import "graphics/CO/SFWYamamoto/SFWYamamotobody.bin"
-GraphicsSFWYamamotoFace:	
-	.import "graphics/CO/SFWYamamoto/SFWYamamotoneutral.bin"
-GraphicsSFWYamamotoHappyFace:
-	.import "graphics/CO/SFWYamamoto/SFWYamamotohappy.bin"
-GraphicsSFWYamamotoSadFace:
-	.import "graphics/CO/SFWYamamoto/SFWYamamotosad.bin"
-GraphicsSFWYamamotoName:
-	.import "graphics/CO/SFWYamamoto/yamamotoname.bin"
-GraphicsSFWYamamotoMugshot:
-	.import "graphics/CO/SFWYamamoto/SFWYamamotomug.bin"
-;Blank Line
+graphicssfwyamamotopalette:
+	.import "graphics/co/sfwyamamoto/sfwyamamotopalette.bin"
+graphicssfwyamamotographic:
+	.dw graphicssfwyamamototop
+	.dw graphicssfwyamamotobody
+graphicssfwyamamototop:
+	.import "graphics/co/sfwyamamoto/sfwyamamototop.bin"
+graphicssfwyamamotobody:
+	.import "graphics/co/sfwyamamoto/sfwyamamotobody.bin"
+graphicssfwyamamotoface:
+	.import "graphics/co/sfwyamamoto/sfwyamamotoneutral.bin"
+graphicssfwyamamotohappyface:
+	.import "graphics/co/sfwyamamoto/sfwyamamotohappy.bin"
+graphicssfwyamamotosadface:
+	.import "graphics/co/sfwyamamoto/sfwyamamotosad.bin"
+graphicssfwyamamotoname:
+	.import "graphics/co/sfwyamamoto/yamamotoname.bin"
+graphicssfwyamamotomugshot:
+	.import "graphics/co/sfwyamamoto/sfwyamamotomug.bin"
+;blank line

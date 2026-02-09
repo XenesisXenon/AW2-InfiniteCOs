@@ -1,21 +1,21 @@
-;graphicsAWDSKanbei.asm
-GraphicsAWDSKanbeiPalette:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeiPalette.bin"
-GraphicsAWDSKanbeiGraphic:
-	.dw GraphicsAWDSKanbeiTop
-	.dw GraphicsAWDSKanbeiBody	
-GraphicsAWDSKanbeiTop:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeitop.bin"
-GraphicsAWDSKanbeiBody:	
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeibody.bin"
-GraphicsAWDSKanbeiFace:	
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeineutral.bin"
-GraphicsAWDSKanbeiHappyFace:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeihappy.bin"
-GraphicsAWDSKanbeiSadFace:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeisad.bin"
-GraphicsAWDSKanbeiName:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeiname.bin"
-GraphicsAWDSKanbeiMugshot:
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeimug.bin"
-;Blank Line
+;graphicsawdskanbei.asm
+graphicsawdskanbeipalette:
+	.import "graphics/co/awdskanbei/awdskanbeipalette.bin"
+graphicsawdskanbeigraphic:
+	.dw graphicsawdskanbeitop
+	.dw graphicsawdskanbeibody
+graphicsawdskanbeitop:
+	.import "graphics/co/awdskanbei/awdskanbeitop.bin"
+graphicsawdskanbeibody:
+	.import "graphics/co/awdskanbei/awdskanbeibody.bin"
+graphicsawdskanbeiface:
+	.import "graphics/co/awdskanbei/awdskanbeineutral.bin"
+graphicsawdskanbeihappyface:
+	.import "graphics/co/awdskanbei/awdskanbeihappy.bin"
+graphicsawdskanbeisadface:
+	.import "graphics/co/awdskanbei/awdskanbeisad.bin"
+graphicsawdskanbeiname:
+	.import "graphics/co/awdskanbei/awdskanbeiname.bin"
+graphicsawdskanbeimugshot:
+	.import "graphics/co/awdskanbei/awdskanbeimug.bin"
+;blank line

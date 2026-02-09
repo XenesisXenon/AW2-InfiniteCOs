@@ -1,0 +1,20 @@
+;C11_Include.asm
+.relativeinclude on
+	.include "c11_0_event_0.asm"
+	.include "c11_0_event_1.asm"
+	.include "c11_0_trigger.asm"
+	.include "c11_1_event_0.asm"
+	.include "c11_1_event_1.asm"
+	.include "c11_1_event_2.asm"
+	.include "c11_1_event_3.asm"
+	.include "c11_1_trigger.asm"
+	.include "c11_2_trigger.asm"
+	.include "c11_3_event_0.asm"
+	.include "c11_3_trigger.asm"
+	.include "c11_4_trigger.asm"
+	.include "c11_5_event_0.asm"
+	.include "c11_5_event_1.asm"
+	.include "c11_5_trigger.asm"
+	.include "c11_terms.asm"
+	.include "c11_worldmap.asm"
+.relativeinclude off

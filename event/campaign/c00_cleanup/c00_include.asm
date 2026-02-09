@@ -1,0 +1,26 @@
+;C00_Include.asm
+
+.relativeinclude on
+	.include "c00_terms.asm"
+	.include "c00_worldmap.asm"
+	.include "c00_0_event-0.asm"
+	.include "c00_1_event-0.asm"
+	.include "c00_1_event-1.asm"
+	.include "c00_1_event-2.asm"
+	.include "c00_1_event-3.asm"
+	.include "c00_2_event-0.asm"
+	.include "c00_2_event-0a.asm"
+	.include "c00_2_event-1.asm"
+	.include "c00_2_event-1a.asm"
+	.include "c00_3_event-0.asm"
+	.include "c00_4_event-0.asm"
+	.include "c00_4_event-1.asm"
+	.include "c00_5_event-0.asm"
+	.include "c00_5_event-1.asm"
+	.include "c00_0_trigger.asm"
+	.include "c00_1_trigger.asm"
+	.include "c00_2_trigger.asm"
+	.include "c00_3_trigger.asm"
+	.include "c00_4_trigger.asm"
+	.include "c00_5_trigger.asm"
+.relativeinclude off

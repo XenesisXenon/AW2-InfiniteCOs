@@ -21,7 +21,7 @@ Anchor_EndOfEvent:
 	.include "main-generated.asm"
 	
 	;Script-Generated Tables
-	.include "main-CO.asm"
+	.include "main-co.asm"
 	.include "main-unit.asm"
 	.include "main-map.asm"
 

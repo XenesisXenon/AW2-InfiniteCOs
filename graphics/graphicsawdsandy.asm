@@ -1,21 +1,21 @@
-;graphicsAWDSAndy.asm
-GraphicsAWDSAndyPalette:
-	.import "graphics/CO/AWDSAndy/AWDSAndyPalette.bin"
-GraphicsAWDSAndyGraphic:
-	.dw GraphicsAWDSAndyTop
-	.dw GraphicsAWDSAndyBody	
-GraphicsAWDSAndyTop:
-	.import "graphics/CO/AWDSAndy/AWDSAndytop.bin"
-GraphicsAWDSAndyBody:	
-	.import "graphics/CO/AWDSAndy/AWDSAndybody.bin"
-GraphicsAWDSAndyFace:	
-	.import "graphics/CO/AWDSAndy/AWDSAndyneutral.bin"
-GraphicsAWDSAndyHappyFace:
-	.import "graphics/CO/AWDSAndy/AWDSAndyhappy.bin"
-GraphicsAWDSAndySadFace:
-	.import "graphics/CO/AWDSAndy/AWDSAndysad.bin"
-GraphicsAWDSAndyName:
-	.import "graphics/CO/AWDSAndy/AWDSAndyname.bin"
-GraphicsAWDSAndyMugshot:
-	.import "graphics/CO/AWDSAndy/AWDSAndymug.bin"
-;Blank Line
+;graphicsawdsandy.asm
+graphicsawdsandypalette:
+	.import "graphics/co/awdsandy/awdsandypalette.bin"
+graphicsawdsandygraphic:
+	.dw graphicsawdsandytop
+	.dw graphicsawdsandybody
+graphicsawdsandytop:
+	.import "graphics/co/awdsandy/awdsandytop.bin"
+graphicsawdsandybody:
+	.import "graphics/co/awdsandy/awdsandybody.bin"
+graphicsawdsandyface:
+	.import "graphics/co/awdsandy/awdsandyneutral.bin"
+graphicsawdsandyhappyface:
+	.import "graphics/co/awdsandy/awdsandyhappy.bin"
+graphicsawdsandysadface:
+	.import "graphics/co/awdsandy/awdsandysad.bin"
+graphicsawdsandyname:
+	.import "graphics/co/awdsandy/awdsandyname.bin"
+graphicsawdsandymugshot:
+	.import "graphics/co/awdsandy/awdsandymug.bin"
+;blank line

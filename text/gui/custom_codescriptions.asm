@@ -203,4 +203,7 @@ String_VsMenu_CCOEliwood:
 
 String_VsMenu_CCONergal:
 	.ascii "Nergal: Duplicate unit boost.",0x0
+
+String_VsMenu_CCOTransmog:
+	.ascii "Transmog: ",0x0
 ;Blank Line

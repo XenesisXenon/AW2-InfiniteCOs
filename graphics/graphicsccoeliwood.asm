@@ -1,22 +1,22 @@
-;Outrealm CO Blank Template
+;outrealm co blank template
 
-GraphicsCCOEliwoodPalette:
-	.import	"graphics/CO/CCOEliwood/eliwoodpalette.bin"
-GraphicsCCOEliwoodGraphic:
-	.dw GraphicsCCOEliwoodTop
-	.dw GraphicsCCOEliwoodBody
+graphicsccoeliwoodpalette:
+	.import	"graphics/co/ccoeliwood/eliwoodpalette.bin"
+graphicsccoeliwoodgraphic:
+	.dw graphicsccoeliwoodtop
+	.dw graphicsccoeliwoodbody
 	
-GraphicsCCOEliwoodTop:
-	.import "graphics/CO/CCOEliwood/eliwoodtop.bin"
-GraphicsCCOEliwoodBody:	
-	.import "graphics/CO/CCOEliwood/eliwoodbody.bin"
-GraphicsCCOEliwoodFace:	
-	.import "graphics/CO/CCOEliwood/eliwoodneutral.bin"
-GraphicsCCOEliwoodHappyFace:	
-	.import "graphics/CO/CCOEliwood/eliwoodneutral.bin"
-GraphicsCCOEliwoodSadFace:	
-	.import "graphics/CO/CCOEliwood/eliwoodneutral.bin"
-GraphicsCCOEliwoodName:
-	.import "graphics/CO/CCOEliwood/eliwoodname.bin"
-GraphicsCCOEliwoodMugshot:
-	.import "graphics/CO/CCOEliwood/eliwoodmug.bin"
+graphicsccoeliwoodtop:
+	.import "graphics/co/ccoeliwood/eliwoodtop.bin"
+graphicsccoeliwoodbody:
+	.import "graphics/co/ccoeliwood/eliwoodbody.bin"
+graphicsccoeliwoodface:
+	.import "graphics/co/ccoeliwood/eliwoodneutral.bin"
+graphicsccoeliwoodhappyface:
+	.import "graphics/co/ccoeliwood/eliwoodneutral.bin"
+graphicsccoeliwoodsadface:
+	.import "graphics/co/ccoeliwood/eliwoodneutral.bin"
+graphicsccoeliwoodname:
+	.import "graphics/co/ccoeliwood/eliwoodname.bin"
+graphicsccoeliwoodmugshot:
+	.import "graphics/co/ccoeliwood/eliwoodmug.bin"

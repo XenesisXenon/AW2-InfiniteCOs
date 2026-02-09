@@ -1,21 +1,21 @@
 ;graphicsawdsjugger.asm
-GraphicsAWDSSashaPalette:
-	.import "graphics/CO/AWDSSasha/AWDSSashaPalette.bin"
-GraphicsAWDSSashaGraphic:
-	.dw GraphicsAWDSSashaTop
-	.dw GraphicsAWDSSashaBody	
-GraphicsAWDSSashaTop:
-	.import "graphics/CO/AWDSSasha/AWDSSashatop.bin"
-GraphicsAWDSSashaBody:	
-	.import "graphics/CO/AWDSSasha/AWDSSashabody.bin"
-GraphicsAWDSSashaFace:	
-	.import "graphics/CO/AWDSSasha/AWDSSashaneutral.bin"
-GraphicsAWDSSashaHappyFace:
-	.import "graphics/CO/AWDSSasha/AWDSSashahappy.bin"
-GraphicsAWDSSashaSadFace:
-	.import "graphics/CO/AWDSSasha/AWDSSashasad.bin"
-GraphicsAWDSSashaName:
-	.import "graphics/CO/AWDSSasha/AWDSSashaname.bin"
-GraphicsAWDSSashaMugshot:
-	.import "graphics/CO/AWDSSasha/AWDSSashamug.bin"
-;Blank Line
+graphicsawdssashapalette:
+	.import "graphics/co/awdssasha/awdssashapalette.bin"
+graphicsawdssashagraphic:
+	.dw graphicsawdssashatop
+	.dw graphicsawdssashabody
+graphicsawdssashatop:
+	.import "graphics/co/awdssasha/awdssashatop.bin"
+graphicsawdssashabody:
+	.import "graphics/co/awdssasha/awdssashabody.bin"
+graphicsawdssashaface:
+	.import "graphics/co/awdssasha/awdssashaneutral.bin"
+graphicsawdssashahappyface:
+	.import "graphics/co/awdssasha/awdssashahappy.bin"
+graphicsawdssashasadface:
+	.import "graphics/co/awdssasha/awdssashasad.bin"
+graphicsawdssashaname:
+	.import "graphics/co/awdssasha/awdssashaname.bin"
+graphicsawdssashamugshot:
+	.import "graphics/co/awdssasha/awdssashamug.bin"
+;blank line

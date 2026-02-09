@@ -1,21 +1,21 @@
-;graphicsAWDSEagle.asm
-GraphicsAWDSEaglePalette:
-	.import "graphics/CO/AWDSEagle/AWDSEaglePalette.bin"
-GraphicsAWDSEagleGraphic:
-	.dw GraphicsAWDSEagleTop
-	.dw GraphicsAWDSEagleBody	
-GraphicsAWDSEagleTop:
-	.import "graphics/CO/AWDSEagle/AWDSEagletop.bin"
-GraphicsAWDSEagleBody:	
-	.import "graphics/CO/AWDSEagle/AWDSEaglebody.bin"
-GraphicsAWDSEagleFace:	
-	.import "graphics/CO/AWDSEagle/AWDSEagleneutral.bin"
-GraphicsAWDSEagleHappyFace:
-	.import "graphics/CO/AWDSEagle/AWDSEaglehappy.bin"
-GraphicsAWDSEagleSadFace:
-	.import "graphics/CO/AWDSEagle/AWDSEaglesad.bin"
-GraphicsAWDSEagleName:
-	.import "graphics/CO/AWDSEagle/AWDSEaglename.bin"
-GraphicsAWDSEagleMugshot:
-	.import "graphics/CO/AWDSEagle/AWDSEaglemug.bin"
-;Blank Line
+;graphicsawdseagle.asm
+graphicsawdseaglepalette:
+	.import "graphics/co/awdseagle/awdseaglepalette.bin"
+graphicsawdseaglegraphic:
+	.dw graphicsawdseagletop
+	.dw graphicsawdseaglebody
+graphicsawdseagletop:
+	.import "graphics/co/awdseagle/awdseagletop.bin"
+graphicsawdseaglebody:
+	.import "graphics/co/awdseagle/awdseaglebody.bin"
+graphicsawdseagleface:
+	.import "graphics/co/awdseagle/awdseagleneutral.bin"
+graphicsawdseaglehappyface:
+	.import "graphics/co/awdseagle/awdseaglehappy.bin"
+graphicsawdseaglesadface:
+	.import "graphics/co/awdseagle/awdseaglesad.bin"
+graphicsawdseaglename:
+	.import "graphics/co/awdseagle/awdseaglename.bin"
+graphicsawdseaglemugshot:
+	.import "graphics/co/awdseagle/awdseaglemug.bin"
+;blank line

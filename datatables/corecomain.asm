@@ -28,6 +28,7 @@ VSCoSelectTable:
 ;	.db	COCCOZed
 	.db	COCCOEliwood
 	.db	COCCONergal
+	.db COCCOTransmog
 	.db	0xFF
 	
 .align 4	
@@ -69,6 +70,7 @@ Table_COSelect_CCO:
 	.db	COCCOWalter
 	.db	COCCOEliwood
 	.db	COCCONergal
+	.db COCCOTransmog
 	.db	0xFF
 	
 
@@ -82,7 +84,7 @@ WarRoomCOSelectTable:
 	.db	0xFF,0x2
 	.db	COKanbei,COSonja,COSensei,COAWDSKanbei,COAWDSSonja,COAWDSSensei,COAWDSGrimm,COAW1Kanbei,COAW1Sonja
 	.db	0xFF,0x3
-	.db	COFlak,COLash,COAdder,COHawke,COSturm,COAWDSFlak,COAWDSLash,COAWDSAdder,COAWDSHawke,COAWDSJugger,COAWDSKoal,COAWDSKindle,COAWDSVonBolt,COAW1Sturm,COAW1SturmVs,COSFWCaroline,COSFWBillygates,COSFWYamamoto,COCCOEpoch,COCCOVenomAdder,COCCONergal
+	.db	COFlak,COLash,COAdder,COHawke,COSturm,COAWDSFlak,COAWDSLash,COAWDSAdder,COAWDSHawke,COAWDSJugger,COAWDSKoal,COAWDSKindle,COAWDSVonBolt,COAW1Sturm,COAW1SturmVs,COSFWCaroline,COSFWBillygates,COSFWYamamoto,COCCOEpoch,COCCOVenomAdder,COCCONergal, COCCOTransmog
 	.db	0xFF,0x4,0xFF
 	
 .align 4
@@ -99,7 +101,7 @@ BattleAnimationSpriteTable:
 	;SFW
 	.db	0,1,3
 	;CCO
-	.db	4,4,2,2,0,0
+	.db	4,4,2,2,0,0,0
 	
 
 .align 4

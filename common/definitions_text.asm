@@ -68,8 +68,9 @@
 	ScriptCCOZed		equ ScriptOutrealm+(14*46)
 	ScriptCCOEliwood	equ ScriptOutrealm+(14*47)
 	ScriptCCONergal		equ ScriptOutrealm+(14*48)
+	ScriptCCOTransmog	equ ScriptOutrealm+(14*49)
 
-	AdditionalMapCaseNames	equ ScriptCCONergal+14
+	AdditionalMapCaseNames	equ ScriptCCOTransmog+14
 	AW1TutorialMapNames	equ AdditionalMapCaseNames+10
 	AW1CampaignMapNames	equ AW1TutorialMapNames+14
 	AWDSCampaignMapNames	equ AW1CampaignMapNames+34

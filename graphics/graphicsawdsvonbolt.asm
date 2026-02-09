@@ -1,21 +1,21 @@
 ;graphicsawdsjugger.asm
-GraphicsAWDSVonboltPalette:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltPalette.bin"
-GraphicsAWDSVonboltGraphic:
-	.dw GraphicsAWDSVonboltTop
-	.dw GraphicsAWDSVonboltBody	
-GraphicsAWDSVonboltTop:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonbolttop.bin"
-GraphicsAWDSVonboltBody:	
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltbody.bin"
-GraphicsAWDSVonboltFace:	
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltneutral.bin"
-GraphicsAWDSVonboltHappyFace:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonbolthappy.bin"
-GraphicsAWDSVonboltSadFace:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltsad.bin"
-GraphicsAWDSVonboltName:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltname.bin"
-GraphicsAWDSVonboltMugshot:
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltmug.bin"
-;Blank Line
+graphicsawdsvonboltpalette:
+	.import "graphics/co/awdsvonbolt/awdsvonboltpalette.bin"
+graphicsawdsvonboltgraphic:
+	.dw graphicsawdsvonbolttop
+	.dw graphicsawdsvonboltbody
+graphicsawdsvonbolttop:
+	.import "graphics/co/awdsvonbolt/awdsvonbolttop.bin"
+graphicsawdsvonboltbody:
+	.import "graphics/co/awdsvonbolt/awdsvonboltbody.bin"
+graphicsawdsvonboltface:
+	.import "graphics/co/awdsvonbolt/awdsvonboltneutral.bin"
+graphicsawdsvonbolthappyface:
+	.import "graphics/co/awdsvonbolt/awdsvonbolthappy.bin"
+graphicsawdsvonboltsadface:
+	.import "graphics/co/awdsvonbolt/awdsvonboltsad.bin"
+graphicsawdsvonboltname:
+	.import "graphics/co/awdsvonbolt/awdsvonboltname.bin"
+graphicsawdsvonboltmugshot:
+	.import "graphics/co/awdsvonbolt/awdsvonboltmug.bin"
+;blank line

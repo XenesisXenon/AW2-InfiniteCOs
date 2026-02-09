@@ -1,3 +1,3 @@
-;Advance Wars 2 - AW Infinite COs Complete Build
+;advance wars 2 - aw infinite cos complete build
 ;main-unit.asm
-	.include "Units/Unitlist.asm"
+	.include "units/unitlist.asm"

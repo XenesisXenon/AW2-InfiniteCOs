@@ -1,21 +1,21 @@
-;graphicsAWDSNell.asm
-GraphicsAWDSNellPalette:
-	.import "graphics/CO/AWDSNell/AWDSNellPalette.bin"
-GraphicsAWDSNellGraphic:
-	.dw GraphicsAWDSNellTop
-	.dw GraphicsAWDSNellBody	
-GraphicsAWDSNellTop:
-	.import "graphics/CO/AWDSNell/AWDSNelltop.bin"
-GraphicsAWDSNellBody:	
-	.import "graphics/CO/AWDSNell/AWDSNellbody.bin"
-GraphicsAWDSNellFace:	
-	.import "graphics/CO/AWDSNell/AWDSNellneutral.bin"
-GraphicsAWDSNellHappyFace:
-	.import "graphics/CO/AWDSNell/AWDSNellhappy.bin"
-GraphicsAWDSNellSadFace:
-	.import "graphics/CO/AWDSNell/AWDSNellsad.bin"
-GraphicsAWDSNellName:
-	.import "graphics/CO/AWDSNell/AWDSNellname.bin"
-GraphicsAWDSNellMugshot:
-	.import "graphics/CO/AWDSNell/AWDSNellmug.bin"
-;Blank Line
+;graphicsawdsnell.asm
+graphicsawdsnellpalette:
+	.import "graphics/co/awdsnell/awdsnellpalette.bin"
+graphicsawdsnellgraphic:
+	.dw graphicsawdsnelltop
+	.dw graphicsawdsnellbody
+graphicsawdsnelltop:
+	.import "graphics/co/awdsnell/awdsnelltop.bin"
+graphicsawdsnellbody:
+	.import "graphics/co/awdsnell/awdsnellbody.bin"
+graphicsawdsnellface:
+	.import "graphics/co/awdsnell/awdsnellneutral.bin"
+graphicsawdsnellhappyface:
+	.import "graphics/co/awdsnell/awdsnellhappy.bin"
+graphicsawdsnellsadface:
+	.import "graphics/co/awdsnell/awdsnellsad.bin"
+graphicsawdsnellname:
+	.import "graphics/co/awdsnell/awdsnellname.bin"
+graphicsawdsnellmugshot:
+	.import "graphics/co/awdsnell/awdsnellmug.bin"
+;blank line

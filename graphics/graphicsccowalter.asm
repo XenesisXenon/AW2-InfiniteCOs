@@ -1,21 +1,21 @@
-;graphicsCCOWalter.asm
-GraphicsCCOWalterPalette:
-	.import "graphics/CO/CCOWalter/CCOWalterPalette.bin"
-GraphicsCCOWalterGraphic:
-	.dw GraphicsCCOWalterTop
-	.dw GraphicsCCOWalterBody	
-GraphicsCCOWalterTop:
-	.import "graphics/CO/CCOWalter/CCOWaltertop.bin"
-GraphicsCCOWalterBody:	
-	.import "graphics/CO/CCOWalter/CCOWalterbody.bin"
-GraphicsCCOWalterFace:	
-	.import "graphics/CO/CCOWalter/CCOWalterneutral.bin"
-GraphicsCCOWalterHappyFace:
-	.import "graphics/CO/CCOWalter/CCOWalterhappy.bin"
-GraphicsCCOWalterSadFace:
-	.import "graphics/CO/CCOWalter/CCOWaltersad.bin"
-GraphicsCCOWalterName:
-	.import "graphics/CO/CCOWalter/CCOWaltername.bin"
-GraphicsCCOWalterMugshot:
-	.import "graphics/CO/CCOWalter/CCOWaltermug.bin"
-;Blank Line
+;graphicsccowalter.asm
+graphicsccowalterpalette:
+	.import "graphics/co/ccowalter/ccowalterpalette.bin"
+graphicsccowaltergraphic:
+	.dw graphicsccowaltertop
+	.dw graphicsccowalterbody
+graphicsccowaltertop:
+	.import "graphics/co/ccowalter/ccowaltertop.bin"
+graphicsccowalterbody:
+	.import "graphics/co/ccowalter/ccowalterbody.bin"
+graphicsccowalterface:
+	.import "graphics/co/ccowalter/ccowalterneutral.bin"
+graphicsccowalterhappyface:
+	.import "graphics/co/ccowalter/ccowalterhappy.bin"
+graphicsccowaltersadface:
+	.import "graphics/co/ccowalter/ccowaltersad.bin"
+graphicsccowaltername:
+	.import "graphics/co/ccowalter/ccowaltername.bin"
+graphicsccowaltermugshot:
+	.import "graphics/co/ccowalter/ccowaltermug.bin"
+;blank line

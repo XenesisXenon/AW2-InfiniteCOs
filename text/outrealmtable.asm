@@ -734,4 +734,19 @@
 	.word	CCONergalCOPQuote4
 	.word	CCONergalCOPQuote5
 	.word	CCONergalCOPQuote6	
+
+	.word	CCOTransmogName
+	.word	CCOTransmogCOPower
+	.word	CCOTransmogSuperPower
+	.word	CCOTransmogDesc1
+	.word	CCOTransmogDesc2
+	.word	CCOTransmogDesc3
+	.word	CCOTransmogDesc4
+	.word	CCOTransmogVictory
+	.word	CCOTransmogCOPQuote1
+	.word	CCOTransmogCOPQuote2
+	.word	CCOTransmogCOPQuote3
+	.word	CCOTransmogCOPQuote4
+	.word	CCOTransmogCOPQuote5
+	.word	CCOTransmogCOPQuote6
 	;Blank Line

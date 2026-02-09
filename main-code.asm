@@ -1,13 +1,13 @@
-;Main-Code.asm
-;This is for floating location code
-;This Section is for Floating Location Code	
+;main-code.asm
+;this is for floating location code
+;this section is for floating location code
 
-;Code
+;code
 	.include "./common/common_functions.asm"
 	.align 4
-	.include "./code/PowerChargingModifier/corepowercharge.asm"
+	.include "./code/powerchargingmodifier/corepowercharge.asm"
 	.align 4
-	.include "./code/PowerChargingModifier/core_starcost.asm"
+	.include "./code/powerchargingmodifier/core_starcost.asm"
 	.align 4
 	.include "./code/repairexpansion/corerepairexpansion.asm"	
 	.align 4
@@ -45,7 +45,7 @@
 	.align 4
 	.include "./code/selectmodemenu/core_selectmode_menu.asm"
 	.align 4
-	.include "./code/maps/CoreMapHeaderDesignMapDisplayExpansion.asm"
+	.include "./code/maps/coremapheaderdesignmapdisplayexpansion.asm"
 	.align 4
 	.include "./code/keypad/core_keypad.asm"
 	.align 4
@@ -77,7 +77,7 @@
 	.align 4
 	.include "./code/hardtoggle/corehardtoggle.asm"
 	.align 4
-	.include "./code/powerchargingmodifier/corepowerSCOPdisable.asm"
+	.include "./code/powerchargingmodifier/corepowerscopdisable.asm"
 	.align 4
 	.include "./code/dyn_tilemaps/core_dynamictilemaps.asm"
 	.align 4
@@ -85,7 +85,7 @@
 	.align 4
 	.include "./code/campaign/core_campaign.asm"
 	.align 4
-	.include "./code/MeteorPowerExpansion/meteorpowerexpansionmain.asm"
+	.include "./code/meteorpowerexpansion/meteorpowerexpansionmain.asm"
 	.align 4
 	.include "./code/freecopmusic/corefreescopmusic.asm"
 	.align 4
@@ -93,19 +93,19 @@
 	.align 4
 	.include "./code/customuniticons/corecustomuniticonsdisp.asm"
 	.align 4
-	.include "./code/Script_Functions/Core_Script_Functions.asm"
+	.include "./code/script_functions/core_script_functions.asm"
 	.align 4
 	.include "./code/pathfinding/core_pathfinding.asm"
 	.align 4
 	.include "./code/copower/core_copower.asm"
 
-	;Engine Scripts
+	;engine scripts
 	.align 4
-	.include "./EngineScript/CoreEngineScript.asm"
+	.include "./enginescript/coreenginescript.asm"
 	.align 4
 	.include "./maps/coremaps.asm"
 
-	;Text String Data
+	;text string data
 	.align 4
 	.include "./text/texttable.asm"
 	.align 4
@@ -113,6 +113,6 @@
 	.align 4
 	.include "./text/coretextmain.asm"
 	
-	;Setup
+	;setup
 	.align 4
 ;blank line

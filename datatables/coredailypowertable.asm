@@ -81,7 +81,7 @@ CoreDailyPowerTable:
 	.dw	CCOTemplateDailyPowerTable
 	
 ;Additional Tables Added Here
-	.include	"./CODailyPower/CCOTemplateDailyCopt.asm"
-	.include	"./CODailyPower/HealHPDailyCopt.asm"
+	.include	"./codailypower/ccotemplatedailycopt.asm"
+	.include	"./codailypower/healhpdailycopt.asm"
 	
 	

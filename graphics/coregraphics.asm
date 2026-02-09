@@ -5,18 +5,18 @@
 ;Graphics which do not require fixed locations
 	.align 4
 GraphicsVeteranIcons:
-	.import "graphics/UnitMapSprite/InfoTags/awpVeterancyIcons.bin"
+	.import "graphics/unitmapsprite/infotags/awpveterancyicons.bin"
 
 	.align 4
 Graphics_AWDS_ForceRanks_Palette:
 	;.import "graphics/GUI/awds-skills-complete.bin"
-	.import "graphics/GUI/res_skill.bin"	;File from AWDS Super Forces
+	.import "graphics/gui/res_skill.bin"	;file from awds super forces
 	
 Graphics_AWDS_Property_Tower:
 	.align 4
-	.import "graphics/Terrain/awds_tower.bin"
+	.import "graphics/terrain/awds_tower.bin"
 Graphics_AW2_Property_Lab:
-	.import "graphics/Terrain/aw2_lab.bin"
+	.import "graphics/terrain/aw2_lab.bin"
 
 ;Generic Blank Outrealm Graphics
 	.align 4
@@ -80,65 +80,66 @@ Graphics_AW2_Property_Lab:
 
 GraphicsOutrealmMugSmall:
 ;Small Mugs for Troopers
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
 
 ;Custom COs Here
-	.import "graphics/CO/AWDSJake/AWDSJakesmug.bin"
-	.import "graphics/CO/AWDSRachel/AWDSRachelsmug.bin"
-	.import "graphics/CO/AWDSSasha/AWDSSashasmug.bin"
-	.import "graphics/CO/AWDSJavier/AWDSJaviersmug.bin"
-	.import "graphics/CO/AWDSGrimm/AWDSGrimmSmug.bin"
-	.import "graphics/CO/AWDSJugger/AWDSJuggersmug.bin"
-	.import "graphics/CO/AWDSKoal/AWDSKoalsmug.bin"	
-	.import "graphics/CO/AWDSKindle/AWDSKindlesmug.bin"	
-	.import "graphics/CO/AWDSVonbolt/AWDSVonboltsmug.bin"
+	.import "graphics/co/awdsjake/awdsjakesmug.bin"
+	.import "graphics/co/awdsrachel/awdsrachelsmug.bin"
+	.import "graphics/co/awdssasha/awdssashasmug.bin"
+	.import "graphics/co/awdsjavier/awdsjaviersmug.bin"
+	.import "graphics/co/awdsgrimm/awdsgrimmsmug.bin"
+	.import "graphics/co/awdsjugger/awdsjuggersmug.bin"
+	.import "graphics/co/awdskoal/awdskoalsmug.bin"
+	.import "graphics/co/awdskindle/awdskindlesmug.bin"
+	.import "graphics/co/awdsvonbolt/awdsvonboltsmug.bin"
 
-	.import "graphics/CO/AWDSNell/AWDSNellsmug.bin"
-	.import "graphics/CO/AWDSAndy/AWDSAndysmug.bin"
-	.import "graphics/CO/AWDSMax/AWDSMaxsmug.bin"
-	.import "graphics/CO/AWDSSami/AWDSSamismug.bin"
-	.import "graphics/CO/AWDSHachi/AWDSHachismug.bin"
-	.import "graphics/CO/AWDSOlaf/AWDSOlafsmug.bin"
-	.import "graphics/CO/AWDSGrit/AWDSGritsmug.bin"
-	.import "graphics/CO/AWDSColin/AWDSColinsmug.bin"
-	.import "graphics/CO/AWDSKanbei/AWDSKanbeismug.bin"
-	.import "graphics/CO/AWDSSonja/AWDSSonjasmug.bin"
-	.import "graphics/CO/AWDSSensei/AWDSSenseismug.bin"
-	.import "graphics/CO/AWDSEagle/AWDSEaglesmug.bin"
-	.import "graphics/CO/AWDSDrake/AWDSDrakesmug.bin"
-	.import "graphics/CO/AWDSJess/AWDSJesssmug.bin"
-	.import "graphics/CO/AWDSFlak/AWDSFlaksmug.bin"
-	.import "graphics/CO/AWDSLash/AWDSLashsmug.bin"
-	.import "graphics/CO/AWDSAdder/AWDSAddersmug.bin"
-	.import "graphics/CO/AWDSHawke/AWDSHawkesmug.bin"
+	.import "graphics/co/awdsnell/awdsnellsmug.bin"
+	.import "graphics/co/awdsandy/awdsandysmug.bin"
+	.import "graphics/co/awdsmax/awdsmaxsmug.bin"
+	.import "graphics/co/awdssami/awdssamismug.bin"
+	.import "graphics/co/awdshachi/awdshachismug.bin"
+	.import "graphics/co/awdsolaf/awdsolafsmug.bin"
+	.import "graphics/co/awdsgrit/awdsgritsmug.bin"
+	.import "graphics/co/awdscolin/awdscolinsmug.bin"
+	.import "graphics/co/awdskanbei/awdskanbeismug.bin"
+	.import "graphics/co/awdssonja/awdssonjasmug.bin"
+	.import "graphics/co/awdssensei/awdssenseismug.bin"
+	.import "graphics/co/awdseagle/awdseaglesmug.bin"
+	.import "graphics/co/awdsdrake/awdsdrakesmug.bin"
+	.import "graphics/co/awdsjess/awdsjesssmug.bin"
+	.import "graphics/co/awdsflak/awdsflaksmug.bin"
+	.import "graphics/co/awdslash/awdslashsmug.bin"
+	.import "graphics/co/awdsadder/awdsaddersmug.bin"
+	.import "graphics/co/awdshawke/awdshawkesmug.bin"
 	
-	.import "graphics/CO/AW1Sturm/AW1Sturmsmug.bin"
-	.import "graphics/CO/AW1Sturm/AW1Sturmsmug.bin"
+	.import "graphics/co/aw1sturm/aw1sturmsmug.bin"
+	.import "graphics/co/aw1sturm/aw1sturmsmug.bin"
 
-	.import "graphics/CO/AW1Nell/AW1Nellsmug.bin"
-	.import "graphics/CO/AW1Andy/AW1Andysmug.bin"
-	.import "graphics/CO/AW1Max/AW1Maxsmug.bin"
-	.import "graphics/CO/AW1Sami/AW1Samismug.bin"
-	.import "graphics/CO/AW1Olaf/AW1Olafsmug.bin"
-	.import "graphics/CO/AW1Grit/AW1Gritsmug.bin"
-	.import "graphics/CO/AW1Kanbei/AW1Kanbeismug.bin"
-	.import "graphics/CO/AW1Sonja/AW1Sonjasmug.bin"
-	.import "graphics/CO/AW1Eagle/AW1Eaglesmug.bin"
-	.import "graphics/CO/AW1Drake/AW1Drakesmug.bin"
-	.import "graphics/CO/SFWCarol/SFWCarolsmug.bin"
-	.import "graphics/CO/SFWBillygates/SFWBillygatessmug.bin"	
-	.import "graphics/CO/SFWYamamoto/SFWYamamotosmug.bin"
+	.import "graphics/co/aw1nell/aw1nellsmug.bin"
+	.import "graphics/co/aw1andy/aw1andysmug.bin"
+	.import "graphics/co/aw1max/aw1maxsmug.bin"
+	.import "graphics/co/aw1sami/aw1samismug.bin"
+	.import "graphics/co/aw1olaf/aw1olafsmug.bin"
+	.import "graphics/co/aw1grit/aw1gritsmug.bin"
+	.import "graphics/co/aw1kanbei/aw1kanbeismug.bin"
+	.import "graphics/co/aw1sonja/aw1sonjasmug.bin"
+	.import "graphics/co/aw1eagle/aw1eaglesmug.bin"
+	.import "graphics/co/aw1drake/aw1drakesmug.bin"
+	.import "graphics/co/sfwcarol/sfwcarolsmug.bin"
+	.import "graphics/co/sfwbillygates/sfwbillygatessmug.bin"
+	.import "graphics/co/sfwyamamoto/sfwyamamotosmug.bin"
 	
-	.import "graphics/CO/CCOVenomAdder/CCOVenomAddersmug.bin"
-	.import "graphics/CO/CCOEpoch/CCOEpochsmug.bin"	
-	.import "graphics/CO/CCOWalter/CCOWaltersmug.bin"	
-	.import "graphics/CO/OutrealmCO/outrealmsmug.bin"	
-	.import "graphics/CO/CCOEliwood/eliwoodsmug.bin"	;Eliwood	
-	.import "graphics/CO/CCONergal/NergalSMug.bin"		;nergal	
+	.import "graphics/co/ccovenomadder/ccovenomaddersmug.bin"
+	.import "graphics/co/ccoepoch/ccoepochsmug.bin"
+	.import "graphics/co/ccowalter/ccowaltersmug.bin"
+	.import "graphics/co/outrealmco/outrealmsmug.bin"
+	.import "graphics/co/ccoeliwood/eliwoodsmug.bin"	;eliwood
+	.import "graphics/co/cconergal/nergalsmug.bin"		;nergal
+	.import "graphics/co/outrealmco/outrealmsmug.bin"	;transmog
 	
 	
 	

@@ -1,21 +1,21 @@
 ;graphicsawdsjugger.asm
-GraphicsAWDSJuggerPalette:
-	.import "graphics/CO/AWDSJugger/AWDSJuggerPalette.bin"
-GraphicsAWDSJuggerGraphic:
-	.dw GraphicsAWDSJuggerTop
-	.dw GraphicsAWDSJuggerBody	
-GraphicsAWDSJuggerTop:
-	.import "graphics/CO/AWDSJugger/AWDSJuggertop.bin"
-GraphicsAWDSJuggerBody:	
-	.import "graphics/CO/AWDSJugger/AWDSJuggerbody.bin"
-GraphicsAWDSJuggerFace:	
-	.import "graphics/CO/AWDSJugger/AWDSJuggerneutral.bin"
-GraphicsAWDSJuggerHappyFace:
-	.import "graphics/CO/AWDSJugger/AWDSJuggerhappy.bin"
-GraphicsAWDSJuggerSadFace:
-	.import "graphics/CO/AWDSJugger/AWDSJuggersad.bin"
-GraphicsAWDSJuggerName:
-	.import "graphics/CO/AWDSJugger/AWDSJuggername.bin"
-GraphicsAWDSJuggerMugshot:
-	.import "graphics/CO/AWDSJugger/AWDSJuggermug.bin"
-;Blank Line
+graphicsawdsjuggerpalette:
+	.import "graphics/co/awdsjugger/awdsjuggerpalette.bin"
+graphicsawdsjuggergraphic:
+	.dw graphicsawdsjuggertop
+	.dw graphicsawdsjuggerbody
+graphicsawdsjuggertop:
+	.import "graphics/co/awdsjugger/awdsjuggertop.bin"
+graphicsawdsjuggerbody:
+	.import "graphics/co/awdsjugger/awdsjuggerbody.bin"
+graphicsawdsjuggerface:
+	.import "graphics/co/awdsjugger/awdsjuggerneutral.bin"
+graphicsawdsjuggerhappyface:
+	.import "graphics/co/awdsjugger/awdsjuggerhappy.bin"
+graphicsawdsjuggersadface:
+	.import "graphics/co/awdsjugger/awdsjuggersad.bin"
+graphicsawdsjuggername:
+	.import "graphics/co/awdsjugger/awdsjuggername.bin"
+graphicsawdsjuggermugshot:
+	.import "graphics/co/awdsjugger/awdsjuggermug.bin"
+;blank line

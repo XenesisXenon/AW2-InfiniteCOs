@@ -1,21 +1,21 @@
-;graphicsAW1Eagle.asm
-GraphicsAW1EaglePalette:
-	.import "graphics/CO/AW1Eagle/AW1EaglePalette.bin"
-GraphicsAW1EagleGraphic:
-	.dw GraphicsAW1EagleTop
-	.dw GraphicsAW1EagleBody	
-GraphicsAW1EagleTop:
-	.import "graphics/CO/AW1Eagle/AW1Eagletop.bin"
-GraphicsAW1EagleBody:	
-	.import "graphics/CO/AW1Eagle/AW1Eaglebody.bin"
-GraphicsAW1EagleFace:	
-	.import "graphics/CO/AW1Eagle/AW1Eagleneutral.bin"
-GraphicsAW1EagleHappyFace:
-	.import "graphics/CO/AW1Eagle/AW1Eaglehappy.bin"
-GraphicsAW1EagleSadFace:
-	.import "graphics/CO/AW1Eagle/AW1Eaglesad.bin"
-;GraphicsAW1EagleName:
-;	.import "graphics/CO/AW1Eagle/AW1Eaglename.bin"
-GraphicsAW1EagleMugshot:
-	.import "graphics/CO/AW1Eagle/AW1Eaglemug.bin"
-;Blank Line
+;graphicsaw1eagle.asm
+graphicsaw1eaglepalette:
+	.import "graphics/co/aw1eagle/aw1eaglepalette.bin"
+graphicsaw1eaglegraphic:
+	.dw graphicsaw1eagletop
+	.dw graphicsaw1eaglebody
+graphicsaw1eagletop:
+	.import "graphics/co/aw1eagle/aw1eagletop.bin"
+graphicsaw1eaglebody:
+	.import "graphics/co/aw1eagle/aw1eaglebody.bin"
+graphicsaw1eagleface:
+	.import "graphics/co/aw1eagle/aw1eagleneutral.bin"
+graphicsaw1eaglehappyface:
+	.import "graphics/co/aw1eagle/aw1eaglehappy.bin"
+graphicsaw1eaglesadface:
+	.import "graphics/co/aw1eagle/aw1eaglesad.bin"
+;graphicsaw1eaglename:
+;	.import "graphics/co/aw1eagle/aw1eaglename.bin"
+graphicsaw1eaglemugshot:
+	.import "graphics/co/aw1eagle/aw1eaglemug.bin"
+;blank line

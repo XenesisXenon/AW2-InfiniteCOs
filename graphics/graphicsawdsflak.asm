@@ -1,21 +1,21 @@
-;graphicsAWDSFlak.asm
-GraphicsAWDSFlakPalette:
-	.import "graphics/CO/AWDSFlak/AWDSFlakPalette.bin"
-GraphicsAWDSFlakGraphic:
-	.dw GraphicsAWDSFlakTop
-	.dw GraphicsAWDSFlakBody	
-GraphicsAWDSFlakTop:
-	.import "graphics/CO/AWDSFlak/AWDSFlaktop.bin"
-GraphicsAWDSFlakBody:	
-	.import "graphics/CO/AWDSFlak/AWDSFlakbody.bin"
-GraphicsAWDSFlakFace:	
-	.import "graphics/CO/AWDSFlak/AWDSFlakneutral.bin"
-GraphicsAWDSFlakHappyFace:
-	.import "graphics/CO/AWDSFlak/AWDSFlakhappy.bin"
-GraphicsAWDSFlakSadFace:
-	.import "graphics/CO/AWDSFlak/AWDSFlaksad.bin"
-GraphicsAWDSFlakName:
-	.import "graphics/CO/AWDSFlak/AWDSFlakname.bin"
-GraphicsAWDSFlakMugshot:
-	.import "graphics/CO/AWDSFlak/AWDSFlakmug.bin"
-;Blank Line
+;graphicsawdsflak.asm
+graphicsawdsflakpalette:
+	.import "graphics/co/awdsflak/awdsflakpalette.bin"
+graphicsawdsflakgraphic:
+	.dw graphicsawdsflaktop
+	.dw graphicsawdsflakbody
+graphicsawdsflaktop:
+	.import "graphics/co/awdsflak/awdsflaktop.bin"
+graphicsawdsflakbody:
+	.import "graphics/co/awdsflak/awdsflakbody.bin"
+graphicsawdsflakface:
+	.import "graphics/co/awdsflak/awdsflakneutral.bin"
+graphicsawdsflakhappyface:
+	.import "graphics/co/awdsflak/awdsflakhappy.bin"
+graphicsawdsflaksadface:
+	.import "graphics/co/awdsflak/awdsflaksad.bin"
+graphicsawdsflakname:
+	.import "graphics/co/awdsflak/awdsflakname.bin"
+graphicsawdsflakmugshot:
+	.import "graphics/co/awdsflak/awdsflakmug.bin"
+;blank line

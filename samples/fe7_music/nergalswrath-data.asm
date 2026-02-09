@@ -1,0 +1,17 @@
+	.include "samples/fe7_music/samples/nergalswrath019.asm"
+	.include "samples/fe7_music/samples/nergalswrath038.asm"
+	.include "samples/fe7_music/samples/nergalswrath047.asm"
+	.include "samples/fe7_music/samples/nergalswrath048.asm"
+	.include "samples/fe7_music/samples/nergalswrath057.asm"
+	.include "samples/fe7_music/samples/nergalswrath060.asm"
+	.include "samples/fe7_music/samples/nergalswrath061.asm"
+	.include "samples/fe7_music/samples/nergalswrath076.asm"
+	.include "samples/fe7_music/samples/nergalswrath097.asm"
+	.include "samples/fe7_music/samples/nergalswrath108.asm"
+	.include "samples/fe7_music/samples/nergalswrath110.asm"
+	.include "samples/fe7_music/samples/nergalswrath111.asm"
+	.include "samples/fe7_music/samples/nergalswrath114.asm"
+	.include "samples/fe7_music/samples/nergalswrath115.asm"
+	.include "samples/fe7_music/samples/nergalswrath122.asm"
+
+; blank line

@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsAW1MaxPalette:
-	.import "graphics/CO/AW1Max/AW1MaxPalette.bin"
-GraphicsAW1MaxGraphic:
-	.dw GraphicsAW1MaxTop
-	.dw GraphicsAW1MaxBody	
-GraphicsAW1MaxTop:
-	.import "graphics/CO/AW1Max/AW1Maxtop.bin"
-GraphicsAW1MaxBody:	
-	.import "graphics/CO/AW1Max/AW1Maxbody.bin"
-GraphicsAW1MaxFace:	
-	.import "graphics/CO/AW1Max/AW1Maxneutral.bin"
-GraphicsAW1MaxHappyFace:
-	.import "graphics/CO/AW1Max/AW1Maxhappy.bin"
-GraphicsAW1MaxSadFace:
-	.import "graphics/CO/AW1Max/AW1Maxsad.bin"
-;GraphicsAW1MaxName:
-;	.import "graphics/CO/AW1Max/AW1Maxname.bin"
-GraphicsAW1MaxMugshot:
-	.import "graphics/CO/AW1Max/AW1Maxmug.bin"
-;Blank Line
+graphicsaw1maxpalette:
+	.import "graphics/co/aw1max/aw1maxpalette.bin"
+graphicsaw1maxgraphic:
+	.dw graphicsaw1maxtop
+	.dw graphicsaw1maxbody
+graphicsaw1maxtop:
+	.import "graphics/co/aw1max/aw1maxtop.bin"
+graphicsaw1maxbody:
+	.import "graphics/co/aw1max/aw1maxbody.bin"
+graphicsaw1maxface:
+	.import "graphics/co/aw1max/aw1maxneutral.bin"
+graphicsaw1maxhappyface:
+	.import "graphics/co/aw1max/aw1maxhappy.bin"
+graphicsaw1maxsadface:
+	.import "graphics/co/aw1max/aw1maxsad.bin"
+;graphicsaw1maxname:
+;	.import "graphics/co/aw1max/aw1maxname.bin"
+graphicsaw1maxmugshot:
+	.import "graphics/co/aw1max/aw1maxmug.bin"
+;blank line

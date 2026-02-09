@@ -1,0 +1,9 @@
+;Current Unit Offsets
+CurrentUnitID			equ	0x0
+CurrentUnitState		equ	0x1
+CurrentUnitPosition		equ	0x2
+CurrentUnitHP			equ	0x4
+CurrentUnitAmmo			equ	0x4
+CurrentUnitCapture		equ	0x4
+CurrentUnitFuel			equ	0x6
+CurrentUnitTransport		equ	0x7

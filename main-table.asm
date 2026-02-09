@@ -1,8 +1,8 @@
-;Advance Wars 2 - AW Infinite COs Complete Build
+;advance wars 2 - aw infinite cos complete build
 ;main-table.asm
 
-;For tables that require code in dynamic locations
-;Battle Maps Purchaseable Item Table
+;for tables that require code in dynamic locations
+;battle maps purchaseable item table
  	.align 4
 	.include "./datatables/core_tileallocation_table.asm"
 	.align 4
@@ -20,5 +20,5 @@
 	.align 4
 	.include "./datatables/tablepropertyallocation.asm"
 	.align 4
-	.include "./Event/core_event.asm"
+	.include "./event/core_event.asm"
 

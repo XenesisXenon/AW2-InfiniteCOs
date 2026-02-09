@@ -1,71 +1,71 @@
 ;coremusic.asm
-;What Music To Import
+;what music to import
 
-;Kirby - Nightmare in Dream Land
+;kirby - nightmare in dream land
 ;	.align 4
-;	.include music/KirbyNidl/KirbyClassicStage-header.asm
+;	.include music/kirbynidl/kirbyclassicstage-header.asm
 ;	.align 4
-;	.include music/KirbyNidl/KirbyBossBattle-header.asm
+;	.include music/kirbynidl/kirbybossbattle-header.asm
 ;	.align 4
-;	.include music/KirbyNidl/KirbyDededeBattle-header.asm
+;	.include music/kirbynidl/kirbydededebattle-header.asm
 	
-;Phoenix Wright - Ace Attorney
+;phoenix wright - ace attorney
 	.align 4
-	.include "music/AceAttorney/PW1Investigation-header.asm"
+	.include "music/aceattorney/pw1investigation-header.asm"
 	.align 4
-	.include "music/AceAttorney/PW1RevealTruth-header.asm"
+	.include "music/aceattorney/pw1revealtruth-header.asm"
 	.align 4
-	.include "music/AceAttorney/Objection-header.asm"
+	.include "music/aceattorney/objection-header.asm"
 	
-;Pokemon Fire Red
-;	.include music/FireredMusic/DeoxysBattle-header.asm
+;pokemon fire red
+;	.include music/fireredmusic/deoxysbattle-header.asm
 	
-;Midi 2 GBA Test
+;midi 2 gba test
 ;	.align 4
-;	.include music/GBA2Midi/Test1-header.asm
+;	.include music/gba2midi/test1-header.asm
 ;	.align 4
-;	.include music/GBA2Midi/IoTIncan-header.asm
+;	.include music/gba2midi/iotincan-header.asm
 	
-;Ripper Update Test
+;ripper update test
 ;	.align 4
 ;	.include music/test1/test1-header.asm
 
-;Fire Emblem: Blazing Sword
+;fire emblem: blazing sword
 	.align 4
-	.include "music/FE7_Music/Eliwood1-header.asm"
+	.include "music/fe7_music/eliwood1-header.asm"
 	.align 4
-	.include "music/FE7_Music/GoingMyWay-header.asm"
+	.include "music/fe7_music/goingmyway-header.asm"
 	.align 4
-	.include "music/FE7_Music/WinningRoad-header.asm"
+	.include "music/fe7_music/winningroad-header.asm"
 	.align 4
-	.include "music/FE7_Music/Attack-header.asm"
+	.include "music/fe7_music/attack-header.asm"
 	.align 4
-	.include "music/FE7_Music/Map1-header.asm"
+	.include "music/fe7_music/map1-header.asm"
 	.align 4
-	.include "music/FE7_Music/NergalsTheme-header.asm"
+	.include "music/fe7_music/nergalstheme-header.asm"
 	.align 4
-	.include "music/FE7_Music/NergalsWrath-header.asm"
+	.include "music/fe7_music/nergalswrath-header.asm"
 	.align 4
-	.include "music/FE7_Music/RiseToTheChallenge-header.asm"
+	.include "music/fe7_music/risetothechallenge-header.asm"
 	.align 4
-	.include "music/FE7_Music/IntoTheDark-header.asm"
+	.include "music/fe7_music/intothedark-header.asm"
 	
-;Sound Effects
+;sound effects
 	.align 4
-	.include "music/FE7_SFX/SFX_Warp-header.asm"
+	.include "music/fe7_sfx/sfx_warp-header.asm"
 	.align 4
-	.include "music/FE7_SFX/SFX_WarpEnd-header.asm"
+	.include "music/fe7_sfx/sfx_warpend-header.asm"
 	
 	
-;Metroid Fusion
+;metroid fusion
 	;.align 4
-	;.include "music/MetFusion_Music/Sector1SRX-header.asm"
+	;.include "music/metfusion_music/sector1srx-header.asm"
 	;.align 4
-	;.include "music/MetFusion_Music/Sector2TRO-header.asm"
+	;.include "music/metfusion_music/sector2tro-header.asm"
 	
-;Metroid Zero Mission
+;metroid zero mission
 	.align 4
-	.include "music/MetZM_music/Brinstar-header.asm"
+	.include "music/metzm_music/brinstar-header.asm"
 	.align 4
-	.include "music/MetZM_music/KraidsLair-header.asm"
-;Blank Line	
+	.include "music/metzm_music/kraidslair-header.asm"
+;blank line

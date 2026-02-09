@@ -1,21 +1,21 @@
-;graphicsAW1Sami.asm
-GraphicsAW1SamiPalette:
-	.import "graphics/CO/AW1Sami/AW1SamiPalette.bin"
-GraphicsAW1SamiGraphic:
-	.dw GraphicsAW1SamiTop
-	.dw GraphicsAW1SamiBody	
-GraphicsAW1SamiTop:
-	.import "graphics/CO/AW1Sami/AW1Samitop.bin"
-GraphicsAW1SamiBody:	
-	.import "graphics/CO/AW1Sami/AW1Samibody.bin"
-GraphicsAW1SamiFace:	
-	.import "graphics/CO/AW1Sami/AW1Samineutral.bin"
-GraphicsAW1SamiHappyFace:
-	.import "graphics/CO/AW1Sami/AW1Samihappy.bin"
-GraphicsAW1SamiSadFace:
-	.import "graphics/CO/AW1Sami/AW1Samisad.bin"
-;GraphicsAW1SamiName:
-;	.import "graphics/CO/AW1Sami/AW1Saminame.bin"
-GraphicsAW1SamiMugshot:
-	.import "graphics/CO/AW1Sami/AW1Samimug.bin"
-;Blank Line
+;graphicsaw1sami.asm
+graphicsaw1samipalette:
+	.import "graphics/co/aw1sami/aw1samipalette.bin"
+graphicsaw1samigraphic:
+	.dw graphicsaw1samitop
+	.dw graphicsaw1samibody
+graphicsaw1samitop:
+	.import "graphics/co/aw1sami/aw1samitop.bin"
+graphicsaw1samibody:
+	.import "graphics/co/aw1sami/aw1samibody.bin"
+graphicsaw1samiface:
+	.import "graphics/co/aw1sami/aw1samineutral.bin"
+graphicsaw1samihappyface:
+	.import "graphics/co/aw1sami/aw1samihappy.bin"
+graphicsaw1samisadface:
+	.import "graphics/co/aw1sami/aw1samisad.bin"
+;graphicsaw1saminame:
+;	.import "graphics/co/aw1sami/aw1saminame.bin"
+graphicsaw1samimugshot:
+	.import "graphics/co/aw1sami/aw1samimug.bin"
+;blank line

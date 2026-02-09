@@ -58,5 +58,5 @@
 	.include "text/outrealmcos/ccowalter.asm"
 	.include "text/outrealmcos/ccoeliwood.asm"
 	.include "text/outrealmcos/cconergal.asm"
-	
+	.include "text/outrealmcos/ccotransmog.asm"
 ;Blank Line

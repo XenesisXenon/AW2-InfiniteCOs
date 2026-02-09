@@ -1,21 +1,21 @@
-;graphicsAWDSJake.asm
-GraphicsAWDSJakePalette:
-	.import "graphics/CO/AWDSJake/AWDSJakePalette.bin"
-GraphicsAWDSJakeGraphic:
-	.dw GraphicsAWDSJakeTop
-	.dw GraphicsAWDSJakeBody	
-GraphicsAWDSJakeTop:
-	.import "graphics/CO/AWDSJake/AWDSJaketop.bin"
-GraphicsAWDSJakeBody:	
-	.import "graphics/CO/AWDSJake/AWDSJakebody.bin"
-GraphicsAWDSJakeFace:	
-	.import "graphics/CO/AWDSJake/AWDSJakeneutral.bin"
-GraphicsAWDSJakeHappyFace:
-	.import "graphics/CO/AWDSJake/AWDSJakehappy.bin"
-GraphicsAWDSJakeSadFace:
-	.import "graphics/CO/AWDSJake/AWDSJakesad.bin"
-GraphicsAWDSJakeName:
-	.import "graphics/CO/AWDSJake/AWDSJakename.bin"
-GraphicsAWDSJakeMugshot:
-	.import "graphics/CO/AWDSJake/AWDSJakemug.bin"
-;Blank Line
+;graphicsawdsjake.asm
+graphicsawdsjakepalette:
+	.import "graphics/co/awdsjake/awdsjakepalette.bin"
+graphicsawdsjakegraphic:
+	.dw graphicsawdsjaketop
+	.dw graphicsawdsjakebody
+graphicsawdsjaketop:
+	.import "graphics/co/awdsjake/awdsjaketop.bin"
+graphicsawdsjakebody:
+	.import "graphics/co/awdsjake/awdsjakebody.bin"
+graphicsawdsjakeface:
+	.import "graphics/co/awdsjake/awdsjakeneutral.bin"
+graphicsawdsjakehappyface:
+	.import "graphics/co/awdsjake/awdsjakehappy.bin"
+graphicsawdsjakesadface:
+	.import "graphics/co/awdsjake/awdsjakesad.bin"
+graphicsawdsjakename:
+	.import "graphics/co/awdsjake/awdsjakename.bin"
+graphicsawdsjakemugshot:
+	.import "graphics/co/awdsjake/awdsjakemug.bin"
+;blank line

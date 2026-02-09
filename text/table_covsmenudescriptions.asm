@@ -73,4 +73,5 @@ Table_VersusMenu_Description_Offset:
 	.word	String_VsMenu_Andy
 	.word	String_VsMenu_CCOEliwood
 	.word	String_VsMenu_CCONergal
+	.word	String_VsMenu_CCOTransmog
 	

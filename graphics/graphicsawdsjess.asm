@@ -1,21 +1,21 @@
-;graphicsAWDSJess.asm
-GraphicsAWDSJessPalette:
-	.import "graphics/CO/AWDSJess/AWDSJessPalette.bin"
-GraphicsAWDSJessGraphic:
-	.dw GraphicsAWDSJessTop
-	.dw GraphicsAWDSJessBody	
-GraphicsAWDSJessTop:
-	.import "graphics/CO/AWDSJess/AWDSJesstop.bin"
-GraphicsAWDSJessBody:	
-	.import "graphics/CO/AWDSJess/AWDSJessbody.bin"
-GraphicsAWDSJessFace:	
-	.import "graphics/CO/AWDSJess/AWDSJessneutral.bin"
-GraphicsAWDSJessHappyFace:
-	.import "graphics/CO/AWDSJess/AWDSJesshappy.bin"
-GraphicsAWDSJessSadFace:
-	.import "graphics/CO/AWDSJess/AWDSJesssad.bin"
-GraphicsAWDSJessName:
-	.import "graphics/CO/AWDSJess/AWDSJessname.bin"
-GraphicsAWDSJessMugshot:
-	.import "graphics/CO/AWDSJess/AWDSJessmug.bin"
-;Blank Line
+;graphicsawdsjess.asm
+graphicsawdsjesspalette:
+	.import "graphics/co/awdsjess/awdsjesspalette.bin"
+graphicsawdsjessgraphic:
+	.dw graphicsawdsjesstop
+	.dw graphicsawdsjessbody
+graphicsawdsjesstop:
+	.import "graphics/co/awdsjess/awdsjesstop.bin"
+graphicsawdsjessbody:
+	.import "graphics/co/awdsjess/awdsjessbody.bin"
+graphicsawdsjessface:
+	.import "graphics/co/awdsjess/awdsjessneutral.bin"
+graphicsawdsjesshappyface:
+	.import "graphics/co/awdsjess/awdsjesshappy.bin"
+graphicsawdsjesssadface:
+	.import "graphics/co/awdsjess/awdsjesssad.bin"
+graphicsawdsjessname:
+	.import "graphics/co/awdsjess/awdsjessname.bin"
+graphicsawdsjessmugshot:
+	.import "graphics/co/awdsjess/awdsjessmug.bin"
+;blank line

@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsAW1AndyPalette:
-	.import "graphics/CO/AW1Andy/AW1AndyPalette.bin"
-GraphicsAW1AndyGraphic:
-	.dw GraphicsAW1AndyTop
-	.dw GraphicsAW1AndyBody	
-GraphicsAW1AndyTop:
-	.import "graphics/CO/AW1Andy/AW1Andytop.bin"
-GraphicsAW1AndyBody:	
-	.import "graphics/CO/AW1Andy/AW1Andybody.bin"
-GraphicsAW1AndyFace:	
-	.import "graphics/CO/AW1Andy/AW1Andyneutral.bin"
-GraphicsAW1AndyHappyFace:
-	.import "graphics/CO/AW1Andy/AW1Andyhappy.bin"
-GraphicsAW1AndySadFace:
-	.import "graphics/CO/AW1Andy/AW1Andysad.bin"
-;GraphicsAW1AndyName:
-;	.import "graphics/CO/AW1Andy/AW1Andyname.bin"
-GraphicsAW1AndyMugshot:
-	.import "graphics/CO/AW1Andy/AW1Andymug.bin"
-;Blank Line
+graphicsaw1andypalette:
+	.import "graphics/co/aw1andy/aw1andypalette.bin"
+graphicsaw1andygraphic:
+	.dw graphicsaw1andytop
+	.dw graphicsaw1andybody
+graphicsaw1andytop:
+	.import "graphics/co/aw1andy/aw1andytop.bin"
+graphicsaw1andybody:
+	.import "graphics/co/aw1andy/aw1andybody.bin"
+graphicsaw1andyface:
+	.import "graphics/co/aw1andy/aw1andyneutral.bin"
+graphicsaw1andyhappyface:
+	.import "graphics/co/aw1andy/aw1andyhappy.bin"
+graphicsaw1andysadface:
+	.import "graphics/co/aw1andy/aw1andysad.bin"
+;graphicsaw1andyname:
+;	.import "graphics/co/aw1andy/aw1andyname.bin"
+graphicsaw1andymugshot:
+	.import "graphics/co/aw1andy/aw1andymug.bin"
+;blank line

@@ -1,0 +1,15 @@
+	.include "samples/fe7_music/samples/map1034.asm"
+	.include "samples/fe7_music/samples/map1047.asm"
+	.include "samples/fe7_music/samples/map1048.asm"
+	.include "samples/fe7_music/samples/map1049.asm"
+	.include "samples/fe7_music/samples/map1060.asm"
+	.include "samples/fe7_music/samples/map1061.asm"
+	.include "samples/fe7_music/samples/map1068.asm"
+	.include "samples/fe7_music/samples/map1071.asm"
+	.include "samples/fe7_music/samples/map1073.asm"
+	.include "samples/fe7_music/samples/map1100.asm"
+	.include "samples/fe7_music/samples/map1101.asm"
+	.include "samples/fe7_music/samples/map1103.asm"
+	.include "samples/fe7_music/samples/map1127-drums.asm"
+
+; blank line

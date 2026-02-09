@@ -1,21 +1,21 @@
-;graphicsAWDSColin.asm
-GraphicsAWDSColinPalette:
-	.import "graphics/CO/AWDSColin/AWDSColinPalette.bin"
-GraphicsAWDSColinGraphic:
-	.dw GraphicsAWDSColinTop
-	.dw GraphicsAWDSColinBody	
-GraphicsAWDSColinTop:
-	.import "graphics/CO/AWDSColin/AWDSColintop.bin"
-GraphicsAWDSColinBody:	
-	.import "graphics/CO/AWDSColin/AWDSColinbody.bin"
-GraphicsAWDSColinFace:	
-	.import "graphics/CO/AWDSColin/AWDSColinneutral.bin"
-GraphicsAWDSColinHappyFace:
-	.import "graphics/CO/AWDSColin/AWDSColinhappy.bin"
-GraphicsAWDSColinSadFace:
-	.import "graphics/CO/AWDSColin/AWDSColinsad.bin"
-GraphicsAWDSColinName:
-	.import "graphics/CO/AWDSColin/AWDSColinname.bin"
-GraphicsAWDSColinMugshot:
-	.import "graphics/CO/AWDSColin/AWDSColinmug.bin"
-;Blank Line
+;graphicsawdscolin.asm
+graphicsawdscolinpalette:
+	.import "graphics/co/awdscolin/awdscolinpalette.bin"
+graphicsawdscolingraphic:
+	.dw graphicsawdscolintop
+	.dw graphicsawdscolinbody
+graphicsawdscolintop:
+	.import "graphics/co/awdscolin/awdscolintop.bin"
+graphicsawdscolinbody:
+	.import "graphics/co/awdscolin/awdscolinbody.bin"
+graphicsawdscolinface:
+	.import "graphics/co/awdscolin/awdscolinneutral.bin"
+graphicsawdscolinhappyface:
+	.import "graphics/co/awdscolin/awdscolinhappy.bin"
+graphicsawdscolinsadface:
+	.import "graphics/co/awdscolin/awdscolinsad.bin"
+graphicsawdscolinname:
+	.import "graphics/co/awdscolin/awdscolinname.bin"
+graphicsawdscolinmugshot:
+	.import "graphics/co/awdscolin/awdscolinmug.bin"
+;blank line

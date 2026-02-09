@@ -114,21 +114,21 @@
 
 
 ;Includes the Checks and Effects
-	.include "datatables/COGraphicAndPower/Powerchecks/checkallunits.asm"
-	.include "datatables/COGraphicAndPower/Powerchecks/checkdirectcombat.asm"
-	.include "datatables/COGraphicAndPower/Powerchecks/checkindirectcombat.asm"
-	.include "datatables/COGraphicAndPower/Powerchecks/checksoldierclass.asm"	
-	.include "datatables/COGraphicAndPower/Powerchecks/checkaerialclass.asm"
-	.include "datatables/COGraphicAndPower/Powerchecks/checkaerialclassornotwait.asm"
+	.include "datatables/cographicandpower/powerchecks/checkallunits.asm"
+	.include "datatables/cographicandpower/powerchecks/checkdirectcombat.asm"
+	.include "datatables/cographicandpower/powerchecks/checkindirectcombat.asm"
+	.include "datatables/cographicandpower/powerchecks/checksoldierclass.asm"
+	.include "datatables/cographicandpower/powerchecks/checkaerialclass.asm"
+	.include "datatables/cographicandpower/powerchecks/checkaerialclassornotwait.asm"
 
-	.include "datatables/COGraphicAndPower/Powereffects/copnoeffect.asm"	
-	.include "datatables/COGraphicAndPower/Powereffects/cophealtwohp.asm"	
-	.include "datatables/COGraphicAndPower/Powereffects/cophealfivehp.asm"	
-	.include "datatables/COGraphicAndPower/Powereffects/copreanimateunit.asm"	
-	.include "datatables/COGraphicAndPower/Powereffects/copresupplyunit.asm"
+	.include "datatables/cographicandpower/powereffects/copnoeffect.asm"
+	.include "datatables/cographicandpower/powereffects/cophealtwohp.asm"
+	.include "datatables/cographicandpower/powereffects/cophealfivehp.asm"
+	.include "datatables/cographicandpower/powereffects/copreanimateunit.asm"
+	.include "datatables/cographicandpower/powereffects/copresupplyunit.asm"
 
-	.include "datatables/COGraphicAndPower/Powertypes/powertypestandard.asm"
-	.include "datatables/COGraphicAndPower/Powertypes/powertypepowerofmoney.asm"	
+	.include "datatables/cographicandpower/powertypes/powertypestandard.asm"
+	.include "datatables/cographicandpower/powertypes/powertypepowerofmoney.asm"
 	
 	
 ;Blank Line

@@ -1,21 +1,21 @@
 ;graphicsaw1sturm.asm
-GraphicsSFWCarolPalette:
-	.import "graphics/CO/SFWCarol/SFWCarolPalette.bin"
-GraphicsSFWCarolGraphic:
-	.dw GraphicsSFWCarolTop
-	.dw GraphicsSFWCarolBody	
-GraphicsSFWCarolTop:
-	.import "graphics/CO/SFWCarol/SFWCaroltop.bin"
-GraphicsSFWCarolBody:	
-	.import "graphics/CO/SFWCarol/SFWCarolbody.bin"
-GraphicsSFWCarolFace:	
-	.import "graphics/CO/SFWCarol/SFWCarolneutral.bin"
-GraphicsSFWCarolHappyFace:
-	.import "graphics/CO/SFWCarol/SFWCarolhappy.bin"
-GraphicsSFWCarolSadFace:
-	.import "graphics/CO/SFWCarol/SFWCarolsad.bin"
-GraphicsSFWCarolName:
-	.import "graphics/CO/SFWCarol/carolinename.bin"
-GraphicsSFWCarolMugshot:
-	.import "graphics/CO/SFWCarol/SFWCarolmug.bin"
-;Blank Line
+graphicssfwcarolpalette:
+	.import "graphics/co/sfwcarol/sfwcarolpalette.bin"
+graphicssfwcarolgraphic:
+	.dw graphicssfwcaroltop
+	.dw graphicssfwcarolbody
+graphicssfwcaroltop:
+	.import "graphics/co/sfwcarol/sfwcaroltop.bin"
+graphicssfwcarolbody:
+	.import "graphics/co/sfwcarol/sfwcarolbody.bin"
+graphicssfwcarolface:
+	.import "graphics/co/sfwcarol/sfwcarolneutral.bin"
+graphicssfwcarolhappyface:
+	.import "graphics/co/sfwcarol/sfwcarolhappy.bin"
+graphicssfwcarolsadface:
+	.import "graphics/co/sfwcarol/sfwcarolsad.bin"
+graphicssfwcarolname:
+	.import "graphics/co/sfwcarol/carolinename.bin"
+graphicssfwcarolmugshot:
+	.import "graphics/co/sfwcarol/sfwcarolmug.bin"
+;blank line

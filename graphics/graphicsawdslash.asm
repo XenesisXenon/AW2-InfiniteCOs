@@ -1,21 +1,21 @@
-;graphicsAWDSLash.asm
-GraphicsAWDSLashPalette:
-	.import "graphics/CO/AWDSLash/AWDSLashPalette.bin"
-GraphicsAWDSLashGraphic:
-	.dw GraphicsAWDSLashTop
-	.dw GraphicsAWDSLashBody	
-GraphicsAWDSLashTop:
-	.import "graphics/CO/AWDSLash/AWDSLashtop.bin"
-GraphicsAWDSLashBody:	
-	.import "graphics/CO/AWDSLash/AWDSLashbody.bin"
-GraphicsAWDSLashFace:	
-	.import "graphics/CO/AWDSLash/AWDSLashneutral.bin"
-GraphicsAWDSLashHappyFace:
-	.import "graphics/CO/AWDSLash/AWDSLashhappy.bin"
-GraphicsAWDSLashSadFace:
-	.import "graphics/CO/AWDSLash/AWDSLashsad.bin"
-GraphicsAWDSLashName:
-	.import "graphics/CO/AWDSLash/AWDSLashname.bin"
-GraphicsAWDSLashMugshot:
-	.import "graphics/CO/AWDSLash/AWDSLashmug.bin"
-;Blank Line
+;graphicsawdslash.asm
+graphicsawdslashpalette:
+	.import "graphics/co/awdslash/awdslashpalette.bin"
+graphicsawdslashgraphic:
+	.dw graphicsawdslashtop
+	.dw graphicsawdslashbody
+graphicsawdslashtop:
+	.import "graphics/co/awdslash/awdslashtop.bin"
+graphicsawdslashbody:
+	.import "graphics/co/awdslash/awdslashbody.bin"
+graphicsawdslashface:
+	.import "graphics/co/awdslash/awdslashneutral.bin"
+graphicsawdslashhappyface:
+	.import "graphics/co/awdslash/awdslashhappy.bin"
+graphicsawdslashsadface:
+	.import "graphics/co/awdslash/awdslashsad.bin"
+graphicsawdslashname:
+	.import "graphics/co/awdslash/awdslashname.bin"
+graphicsawdslashmugshot:
+	.import "graphics/co/awdslash/awdslashmug.bin"
+;blank line

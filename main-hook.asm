@@ -113,11 +113,11 @@
 ;Separates Vs. Invention Damage from Vs. Mid Tank Damage
 	.include "./code/inventiondamagefix/hookinventiondamagefix.asm"	
 ;Pointers for various Campaign Code pieces
-	.include "./code/Campaign/Hook_campaign.asm"
+	.include "./code/campaign/hook_campaign.asm"
 ;Code for various Campaign scripting ASM calls
 ;	.include "./code/Campaign_Special/hook_campaign_special.asm"
 ;Code for Co-existing Battle Maps and Option Shop
-	.include "./code/Battlemaps/hook_battlemaps.asm"
+	.include "./code/battlemaps/hook_battlemaps.asm"
 ;Bug Fix for the Gas Trick
 ;	.include "./code/gastrick/hook_gastrick.asm"
 ;Fix/Alteration to change what the game considers an indirect
@@ -130,16 +130,16 @@
 ;Expansion to allow additional CO-Based income
 	.include "./code/incomemodifier/hookincomemodifier.asm"
 ;Expansion to CO Power Charging Subroutine
-	.include "./code/PowerChargingModifier/hookpowercharge.asm"
-	.include "./code/PowerChargingModifier/hook_starcost.asm"
+	.include "./code/powerchargingmodifier/hookpowercharge.asm"
+	.include "./code/powerchargingmodifier/hook_starcost.asm"
 ;Expansion to Allow more Icons eg Vet/Stun
 	.include "./code/customuniticons/hookcustomuniticonsdisp.asm"
 ;Hook to Allow Title Screen Quick Bypass
 	.include "./code/quickload/hookquickload.asm"
 ;Hook to Allow for Disabling SCOPs on the menu
-	.include "./code/Powerchargingmodifier/hookpowerSCOPdisable.asm"
+	.include "./code/powerchargingmodifier/hookpowerscopdisable.asm"
 ;Hook to Modify the Save Functions
-	.include "./code/Save/hooksave.asm"
+	.include "./code/save/hooksave.asm"
 ;Hook to Modify Versus Menu Setup
 	.include "./code/versusmenu/hookversusmenu.asm"
 ;Hook for Keypad Input Handlers

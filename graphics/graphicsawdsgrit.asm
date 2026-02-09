@@ -1,21 +1,21 @@
-;graphicsAWDSGrit.asm
-GraphicsAWDSGritPalette:
-	.import "graphics/CO/AWDSGrit/AWDSGritPalette.bin"
-GraphicsAWDSGritGraphic:
-	.dw GraphicsAWDSGritTop
-	.dw GraphicsAWDSGritBody	
-GraphicsAWDSGritTop:
-	.import "graphics/CO/AWDSGrit/AWDSGrittop.bin"
-GraphicsAWDSGritBody:	
-	.import "graphics/CO/AWDSGrit/AWDSGritbody.bin"
-GraphicsAWDSGritFace:	
-	.import "graphics/CO/AWDSGrit/AWDSGritneutral.bin"
-GraphicsAWDSGritHappyFace:
-	.import "graphics/CO/AWDSGrit/AWDSGrithappy.bin"
-GraphicsAWDSGritSadFace:
-	.import "graphics/CO/AWDSGrit/AWDSGritsad.bin"
-GraphicsAWDSGritName:
-	.import "graphics/CO/AWDSGrit/AWDSGritname.bin"
-GraphicsAWDSGritMugshot:
-	.import "graphics/CO/AWDSGrit/AWDSGritmug.bin"
-;Blank Line
+;graphicsawdsgrit.asm
+graphicsawdsgritpalette:
+	.import "graphics/co/awdsgrit/awdsgritpalette.bin"
+graphicsawdsgritgraphic:
+	.dw graphicsawdsgrittop
+	.dw graphicsawdsgritbody
+graphicsawdsgrittop:
+	.import "graphics/co/awdsgrit/awdsgrittop.bin"
+graphicsawdsgritbody:
+	.import "graphics/co/awdsgrit/awdsgritbody.bin"
+graphicsawdsgritface:
+	.import "graphics/co/awdsgrit/awdsgritneutral.bin"
+graphicsawdsgrithappyface:
+	.import "graphics/co/awdsgrit/awdsgrithappy.bin"
+graphicsawdsgritsadface:
+	.import "graphics/co/awdsgrit/awdsgritsad.bin"
+graphicsawdsgritname:
+	.import "graphics/co/awdsgrit/awdsgritname.bin"
+graphicsawdsgritmugshot:
+	.import "graphics/co/awdsgrit/awdsgritmug.bin"
+;blank line

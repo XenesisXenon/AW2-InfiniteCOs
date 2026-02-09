@@ -1,0 +1,21 @@
+;C26_Include.asm
+.relativeinclude on
+	.include "c26_0_event_0.asm"
+	.include "c26_0_event_1.asm"
+	.include "c26_0_trigger.asm"
+	.include "c26_1_event_0.asm"
+	.include "c26_1_event_1.asm"
+	.include "c26_1_trigger.asm"
+	.include "c26_2_trigger.asm"
+	.include "c26_3_event_0.asm"
+	.include "c26_3_event_1.asm"
+	.include "c26_3_trigger.asm"
+	.include "c26_4_trigger.asm"
+	.include "c26_5_event_0.asm"
+	.include "c26_5_event_0a.asm"
+	.include "c26_5_event_0b.asm"
+	.include "c26_5_event_1.asm"
+	.include "c26_5_trigger.asm"
+	.include "c26_terms.asm"
+	.include "c26_worldmap.asm"
+.relativeinclude off
